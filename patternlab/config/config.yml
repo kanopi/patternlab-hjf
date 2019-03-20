@@ -17,7 +17,7 @@ styleGuideExcludes: ''
 cacheBusterOn: 'true'
 exportDir: export
 publicDir: public
-sourceDir: ../components
+sourceDir: source
 defaultPattern: all
 defaultShowPatternInfo: false
 plugins:
