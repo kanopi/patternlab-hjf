@@ -1,9 +1,13 @@
 
   <!--DO NOT REMOVE-->
   {{ patternLabFoot | raw }}
-
+  
+  <script src="../../public/js/components.js?{{ cacheBuster }}"></script>
+  
   <!-- This makes attach_library work wherever it is in the document flow. -->
   <script src="../../js/reload-scripts.js"></script>
-
+  <script id="__bs_script__">//<![CDATA[
+      document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
+  //]]></script>
   </body>
 </html>

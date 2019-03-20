@@ -1,0 +1,60 @@
+
+{
+  "name": "components",
+  "paths": {
+    "root": "./",
+    "public": "patternlab/public/"
+  },
+  "css": {
+    "css" : "patternlab/source/styles.scss",
+    "src": [
+      "patternlab/source/css/*.scss",
+      "patternlab/source/_patterns/*.scss",
+      "patternlab/source/_patterns/**/*.scss"
+    ],
+    "pl_dest": "patternlab/public/css/",
+    "dest": "dist/css/",
+    "includePaths": [
+      "node_modules/foundation-sites/scss/",
+      "node_modules/motion-ui/src/"
+    ]
+  },
+  "js": {
+    "src": [
+      "patternlab/source/js/*.js",
+      "patternlab/source/js/**/*.js"
+    ]
+  },
+  "patternlab": {
+    "src": [
+      "patternlab/source/_patterns/**/*.twig",
+      "patternlab/source/_meta/*.twig",
+      "patternlab/source/_patterns/**/*.json"
+    ],
+    "javascript": {
+      "src": [
+        "patternlab/source/js/components.js",
+        "patternlab/source/_patterns/01-atoms/**/*.js",
+        "patternlab/source/_patterns/02-molecules/**/*.js",
+        "patternlab/source/_patterns/03-organisms/**/*.js"
+      ],
+      "dest": [
+        "dist/js/"
+      ]
+    }
+  },
+  "images": {
+    "src": [
+      "patternlab/source/images/**/*"
+    ],
+    "dest": "dist/images/"
+  },
+  "autoprefixer": [
+    "last 2 versions",
+    "> 1%",
+    "ie 11"
+  ],
+  "sass": {
+    "outputStyle": "expanded"
+  }
+}
