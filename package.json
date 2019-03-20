@@ -5,5 +5,7 @@
   "main": "index.js",
   "author": "Jason Savino",
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
 }
