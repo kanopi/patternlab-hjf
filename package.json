@@ -1,0 +1,9 @@
+{
+  "name": "patternlab-hjf",
+  "version": "1.0.0",
+  "description": "HJF Pattern Lab library",
+  "main": "index.js",
+  "author": "Jason Savino",
+  "license": "MIT",
+  "devDependencies": {}
+}
