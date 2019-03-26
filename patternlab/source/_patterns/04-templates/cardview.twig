@@ -1,0 +1,16 @@
+{# include "organisms-header" #}
+<h1>{{ title }}</h1>
+
+<div class="grid-x">
+{% for card in cards %}
+  <div class="cell medium-4">
+    {{ card|raw }}
+  </div><!--// cell -->
+{% if loop.index % 3 == 0 and not loop.last %}
+</div><!-- grid -->
+<div class="grid-x">
+{% endif %}
+{% endfor %}
+</div><!-- grid -->
+
+{# include "organisms-footer" #}

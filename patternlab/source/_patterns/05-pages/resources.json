@@ -1,0 +1,102 @@
+{
+  "patternlab": true,
+  "title": "Resources",
+  "cards": [
+      {
+        "include()": {
+          "pattern": "organisms-card",
+          "with": {
+              "content": "This card one!"
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-card",
+          "with": {
+              "content": "This card two!"
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-card",
+          "with": {
+              "content": "This card three!"
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-card",
+          "with": {
+              "content": "This card one!"
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-card",
+          "with": {
+              "content": "This card two!"
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-card",
+          "with": {
+              "content": "This card three!"
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-card",
+          "with": {
+              "content": "This card one!"
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-card",
+          "with": {
+              "content": "This card two!"
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-card",
+          "with": {
+              "content": "This card three!"
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-card",
+          "with": {
+              "content": "This card one!"
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-card",
+          "with": {
+              "content": "This card two!"
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-card",
+          "with": {
+              "content": "This card three!"
+          }
+        }
+      }
+  ]
+}

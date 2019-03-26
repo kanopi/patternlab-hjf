@@ -27,8 +27,9 @@
   },
   "patternlab": {
     "src": [
-      "patternlab/source/_patterns/**/*.twig",
+      "patternlab/source/_data/*.json",
       "patternlab/source/_meta/*.twig",
+      "patternlab/source/_patterns/**/*.twig",
       "patternlab/source/_patterns/**/*.json"
     ],
     "javascript": {

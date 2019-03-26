@@ -20,10 +20,6 @@ publicDir: public
 sourceDir: source
 defaultPattern: all
 defaultShowPatternInfo: false
-plugins:
-    dataTransform:
-        enabled: true
-        verbose: false
 lineageMatch: '{%([ ]+)?(?:include|extends|embed)( |\()[&quot;\&#039;]([\/.@A-Za-z0-9-_]+)[&quot;\&#039;]([\s\S+]*?)%}'
 lineageMatchKey: 3
 patternExtension: twig
@@ -42,3 +38,7 @@ ishControlsHide:
     - hay
 styleguideKit: pattern-lab/styleguidekit-twig-default
 styleguideKitPath: vendor/pattern-lab/styleguidekit-twig-default
+plugins:
+    dataTransform:
+        enabled: true
+        verbose: true
