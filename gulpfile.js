@@ -14,6 +14,8 @@ var gulp = require('gulp'),
 
 const config = require('./gulp.config.json');
 
+const generate = shell.task('php patternlab/core/console --generate');
+
 function compileCss() {
   return gulp.src(config.css.src)
       .pipe(glob())
@@ -51,12 +53,9 @@ function watch() {
 
     gulp.watch(config.css.src, compileCss);
     gulp.watch(config.js.src, compileJs);
-    gulp.watch(config.patternlab.src, generate);
-    gulp.watch(config.patternlab.javascript.src, generate);
     gulp.watch(config.images.src, minifyImages);
+    gulp.watch(config.patternlab.src, server);
 }
-
-var generate = shell.task('php patternlab/core/console --generate');
 
 exports.compileCss = compileCss;
 exports.compileJs = compileJs;
