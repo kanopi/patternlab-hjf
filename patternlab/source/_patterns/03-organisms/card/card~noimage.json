@@ -1,0 +1,17 @@
+{
+  "type": "Article",
+  "card_variation": "c-card-reveal",
+  "image": {
+    "src": "",
+    "alt": ""
+  },
+  "date": "August 2, 2019",
+  "heading": "Moral Injury and The Cost to Physicians",
+  "author" : "Jon Smith",
+  "summary": "HJF has facilitated the transfer of the m102.4 human monoclonal antibody, an experimental therapy for Nipah virus infection, from Queensland, Australia to Kerala, India.",
+  "button": {
+    "title": "Read More",
+    "url": "#",
+    "style": "button warning"
+  }
+}

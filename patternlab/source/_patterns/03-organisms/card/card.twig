@@ -1,15 +1,24 @@
 {# see: https://foundation.zurb.com/sites/docs/card.html #}
 <div class="c-card {{ card_variation }}">
   <div class="c-card__image">
-    <img src="{{ image.src }}" alt="{{ image.alt }}">
+    {% if image %}
+      <img src="{{ image.src }}" alt="{{ image.alt }}">
+    {% endif %}
     <div class="c-card__type">{{ type }}</div>
   </div>
   <div class="c-card__content">
-    <h3 class="c-card__heading">{{ heading }}</h3>
-    <div class="c-card__overlay">
+    {% if date %}
       <div class="c-card__overlay-date"> {{ date }} </div>
+    {% endif %}
+    <h3 class="c-card__heading small">{{ heading }}</h3>
+    <div class="c-card__overlay">
+      {% if date %}
+        <div class="c-card__overlay-date"> {{ date }} </div>
+      {% endif %}
       <div class="c-card__overlay-heading">{{ heading }}</div>
+      {% if author %}
       <div class="c-card__overlay-author">{{ author }} </div>
+      {% endif %}
       <div class="c-card__overlay-summary">{{ summary }}</div>
       <div class="c-card__overlay-button"><a href="{{ button.url }}" class="{{ button.style }}">{{ button.title }}</a></div>
     </div> <!-- /.c-card-card__overlay -->

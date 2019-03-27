@@ -3,8 +3,6 @@
 
 
 $card-reveal-transition-speed: 0.6s;
-$light-blue: #c4e2f5;
-$black: #212121;
 
 // c-card styles
 .c-card {
@@ -12,18 +10,20 @@ $black: #212121;
   cursor: pointer;
   overflow: hidden;
   max-width: 390px;
-  min-height: 440px;
+  min-height: 400px;
   background-color: $primary-color;
 
   &__image {
     position: relative;
+    min-height: 200px;
   }
 
   &__type {
     background-color: $light-blue;
     padding: rem-calc(10 15);
     position: absolute;
-    color: $black;
+    color: $darkest-gray;
+    font-size: $cite-font-size;
     font-weight: $global-weight-bold;
     left: 50px;
     bottom: 20px;
@@ -34,8 +34,17 @@ $black: #212121;
     color: #ffffff;
   }
 
-  &__heading {
-    font-weight: bold;
+  &__heading,
+  .c-card__overlay-heading {
+    font-weight: $global-weight-bold;
+    font-family: $font-family-monospace;
+    line-height: 1.2;
+    font-size: rem-calc(22);
+    padding-bottom: rem-calc(25);
+  }
+
+  .c-card__overlay-date {
+    padding-bottom: rem-calc(14);
   }
 
   &__overlay {
@@ -52,17 +61,7 @@ $black: #212121;
     &.hover {
       top: 0;
       z-index: 1;
-      min-height: 440px;
-    }
-
-    &-date {
-      padding-bottom: rem-calc(14);
-    }
-
-    &-heading {
-      font-weight: $global-weight-bold;
-      font-size: rem-calc(22);
-      padding-bottom: rem-calc(25);
+      min-height: 400px;
     }
 
     &-author {
@@ -72,7 +71,6 @@ $black: #212121;
 
     &-button {
       .button {
-        border-radius: rem-calc(75);
         margin-top: rem-calc(25);
         font-weight: $global-weight-bold;
         padding: rem-calc(15 30.5);
