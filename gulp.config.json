@@ -33,6 +33,8 @@
     ],
     "javascript": {
       "src": [
+        "node_modules/jquery/dist/jquery.min.js",
+        "node_modules/foundation-sites/dist/js/foundation.min.js",
         "patternlab/source/js/components.js",
         "patternlab/source/_patterns/01-atoms/**/*.js",
         "patternlab/source/_patterns/02-molecules/**/*.js",

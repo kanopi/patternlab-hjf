@@ -35,6 +35,13 @@ cd patternlab-hjf
 
 1. Commit new files generated.
 
+## Gulp Tasks
+
+Run `gulp` to watch and compile the CSS and JS needed for PatternLab. This will start BrowserSync as well. 
+Ignore the following:
+
+- Copy the following snippet into your website ...
+
 ## Helpful Commands
 
 These are some helpful commands you can use on the command line for working with Pattern Lab from within the `patternlab` directory.
