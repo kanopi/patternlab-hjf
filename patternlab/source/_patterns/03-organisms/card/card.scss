@@ -1,0 +1,83 @@
+
+@import "../../../css/_settings.scss";
+
+
+$card-reveal-transition-speed: 0.6s;
+$light-blue: #c4e2f5;
+$black: #212121;
+
+// c-card styles
+.c-card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 390px;
+  min-height: 440px;
+  background-color: $primary-color;
+
+  &__image {
+    position: relative;
+  }
+
+  &__type {
+    background-color: $light-blue;
+    padding: rem-calc(10 15);
+    position: absolute;
+    color: $black;
+    font-weight: $global-weight-bold;
+    left: 50px;
+    bottom: 20px;
+  }
+
+  &__content {
+    padding: rem-calc(44 50);
+    color: #ffffff;
+  }
+
+  &__heading {
+    font-weight: bold;
+  }
+
+  &__overlay {
+    background-color: $primary-color;
+    bottom: 0;
+    display: block;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transition: top $card-reveal-transition-speed ease-in-out;
+    padding: rem-calc(44 50);
+    &.hover {
+      top: 0;
+      z-index: 1;
+      min-height: 440px;
+    }
+
+    &-date {
+      padding-bottom: rem-calc(14);
+    }
+
+    &-heading {
+      font-weight: $global-weight-bold;
+      font-size: rem-calc(22);
+      padding-bottom: rem-calc(25);
+    }
+
+    &-author {
+      padding-bottom: rem-calc(10);
+      font-weight: $global-weight-bold;
+    }
+
+    &-button {
+      .button {
+        border-radius: rem-calc(75);
+        margin-top: rem-calc(25);
+        font-weight: $global-weight-bold;
+        padding: rem-calc(15 30.5);
+      }
+    }
+
+  } // .c-card__overlay
+} // .c-card

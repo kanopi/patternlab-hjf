@@ -1,11 +1,17 @@
 {# see: https://foundation.zurb.com/sites/docs/card.html #}
-<div class="card" style="width: 300px;">
-  <div class="card-divider">
-    This is a header
+<div class="c-card {{ card_variation }}">
+  <div class="c-card__image">
+    <img src="{{ image.src }}" alt="{{ image.alt }}">
+    <div class="c-card__type">{{ type }}</div>
   </div>
-  <img src="//foundation.zurb.com/sites/docs/assets/img/generic/rectangle-1.jpg" />
-  <div class="card-section">
-    <h4>This is a card.</h4>
-    {{ content }}
-  </div>
-</div>
+  <div class="c-card__content">
+    <h3 class="c-card__heading">{{ heading }}</h3>
+    <div class="c-card__overlay">
+      <div class="c-card__overlay-date"> {{ date }} </div>
+      <div class="c-card__overlay-heading">{{ heading }}</div>
+      <div class="c-card__overlay-author">{{ author }} </div>
+      <div class="c-card__overlay-summary">{{ summary }}</div>
+      <div class="c-card__overlay-button"><a href="{{ button.url }}" class="{{ button.style }}">{{ button.title }}</a></div>
+    </div> <!-- /.c-card-card__overlay -->
+  </div> <!-- /.c-card-card__content -->
+</div> <!-- /.c-card -->
