@@ -20,7 +20,7 @@
       <div class="c-card__overlay-author">{{ author }} </div>
       {% endif %}
       <div class="c-card__overlay-summary">{{ summary }}</div>
-      <div class="c-card__overlay-button"><a href="{{ button.url }}" class="{{ button.style }}">{{ button.title }}</a></div>
+      <div class="c-card__overlay-button">{{ button|raw }}</div>
     </div> <!-- /.c-card-card__overlay -->
   </div> <!-- /.c-card-card__content -->
 </div> <!-- /.c-card -->

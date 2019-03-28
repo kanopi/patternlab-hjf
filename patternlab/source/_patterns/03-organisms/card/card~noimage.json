@@ -10,8 +10,14 @@
   "author" : "Jon Smith",
   "summary": "HJF has facilitated the transfer of the m102.4 human monoclonal antibody, an experimental therapy for Nipah virus infection, from Queensland, Australia to Kerala, India.",
   "button": {
-    "title": "Read More",
-    "url": "#",
-    "style": "button warning"
+    "include()": {
+      "pattern": "atoms-button",
+      "with": {
+        "uri": "#",
+        "title": "Read More",
+        "classes": "warning"
+      },
+      "only": true
+    }
   }
 }
