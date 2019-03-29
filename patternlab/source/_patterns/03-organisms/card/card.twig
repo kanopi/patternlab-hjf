@@ -1,24 +1,33 @@
 {# see: https://foundation.zurb.com/sites/docs/card.html #}
-<div class="c-card {{ card_variation }}">
-  <div class="c-card__image">
-    {% if image %}
-      <img src="{{ image.src }}" alt="{{ image.alt }}">
-    {% endif %}
-    <div class="c-card__type">{{ type }}</div>
-  </div>
+<div class="c-card c-card{{ card_variation }}">
+  {% if card_variation == '--reveal' %}
+    <div class="c-card__image">
+      {% if image %}
+        <img src="{{ image.src }}" alt="{{ image.alt }}">
+      {% endif %}
+      <div class="c-card__type">{{ type }}</div>
+    </div>
+  {% endif %}
   <div class="c-card__content">
+    {% if card_variation == '--text' and type %}
+      <div class="c-card__type">{{ type }}</div>
+    {% endif %}
     {% if date %}
       <div class="c-card__overlay-date"> {{ date }} </div>
     {% endif %}
     <h3 class="c-card__heading small">{{ heading }}</h3>
     <div class="c-card__overlay">
-      {% if date %}
-        <div class="c-card__overlay-date"> {{ date }} </div>
+      {% if date_overlay %}
+        <div class="c-card__overlay-date"> {{ date_overlay }} </div>
       {% endif %}
-      <div class="c-card__overlay-heading">{{ heading }}</div>
-      {% if author %}
-      <div class="c-card__overlay-author">{{ author }} </div>
+
+      {% if card_variation == '--reveal' %}
+        <div class="c-card__overlay-heading">{{ heading_overlay }}</div>
+        {% if author_overlay %}
+          <div class="c-card__overlay-author">{{ author_overlay }} </div>
+        {% endif %}
       {% endif %}
+
       <div class="c-card__overlay-summary">{{ summary }}</div>
       <div class="c-card__overlay-button">{{ button|raw }}</div>
     </div> <!-- /.c-card-card__overlay -->
