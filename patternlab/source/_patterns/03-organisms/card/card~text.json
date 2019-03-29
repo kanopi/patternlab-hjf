@@ -1,0 +1,25 @@
+{
+  "type": "Research Administration",
+  "card_variation": "--text",
+  "image": {
+    "src": "",
+    "alt": ""
+  },
+  "date": "",
+  "heading": "Financial Services & Reporting",
+  "date_overlay": "",
+  "heading_overlay": "",
+  "author_overlay" : "",
+  "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nunc at dignissim scelerisque. Suspendisse eu suscipit nunc. Aenean placerat scelerisque nisl.",
+  "button": {
+    "include()": {
+      "pattern": "atoms-button",
+      "with": {
+        "uri": "#",
+        "title": "Read More",
+        "classes": "warning"
+      },
+      "only": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+
+@import "card.scss";
+
+//.c-card styles
+.c-card {
+  $self: &;
+  // c-card--text styles
+  &--text {
+    max-width: 390px;
+
+    #{ $self }__heading {
+      padding-bottom: rem-calc(21);
+      margin-bottom: 0;
+      color: $darkest-gray;
+    }
+
+    #{ $self }__type {
+      font-size: rem-calc(16);
+      margin-bottom: rem-calc(11);
+    }
+
+  } // .c-card--text
+} // .c-card
