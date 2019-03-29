@@ -81,6 +81,7 @@ $dark-gray: #8a8a8a;
 $darkest-gray: #212121;
 $black: #0a0a0a;
 $white: #fefefe;
+$medium-blue: #206178;
 $light-blue: #c4e2f5;
 $body-background: $white;
 $body-font-color: $black;
@@ -114,7 +115,7 @@ $breakpoints: (
   xxlarge: 1440px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xlarge xxlarge);
 
 // 3. The Grid
 // -----------
@@ -284,9 +285,9 @@ $button-font-family: inherit;
 $button-padding: 1em;
 $button-margin: $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: $white;
+$button-background: $warning-color;
+$button-background-hover: $light-blue;
+$button-color: $primary-color;
 $button-color-alt: $black;
 $button-radius: rem-calc(75);
 $button-hollow-border-width: 1px;
