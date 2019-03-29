@@ -1,0 +1,1 @@
+* .footer-overlay{position:relative}.footer-overlay:after{content:'';border-style:solid;border-width:0 0 321px 720px;border-color:transparent transparent #10445e transparent;position:absolute;bottom:0;left:50%}@media screen and (min-width: 90em){.footer-overlay:after{right:0;left:inherit}}

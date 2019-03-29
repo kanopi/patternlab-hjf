@@ -17,7 +17,7 @@ cd patternlab-hjf
 
 ## First Time Install
 
-1. Run `npm install` to install dependencies.
+1. Run `npm install` or `yarn install` to install dependencies.
 1. Run `cd patternlab`.
 1. Run `composer install` to install dependencies.
 1. If prompted, answer as follows:

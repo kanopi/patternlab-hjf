@@ -52,3 +52,21 @@
   font-size: 90%;
   line-height: 1;
 }
+
+.patternLink {
+  text-transform: capitalize;  
+}
+
+
+.cell {
+  background-color: #cce5ff;
+}
+
+.example-container.footer-overlay img {
+  width: 100%;
+  max-height: 321px;
+}
+.example-container.hero-overlay img {
+  width: 100%;
+  max-height: 700px;
+}
