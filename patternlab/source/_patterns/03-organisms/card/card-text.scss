@@ -19,5 +19,11 @@
       margin-bottom: rem-calc(11);
     }
 
+    .button {
+      &:hover {
+        background-color: $light-blue;
+      }
+    }
+
   } // .c-card--text
 } // .c-card
