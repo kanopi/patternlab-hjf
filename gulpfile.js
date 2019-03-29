@@ -54,7 +54,7 @@ function watch() {
     gulp.watch(config.css.src, compileCss);
     gulp.watch(config.js.src, compileJs);
     gulp.watch(config.images.src, minifyImages);
-    gulp.watch(config.patternlab.src, server);
+    gulp.watch(config.patternlab.src, build);
 }
 
 exports.compileCss = compileCss;
@@ -63,10 +63,10 @@ exports.minifyImages = minifyImages;
 exports.watch = watch;
 exports.generate = generate;
 
-var server = gulp.series(generate, compileCss, compileJs, minifyImages);
-exports.server = server;
+var build = gulp.series(generate, compileCss, compileJs, minifyImages);
+exports.build = build;
 
-var defaultTasks = gulp.series(server, watch);
+var defaultTasks = gulp.series(build, watch);
 exports.defaultTasks = defaultTasks;
 
 gulp.task('default', defaultTasks);

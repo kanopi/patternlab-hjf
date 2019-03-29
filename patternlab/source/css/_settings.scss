@@ -78,8 +78,10 @@ $foundation-palette: (
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
+$darkest-gray: #212121;
 $black: #0a0a0a;
 $white: #fefefe;
+$light-blue: #c4e2f5;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -186,7 +188,7 @@ $defnlist-term-margin-bottom: 0.3rem;
 $blockquote-color: $dark-gray;
 $blockquote-padding: rem-calc(9 20 0 19);
 $blockquote-border: 1px solid $medium-gray;
-$cite-font-size: rem-calc(13);
+$cite-font-size: rem-calc(14);
 $cite-color: $dark-gray;
 $cite-pseudo-content: '\2014 \0020';
 $keystroke-font: $font-family-monospace;
@@ -279,14 +281,14 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // ----------
 
 $button-font-family: inherit;
-$button-padding: 0.85em 1em;
-$button-margin: 0 0 $global-margin 0;
+$button-padding: 1em;
+$button-margin: $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
-$button-radius: $global-radius;
+$button-radius: rem-calc(75);
 $button-hollow-border-width: 1px;
 $button-sizes: (
   tiny: 0.6rem,
