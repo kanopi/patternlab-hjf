@@ -3,8 +3,8 @@
 
 //.c-testimonial styles
 .c-testimonial {
-  background-color: $card-bg-gray;
   &__inner {
+    background-color: $card-bg-gray;
     padding: rem-calc(60 40);
     @include breakpoint(small down) {
       padding: rem-calc(20);
