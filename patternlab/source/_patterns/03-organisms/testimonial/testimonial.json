@@ -1,0 +1,9 @@
+{
+  "type": "Client Testimonial",
+  "image": "<img src=\"../../images/testimonial-1.png\">",
+  "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus commodo elit, faucibus bibendum mi. Vestibulum varius efficitur orci, id volutpat dolor posuere blandit. Maecenas interdum elit sagittis, aliquam lectus nec, tristique velita.",
+  "client": {
+    "name": "Thomas Cruise",
+    "position": "Google Engineer"
+  }
+}

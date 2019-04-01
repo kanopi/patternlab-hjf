@@ -1,0 +1,48 @@
+
+@import "../../../css/_settings.scss";
+
+//.c-testimonial styles
+.c-testimonial {
+  &__inner {
+    background-color: $card-bg-gray;
+    padding: rem-calc(60 40);
+    @include breakpoint(small down) {
+      padding: rem-calc(20);
+    }
+    color: $darkest-blue;
+    .bold {
+      font-weight: $global-weight-bold;
+    }
+  }
+
+  &__content {
+
+    @include breakpoint(small down) {
+      margin-bottom: rem-calc(20);
+    }
+    @include breakpoint(medium) {
+      padding-left: rem-calc(60);
+    }
+  }
+
+  &__type {
+    color: $darkest-gray;
+    margin-bottom: rem-calc(25);
+    @include breakpoint(small down) {
+      text-align: center;
+    }
+  }
+
+  &__image {
+    @include breakpoint(small down) {
+      text-align: center;
+    }
+  }
+
+  &__summary {
+    font-family: $font-family-monospace;
+    line-height: 1.2;
+    font-size: rem-calc(28);
+    padding-bottom: rem-calc(25);
+  }
+} // .c-testimonial
