@@ -1,0 +1,8 @@
+@import "../../css/_settings.scss";
+
+html {
+  font-size: $global-font-size-small;
+  @include breakpoint(medium) {
+    font-size: $global-font-size;
+  }
+}

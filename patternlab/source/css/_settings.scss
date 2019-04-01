@@ -64,7 +64,7 @@
 
 // 1. Global
 // ---------
-
+$global-font-size-small: rem-calc(14);
 $global-font-size: rem-calc(16);
 $global-width: rem-calc(1440);
 $global-lineheight: 1.5;
@@ -79,6 +79,7 @@ $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $darkest-gray: #212121;
+$darkest-blue: #252a35;
 $black: #0a0a0a;
 $white: #fefefe;
 $medium-blue: #206178;
@@ -336,6 +337,7 @@ $card-shadow: none;
 $card-border-radius: $global-radius;
 $card-padding: $global-padding;
 $card-margin-bottom: $global-margin;
+$card-bg-gray: #eeeeee;
 
 // 15. Close Button
 // ----------------
