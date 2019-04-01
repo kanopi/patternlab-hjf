@@ -1,0 +1,38 @@
+@import "../../../css/_settings.scss";
+
+.accordion {
+  .accordion-title {
+    border: 0;
+    background-color: $light-gray;
+    margin-bottom: 1px;
+    font-family: $font-family-monospace;
+    font-size: rem-calc(18);
+    color: $darkest-gray;
+    padding: rem-calc(15 16);
+    &:hover {
+      font-weight: $global-weight-bold;
+      background-color: $light-blue;
+    }
+  }
+  .is-active {
+    .accordion-title {
+      background-color: $light-blue;
+      font-weight: $global-weight-bold;
+    }
+  }
+  .accordion-content {
+    background-color: $primary-color;
+    padding: rem-calc(20);
+    border: 0;
+    color: #ffffff;
+    h2 {
+      margin-bottom: 1rem;
+      font-family: $font-family-monospace;
+      font-weight: $global-weight-bold;
+      line-height: 1.29;
+      @include breakpoint(small only) {
+        text-align: center;
+      }
+    }
+  }
+}
