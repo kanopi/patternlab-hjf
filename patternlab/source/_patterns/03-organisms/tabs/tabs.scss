@@ -4,11 +4,9 @@
   margin: 0 auto;
   border: 0;
   background-color: transparent;
+  max-width: 1200px;
   &--image {
     max-width: 350px;
-    &.cell {
-      background-color: #ffffff;
-    }
   }
   &--tab-list {
     background-color: #ffffff;
