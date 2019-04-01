@@ -54,10 +54,7 @@
     line-height: rem-calc(30);
     display: flex;
     align-items: center;
-    @include breakpoint(small only) {
-      background-color: $light-gray;
-      margin-bottom: 1px;
-    }
+
     @include breakpoint(medium) {
       border-right: 10px solid transparent;
       padding: rem-calc(0 20 0 0);
@@ -70,11 +67,6 @@
     a {
       color: $darkest-gray;
       vertical-align: middle;
-      @include breakpoint(small only) {
-        display: block;
-        width: 100%;
-        padding: rem-calc(15 16);
-      }
     }
     &:last-child {
       margin-bottom: 0;
@@ -86,9 +78,6 @@
     &:hover {
       border-color: $light-blue;
       font-weight: $global-weight-bold;
-      @include breakpoint(small only) {
-        background-color: $light-blue;
-      }
     }
   }
 }
@@ -114,9 +103,6 @@
     font-family: $font-family-monospace;
     font-weight: $global-weight-bold;
     line-height: 1.29;
-    @include breakpoint(small only) {
-      text-align: center;
-    }
   }
   &__summary {
     padding-bottom: 2rem;
