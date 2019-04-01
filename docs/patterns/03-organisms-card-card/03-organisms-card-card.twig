@@ -2,9 +2,7 @@
 <div class="c-card c-card{{ card_variation }}">
   {% if card_variation == '--reveal' %}
     <div class="c-card__image">
-      {% if image %}
-        <img src="{{ image.src }}" alt="{{ image.alt }}">
-      {% endif %}
+      {{ image | raw }}
       <div class="c-card__type">{{ type }}</div>
     </div>
   {% endif %}
