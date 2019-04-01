@@ -1,69 +1,26 @@
-<div class="grid-container">
-  <div class="grid-x grid-margin-x">
-  <div class="medium-3">
-    <div class="tabs-content" data-tabs-content="tabs">
-      <div class="tabs-panel is-active" id="image-1">
-        <p>One</p>
-        <p>Check me out! I'm a super cool Tab panel with text content!</p>
-      </div>
-      <div class="tabs-panel" id="image-2">
-        <p>Two</p>
-        <img class="thumbnail" src="assets/img/generic/rectangle-7.jpg">
-      </div>
-      <div class="tabs-panel" id="image-3">
-        <p>Three</p>
-        <p>Check me out! I'm a super cool Tab panel with text content!</p>
-      </div>
-      <div class="tabs-panel" id="image-4">
-        <p>Four</p>
-        <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
-      </div>
-      <div class="tabs-panel" id="image-5">
-        <p>Five</p>
-        <p>Check me out! I'm a super cool Tab panel with text content!</p>
-      </div>
-      <div class="tabs-panel" id="image-6">
-        <p>Six</p>
-        <img class="thumbnail" src="assets/img/generic/rectangle-8.jpg">
-      </div>
+<div class="tabs grid-container">
+  <div class="grid-x" data-equalizer>
+    <div class="tabs--image cell show-for-xlarge" data-equalizer-watch>
+      {{ image | raw }}
     </div>
-  </div>
-    <div class="medium-3">
-      <ul class="vertical tabs" data-tabs id="tabs">
-        <li class="tabs-title is-active"><a href="#image-1,#content-1" aria-selected="true">Tab 1</a></li>
-        <li class="tabs-title"><a href="#image-2,#content-2">Tab 2</a></li>
-        <li class="tabs-title"><a href="#image-3,#content-3">Tab 3</a></li>
-        <li class="tabs-title"><a href="#image-4,#content-4">Tab 4</a></li>
-        <li class="tabs-title"><a href="#image-5,#content-5">Tab 5</a></li>
-        <li class="tabs-title"><a href="#image-6,#content-6">Tab 6</a></li>
-      </ul>
+    <div class="tabs--tab-list" data-equalizer-watch>
+
+    <ul class="vertical tabs" data-tabs  data-responsive-accordion-tabs="accordion medium-tabs" id="tabs">
+    	{% for key, tab_item in tab_items %}
+        <li class="tabs-title {{ tab_item.active }}"><a href="#tab-{{ key }}">{{ tab_item.title }}</a></li>
+      {% endfor %}
+    </ul>
     </div>
-    <div class="medium-6">
+    <div class="tabs--tab-content" data-equalizer-watch>
       <div class="tabs-content" data-tabs-content="tabs">
-        <div class="tabs-panel is-active" id="content-1">
-          <p>One</p>
-          <p>Check me out! I'm a super cool Tab panel with text content!</p>
-        </div>
-        <div class="tabs-panel" id="content-2">
-          <p>Two</p>
-          <img class="thumbnail" src="assets/img/generic/rectangle-7.jpg">
-        </div>
-        <div class="tabs-panel" id="content-3">
-          <p>Three</p>
-          <p>Check me out! I'm a super cool Tab panel with text content!</p>
-        </div>
-        <div class="tabs-panel" id="content-4">
-          <p>Four</p>
-          <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
-        </div>
-        <div class="tabs-panel" id="content-5">
-          <p>Five</p>
-          <p>Check me out! I'm a super cool Tab panel with text content!</p>
-        </div>
-        <div class="tabs-panel" id="content-6">
-          <p>Six</p>
-          <img class="thumbnail" src="assets/img/generic/rectangle-8.jpg">
-        </div>
+      {% for key, tab_content in tab_content_items %}
+          <div class="tabs-panel {{ tab_content.active }}" id="tab-{{ key }}">
+            <h2>{{ tab_content.heading }}</h2>
+            <div class="tabs-panel__summary">{{ tab_content.summary }}</div>
+            <div class="tabs-panel__button">{{ tab_content.button | raw }}</div>
+            <div class="tabs-panel__footer">{{ tab_content.footer }}</div>
+          </div>
+      {% endfor %}
       </div>
     </div>
   </div>

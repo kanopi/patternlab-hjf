@@ -1,0 +1,112 @@
+{
+  "image": "<img src=\"../../images/tabs-1.png\">",
+  "tab_items": [
+     {
+       "title": "Apply for Research Funding",
+       "active": "is-active"
+     },
+     {
+       "title": "Develop Your Proposal",
+       "active": ""
+     },
+     {
+       "title": "Build your Team",
+       "active": ""
+     },
+     {
+       "title": "Manage The Administrative Tasks",
+       "active": ""
+     },
+     {
+       "title": "Facilitate the Transfer of Knowledge",
+       "active": ""
+     }
+   ],
+   "tab_content_items": [
+      {
+        "active": "is-active",
+        "heading": "We can help you apply for research funding.",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
+        "button": {
+          "include()": {
+            "pattern": "atoms-button",
+            "with": {
+              "uri": "#",
+              "title": "Funding Opportunities",
+              "classes": "warning"
+            },
+            "only": true
+          }
+        },
+        "footer": "Interested in becoming a corporate partner?"
+      },
+      {
+        "active": "",
+        "heading": "We can help you apply for research funding.",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
+        "button": {
+          "include()": {
+            "pattern": "atoms-button",
+            "with": {
+              "uri": "#",
+              "title": "Funding Opportunities",
+              "classes": "warning"
+            },
+            "only": true
+          }
+        },
+        "footer": "Interested in becoming a corporate partner?"
+      },
+      {
+        "active": "",
+        "heading": "We can help you apply for research funding.",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
+        "button": {
+          "include()": {
+            "pattern": "atoms-button",
+            "with": {
+              "uri": "#",
+              "title": "Funding Opportunities",
+              "classes": "warning"
+            },
+            "only": true
+          }
+        },
+        "footer": "Interested in becoming a corporate partner?"
+      },
+      {
+        "active": "",
+        "heading": "We can help you apply for research funding.",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
+        "button": {
+          "include()": {
+            "pattern": "atoms-button",
+            "with": {
+              "uri": "#",
+              "title": "Funding Opportunities",
+              "classes": "warning"
+            },
+            "only": true
+          }
+        },
+        "footer": "Interested in becoming a corporate partner?"
+      },
+      {
+        "active": "",
+        "heading": "We can help you apply for research funding.",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
+        "button": {
+          "include()": {
+            "pattern": "atoms-button",
+            "with": {
+              "uri": "#",
+              "title": "Funding Opportunities",
+              "classes": "warning"
+            },
+            "only": true
+          }
+        },
+        "footer": "Interested in becoming a corporate partner?"
+      }
+    ]
+}

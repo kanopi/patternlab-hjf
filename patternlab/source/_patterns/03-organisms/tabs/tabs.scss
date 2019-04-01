@@ -1,0 +1,143 @@
+@import "../../../css/_settings.scss";
+
+.tabs {
+  margin: 0 auto;
+  border: 0;
+  background-color: transparent;
+  &--image {
+    max-width: 350px;
+    &.cell {
+      background-color: #ffffff;
+    }
+  }
+  &--tab-list {
+    background-color: #ffffff;
+    width: 100%;
+    @include breakpoint(medium) {
+      max-width: 40%;
+    }
+    @include breakpoint(large) {
+      width: auto;
+      max-width: 350px;
+    }
+  }
+  &--tab-content {
+    height: 100%;
+    background-color: $primary-color;
+    @include breakpoint(small only) {
+      width: 100%;
+    }
+    @include breakpoint(medium) {
+      max-width: 60%;
+    }
+    @include breakpoint(large) {
+      max-width: calc(100% - 350px);
+    }
+    @include breakpoint(xlarge) {
+      max-width: auto;
+      width: calc(100% - 700px);
+    }
+    .tabs-content {
+      height: 100%;
+    }
+  }
+}
+
+// Tab List Styles
+#tabs {
+  list-style-type: none;
+  height: 100%;
+  @include breakpoint(medium) {
+    padding: rem-calc(49 0);
+  }
+  .tabs-title {
+    font-family: $font-family-monospace;
+    font-size: rem-calc(22);
+    line-height: rem-calc(30);
+    display: flex;
+    align-items: center;
+    @include breakpoint(small only) {
+      background-color: $light-gray;
+      margin-bottom: 1px;
+    }
+    @include breakpoint(medium) {
+      border-right: 10px solid transparent;
+      padding: rem-calc(0 20 0 0);
+      min-height: rem-calc(60);
+      margin-bottom: 1rem;
+    }
+    @include breakpoint(large) {
+      padding: rem-calc(0 54);
+    }
+    a {
+      color: $darkest-gray;
+      vertical-align: middle;
+      @include breakpoint(small only) {
+        display: block;
+        width: 100%;
+        padding: rem-calc(15 16);
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &.is-active {
+      font-weight: $global-weight-bold;
+      border-color: $warning-color;
+    }
+    &:hover {
+      border-color: $light-blue;
+      font-weight: $global-weight-bold;
+      @include breakpoint(small only) {
+        background-color: $light-blue;
+      }
+    }
+  }
+}
+
+// Tab Panel styles
+.tabs-panel {
+  padding: rem-calc(65 50);
+  color: #ffffff;
+  display: none;
+  @include breakpoint(small only) {
+    padding: rem-calc(31 10);
+  }
+  @include breakpoint(medium only) {
+    padding: rem-calc(20);
+  }
+  &.is-active {
+    display: block;
+    height: 100%;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-family: $font-family-monospace;
+    font-weight: $global-weight-bold;
+    line-height: 1.29;
+    @include breakpoint(small only) {
+      text-align: center;
+    }
+  }
+  &__summary {
+    padding-bottom: 2rem;
+  }
+
+  &__button {
+    @include breakpoint(small only) {
+      text-align: center;
+    }
+    .button {
+      font-weight: $global-weight-bold;
+      font-size: rem-calc(16);
+    }
+  }
+
+  &__footer {
+    font-weight: 600;
+    @include breakpoint(small only) {
+      text-align: center;
+    }
+  }
+}
