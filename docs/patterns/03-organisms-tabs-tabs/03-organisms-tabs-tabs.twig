@@ -5,7 +5,7 @@
     </div>
     <div class="tabs--tab-list" data-equalizer-watch>
 
-    <ul class="vertical tabs" data-tabs  data-responsive-accordion-tabs="accordion medium-tabs" id="tabs">
+    <ul class="tabs" data-responsive-accordion-tabs="tabs small-accordion medium-tabs" id="tabs">
     	{% for key, tab_item in tab_items %}
         <li class="tabs-title {{ tab_item.active }}"><a href="#tab-{{ key }}">{{ tab_item.title }}</a></li>
       {% endfor %}
