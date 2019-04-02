@@ -10,6 +10,7 @@ var gulp = require('gulp'),
       babel = require('gulp-babel'),
       imagemin = require('gulp-imagemin'),
       importOnce = require('node-sass-import-once'),
+      copy = require('gulp-copy'),
       browserSync = require('browser-sync').create();
 
 const config = require('./gulp.config.json');
@@ -57,13 +58,20 @@ function watch() {
     gulp.watch(config.patternlab.src, build);
 }
 
+function copyJs() {
+  return gulp
+      .src(config.copy.src)
+      .pipe(copy(config.copy.dest, {prefix: 1}));
+}
+
 exports.compileCss = compileCss;
 exports.compileJs = compileJs;
 exports.minifyImages = minifyImages;
+exports.copyJs = copyJs;
 exports.watch = watch;
 exports.generate = generate;
 
-var build = gulp.series(generate, compileCss, compileJs, minifyImages);
+var build = gulp.series(generate, compileCss, compileJs, copyJs, minifyImages);
 exports.build = build;
 
 var defaultTasks = gulp.series(build, watch);
