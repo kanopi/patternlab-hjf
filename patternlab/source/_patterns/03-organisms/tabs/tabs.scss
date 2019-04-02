@@ -62,7 +62,7 @@
       margin-bottom: 1rem;
     }
     @include breakpoint(large) {
-      padding: rem-calc(0 54);
+      padding: rem-calc(0 60);
     }
     a {
       color: $darkest-gray;
