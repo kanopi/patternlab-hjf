@@ -49,7 +49,6 @@ function minifyImages() {
 
 function watch() {
     browserSync.init({
-        proxy: "http://localhost",
         serveStatic: [config.paths.public],
         port: 3000
     });
