@@ -1,10 +1,14 @@
 @import "../../../css/_settings.scss";
 
-.tabs {
+.c-tabs {
   margin: 0 auto;
   border: 0;
   background-color: transparent;
-  max-width: 1200px;
+  max-width: rem-calc(1200);
+  margin-bottom: rem-calc(30);
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(70);
+  }
   &--image {
     max-width: 350px;
   }
