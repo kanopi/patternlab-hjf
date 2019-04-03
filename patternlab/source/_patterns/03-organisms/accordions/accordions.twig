@@ -1,20 +1,15 @@
-<ul class="accordion" data-accordion data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" id="deeplinked-accordion">
-  <li class="accordion-item is-active" data-accordion-item>
-    <a href="#deeplink1" class="accordion-title">Accordion 1</a>
-    <div class="accordion-content" data-tab-content id="deeplink1">
-      Panel 1. Lorem ipsum dolor
+<div class="grid-container">
+<ul class="accordion" data-accordion>
+{% for key, tab_item in tab_items %}
+  <li class="accordion-item {{ tab_item.active }}" data-accordion-item>
+    <a href="#accordion-{{ key }}" class="accordion-title">{{ tab_item.title }}</a>
+    <div class="accordion-content" data-tab-content id="accordion-{{ key }}">
+      <h2>{{ tab_item.heading }}</h2>
+      <div class="tabs-panel__summary">{{ tab_item.summary }}</div>
+      <div class="tabs-panel__button">{{ tab_item.button | raw }}</div>
+      <div class="tabs-panel__footer">{{ tab_item.footer }}</div>
     </div>
   </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#deeplink2" class="accordion-title">Accordion 2</a>
-    <div class="accordion-content" data-tab-content id="deeplink2">
-      Panel 2. Lorem ipsum dolor
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#deeplink3" class="accordion-title">Accordion 3</a>
-    <div class="accordion-content" data-tab-content id="deeplink3">
-      Panel 3. Lorem ipsum dolor
-    </div>
-  </li>
+{% endfor %}
 </ul>
+</div>

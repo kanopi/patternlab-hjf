@@ -1,112 +1,89 @@
 {
-  "image": "<img src=\"../../images/tabs-1.png\">",
   "tab_items": [
      {
        "title": "Apply for Research Funding",
-       "active": "is-active"
+       "active": "is-active",
+       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
+       "button": {
+         "include()": {
+           "pattern": "atoms-button",
+           "with": {
+             "uri": "#",
+             "title": "Funding Opportunities",
+             "classes": "warning"
+           },
+           "only": true
+         }
+       },
+       "footer": "Interested in becoming a corporate partner?"
      },
      {
        "title": "Develop Your Proposal",
-       "active": ""
+       "active": "",
+       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
+       "button": {
+         "include()": {
+           "pattern": "atoms-button",
+           "with": {
+             "uri": "#",
+             "title": "Funding Opportunities",
+             "classes": "warning"
+           },
+           "only": true
+         }
+       },
+       "footer": "Interested in becoming a corporate partner?"
      },
      {
        "title": "Build your Team",
-       "active": ""
+       "active": "",
+       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
+       "button": {
+         "include()": {
+           "pattern": "atoms-button",
+           "with": {
+             "uri": "#",
+             "title": "Funding Opportunities",
+             "classes": "warning"
+           },
+           "only": true
+         }
+       },
+       "footer": "Interested in becoming a corporate partner?"
      },
      {
        "title": "Manage The Administrative Tasks",
-       "active": ""
+       "active": "",
+       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
+       "button": {
+         "include()": {
+           "pattern": "atoms-button",
+           "with": {
+             "uri": "#",
+             "title": "Funding Opportunities",
+             "classes": "warning"
+           },
+           "only": true
+         }
+       },
+       "footer": "Interested in becoming a corporate partner?"
      },
      {
        "title": "Facilitate the Transfer of Knowledge",
-       "active": ""
+       "active": "",
+       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
+       "button": {
+         "include()": {
+           "pattern": "atoms-button",
+           "with": {
+             "uri": "#",
+             "title": "Funding Opportunities",
+             "classes": "warning"
+           },
+           "only": true
+         }
+       },
+       "footer": "Interested in becoming a corporate partner?"
      }
-   ],
-   "tab_content_items": [
-      {
-        "active": "is-active",
-        "heading": "We can help you apply for research funding.",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
-        "button": {
-          "include()": {
-            "pattern": "atoms-button",
-            "with": {
-              "uri": "#",
-              "title": "Funding Opportunities",
-              "classes": "warning"
-            },
-            "only": true
-          }
-        },
-        "footer": "Interested in becoming a corporate partner?"
-      },
-      {
-        "active": "",
-        "heading": "Lorem ipsum dolor sit amet.",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
-        "button": {
-          "include()": {
-            "pattern": "atoms-button",
-            "with": {
-              "uri": "#",
-              "title": "Learn More",
-              "classes": "warning"
-            },
-            "only": true
-          }
-        },
-        "footer": "Interested in becoming a corporate partner?"
-      },
-      {
-        "active": "",
-        "heading": "Consectetur adipiscing elit.",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
-        "button": {
-          "include()": {
-            "pattern": "atoms-button",
-            "with": {
-              "uri": "#",
-              "title": "Read More",
-              "classes": "warning"
-            },
-            "only": true
-          }
-        },
-        "footer": "Interested in becoming a corporate partner?"
-      },
-      {
-        "active": "",
-        "heading": "We can help you apply for research funding.",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
-        "button": {
-          "include()": {
-            "pattern": "atoms-button",
-            "with": {
-              "uri": "#",
-              "title": "Funding Opportunities",
-              "classes": "warning"
-            },
-            "only": true
-          }
-        },
-        "footer": "Interested in becoming a corporate partner?"
-      },
-      {
-        "active": "",
-        "heading": "Integer laoreet ac nibh aliquet ultricies.",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
-        "button": {
-          "include()": {
-            "pattern": "atoms-button",
-            "with": {
-              "uri": "#",
-              "title": "Read More",
-              "classes": "warning"
-            },
-            "only": true
-          }
-        },
-        "footer": "Interested in becoming a corporate partner?"
-      }
-    ]
+   ]
 }
