@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="19px" viewBox="0 0 30 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-DownArrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pattern-Library---Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Atoms---Global" transform="translate(-222.000000, -1533.000000)" fill="#212121">
+            <path d="M251.381306,1535.57052 L239.042411,1550.94512 C237.871922,1552.35163 236.06742,1552.35163 234.945702,1550.94512 L222.606807,1535.57052 C221.436319,1534.11551 222.021563,1533 223.826065,1533 L250.162047,1533 C252.01532,1533 252.551794,1534.11551 251.381306,1535.57052 Z" id="icon-DownArrow"></path>
+        </g>
+    </g>
+</svg>
