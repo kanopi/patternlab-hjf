@@ -1,6 +1,10 @@
 @import "../../../css/_settings.scss";
 
 .accordion {
+  margin-bottom: rem-calc(30);
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(70);
+  }
   .accordion-title {
     border: 0;
     background-color: $light-gray;

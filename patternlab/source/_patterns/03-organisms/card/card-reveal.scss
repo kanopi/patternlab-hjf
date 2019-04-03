@@ -10,7 +10,9 @@ $card-reveal-transition-speed: 0.6s;
   &--reveal {
     position: relative;
     cursor: pointer;
-    max-width: 390px;
+    @include breakpoint(medium) {
+      max-width: 390px;
+    }
     min-height: 400px;
     overflow: hidden;
     background-color: $primary-color;
@@ -20,7 +22,8 @@ $card-reveal-transition-speed: 0.6s;
         min-height: 160px;
         img {
           min-height: 160px;
-          width: auto;
+          width: 100%;
+          height: auto;
         }
       @include breakpoint(medium) {
         min-height: 200px;

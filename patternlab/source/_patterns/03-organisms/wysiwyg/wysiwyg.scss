@@ -1,0 +1,12 @@
+@import "../../../css/_settings.scss";
+
+.c-content {
+  margin-bottom: rem-calc(30);
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(70);
+  }
+  .content {
+    max-width: rem-calc(710);
+    margin: 0 auto;
+  }
+}

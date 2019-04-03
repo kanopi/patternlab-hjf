@@ -6,7 +6,9 @@
   $self: &;
   // c-card--text styles
   &--text {
-    max-width: 390px;
+    @include breakpoint(medium) {
+      max-width: 390px;
+    }
 
     #{ $self }__heading {
       padding-bottom: rem-calc(21);

@@ -3,6 +3,10 @@
 
 //.c-card styles
 .c-card {
+  margin-bottom: rem-calc(30);
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(70);
+  }
   &__type {
     color: $darkest-gray;
     font-size: $cite-font-size;
