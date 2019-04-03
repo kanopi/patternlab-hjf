@@ -37,7 +37,7 @@ function compileJs() {
       .pipe(sourcemaps.init())
       .pipe(concat("components.js", {newLine: ';'}))
       .pipe(sourcemaps.write())
-      .pipe(gulp.dest(config.paths.root + config.paths.public + 'js/'))
+      .pipe(gulp.dest(config.paths.public + 'js/'))
       .pipe(browserSync.reload({stream: true, match: '**/*.js'}));
 }
 
@@ -49,7 +49,9 @@ function minifyImages() {
 
 function watch() {
     browserSync.init({
-        serveStatic: [config.paths.root + config.paths.public]
+        proxy: "http://localhost",
+        serveStatic: [config.paths.public],
+        port: 3000
     });
 
     gulp.watch(config.css.src, compileCss);

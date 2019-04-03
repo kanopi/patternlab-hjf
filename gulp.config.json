@@ -1,9 +1,9 @@
 
 {
-  "name": "components",
+  "name": "patterns-hjf",
   "paths": {
     "root": "./",
-    "public": "patternlab/public/"
+    "public": "docs/"
   },
   "css": {
     "css" : "patternlab/source/styles.scss",
@@ -12,18 +12,19 @@
       "patternlab/source/_patterns/*.scss",
       "patternlab/source/_patterns/**/*.scss"
     ],
-    "pl_dest": "patternlab/public/css/",
-    "dest": "dist/css/",
     "includePaths": [
       "node_modules/foundation-sites/scss/",
       "node_modules/motion-ui/src/"
-    ]
+    ],
+    "pl_dest": "docs/css/",
+    "dest": "dist/css/"
   },
   "js": {
     "src": [
       "patternlab/source/js/*.js",
       "patternlab/source/js/**/*.js"
     ],
+    "pl_dest": "docs/js/",
     "dest": "dist/js/"
   },
   "patternlab": {
@@ -60,7 +61,7 @@
       "node_modules/jquery/dist/jquery.min.js",
       "node_modules/foundation-sites/dist/js/foundation.min.js"
     ],
-    "dest": "patternlab/public/js/"
+    "dest": "docs/js/"
   }
 }
 
