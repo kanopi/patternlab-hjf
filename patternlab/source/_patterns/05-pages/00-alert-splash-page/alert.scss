@@ -1,0 +1,57 @@
+@import "../../../css/_settings.scss";
+html,body {
+  height: 100%;
+  margin: 0;
+}
+
+.maintenance-page {
+  background-color: #212121;
+  color: #fff;
+  text-align: center;
+
+  * & {
+    position: relative;
+  }
+  
+  &:after {
+    content: '';
+    border-style: solid;
+    border-width: 0 0 542px 1210px;
+    border-color: transparent transparent #000000 transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 0;
+
+    @include breakpoint(xxlarge) {
+      right: 0;
+      left: inherit;
+    }
+  }
+  
+  main {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+  }
+
+  img {
+    margin: 60px auto;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+    margin: 0 0 40px;
+  }
+
+  h2 {
+    font-family: $font-family-monospace;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.22;
+    letter-spacing: 0.3px;
+    margin: 0 0 40px;
+  }
+}
