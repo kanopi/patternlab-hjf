@@ -3,6 +3,10 @@
 
 //.c-testimonial styles
 .c-testimonial {
+  margin-bottom: rem-calc(30);
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(70);
+  }
   &__inner {
     background-color: $card-bg-gray;
     padding: rem-calc(60 40);

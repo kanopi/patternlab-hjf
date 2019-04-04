@@ -1,9 +1,9 @@
-<div class="tabs grid-container">
+<div class="c-tabs grid-container">
   <div class="grid-x" data-equalizer>
-    <div class="tabs--image show-for-xlarge" data-equalizer-watch>
+    <div class="c-tabs--image show-for-xlarge" data-equalizer-watch>
       {{ image | raw }}
     </div>
-    <div class="tabs--tab-list" data-equalizer-watch>
+    <div class="c-tabs--tab-list" data-equalizer-watch>
 
     <ul class="tabs" data-responsive-accordion-tabs="tabs small-accordion medium-tabs" id="tabs">
     	{% for key, tab_item in tab_items %}
@@ -11,7 +11,7 @@
       {% endfor %}
     </ul>
     </div>
-    <div class="tabs--tab-content" data-equalizer-watch>
+    <div class="c-tabs--tab-content" data-equalizer-watch>
       <div class="tabs-content" data-tabs-content="tabs">
       {% for key, tab_content in tab_content_items %}
           <div class="tabs-panel {{ tab_content.active }}" id="tab-{{ key }}">

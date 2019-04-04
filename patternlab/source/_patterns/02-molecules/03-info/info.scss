@@ -1,0 +1,16 @@
+@import "../../../css/_settings.scss";
+
+.info-grid {
+  background-color: $light-gray;
+  padding: 0;
+
+  .cell {
+    padding: 50px 65px;
+  }
+}
+
+.section-events .cell:last-child {
+  background-color: $primary-color;
+  color: $white;
+  text-align: center;
+}
