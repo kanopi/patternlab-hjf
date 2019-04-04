@@ -20,7 +20,7 @@ $hero-height: 80vh;
     line-height: 1.22;
     letter-spacing: 0.3px;
     max-width: 954px;
-    text-shadow: 1px 1px 2px $black;
+    z-index: 1;
 
     h1 {
       font-size: 22px;
