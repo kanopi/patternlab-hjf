@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="30px" viewBox="0 0 15 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pattern-Library---Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Atoms---Global" transform="translate(-146.000000, -1378.000000)" fill="#252A35">
+            <path d="M158.261364,1382.98047 L161,1382.98047 L161,1378.21094 C160.528409,1378.14648 158.903409,1378 157.011364,1378 C153.0625,1378 150.357955,1380.48438 150.357955,1385.04883 L150.357955,1389.25 L146,1389.25 L146,1394.58203 L150.357955,1394.58203 L150.357955,1408 L155.698864,1408 L155.698864,1394.58203 L159.880682,1394.58203 L160.545455,1389.25 L155.698864,1389.25 L155.698864,1385.57617 C155.698864,1384.03516 156.113636,1382.98047 158.261364,1382.98047 Z" id="icon-Facebook"></path>
+        </g>
+    </g>
+</svg>
