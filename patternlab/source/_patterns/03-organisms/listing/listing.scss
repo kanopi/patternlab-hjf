@@ -1,19 +1,21 @@
 @import "../../../css/_settings.scss";
 
-.media-object {  
-
-  @include breakpoint(small only) {
+.media-object {
+  max-width: 955px;
+  margin: rem-calc(0 auto 10);
+  @include breakpoint(small down) {
     flex-direction: column;
-    
+
     &-section {
       width: 100%;
+      padding-bottom: 0;
 
       img {
         width: 100%;
       }
     }
   }
-  
+
   @include breakpoint(large down) {
     &-section img {
       height: auto;
@@ -24,14 +26,65 @@
     &:first-child {
       padding-right: 0;
     }
-    
+
     img {
       height: 100%;
     }
   }
 
-  &-section + &-section {
+  h3 {
+    font-weight: $global-weight-bold;
+    font-family: $font-family-monospace;
+    line-height: 1.2;
+    font-size: rem-calc(24);
+    padding-bottom: rem-calc(25);
+    margin-bottom: 0;
+    @include breakpoint(small only) {
+      padding-bottom: rem-calc(20);
+    }
+  }
+
+  .top {
+    margin-bottom: $global-padding * 2;
+    @include breakpoint(small down) {
+      margin-bottom: $global-padding;
+    }
+    .type {
+      background-color: $light-blue;
+      padding: rem-calc(10 15);
+      font-weight: $global-weight-bold;
+    }
+    .date {
+      padding: rem-calc(10 15);
+      @include breakpoint(small down) {
+        display: block;
+        padding-left: 0;
+        margin-top: $global-padding;
+      }
+    }
+  }
+
+  .image-section {
+    @include breakpoint(medium only) {
+      flex: 0 1 auto;
+      overflow: hidden;
+    }
+  }
+
+  .main-section {
     background-color: $light-gray;
-    padding: 40px 50px;
-  }    
+    padding: rem-calc(50 40);
+    min-width: 50%;
+    .inside {
+      max-width: 730px;
+    }
+    @include breakpoint(small down) {
+      padding: rem-calc(30 20);
+    }
+
+    .author {
+      font-weight: $global-weight-bold;
+      margin-bottom: $global-padding;
+    }
+  }
 }
