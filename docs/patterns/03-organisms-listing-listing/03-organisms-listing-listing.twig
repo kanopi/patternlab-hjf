@@ -1,0 +1,18 @@
+<div class="grid-container">
+  <a href="{{ url }}" class="media-object">
+      <div class="media-object-section image-section">
+        {{ image|raw }}
+      </div>
+      <div class="media-object-section main-section">
+        <div class="inside">
+          <div class="top">
+            <span class="type">{{ type }}</span>
+            <span class="date">{{ date }}</span>
+          </div>
+          <h3>{{ title }}</h3>
+          <div class="author">{{ author }}</div>
+          {{ summary }}
+        </div>
+    </div>
+  </a>
+</div>
