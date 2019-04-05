@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="31px" viewBox="0 0 34 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-Camera</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pattern-Library---Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Atoms---Global" transform="translate(-70.000000, -1212.000000)" fill="#212121">
+            <g id="icon-Camera" transform="translate(70.000000, 1212.000000)">
+                <circle id="Oval" cx="17" cy="17" r="5.33333333"></circle>
+                <path d="M12,0.333333333 L8.95,3.66666667 L3.66666667,3.66666667 C1.83333333,3.66666667 0.333333333,5.16666667 0.333333333,7 L0.333333333,27 C0.333333333,28.8333333 1.83333333,30.3333333 3.66666667,30.3333333 L30.3333333,30.3333333 C32.1666667,30.3333333 33.6666667,28.8333333 33.6666667,27 L33.6666667,7 C33.6666667,5.16666667 32.1666667,3.66666667 30.3333333,3.66666667 L25.05,3.66666667 L22,0.333333333 L12,0.333333333 Z M17,25.3333333 C12.4,25.3333333 8.66666667,21.6 8.66666667,17 C8.66666667,12.4 12.4,8.66666667 17,8.66666667 C21.6,8.66666667 25.3333333,12.4 25.3333333,17 C25.3333333,21.6 21.6,25.3333333 17,25.3333333 Z" id="Camera" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-Close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pattern-Library---Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Atoms---Global" transform="translate(-462.000000, -1526.000000)" fill="#212121">
+            <polygon id="icon-Close" points="492 1528.9998 489.000201 1526 477 1538.0002 464.999799 1526 462 1528.9998 474.000201 1541 462 1553.0002 464.999799 1556 477 1543.9998 489.000201 1556 492 1553.0002 479.999799 1541"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="36px" viewBox="0 0 49 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-Play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pattern-Library---Atoms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Atoms---Global" transform="translate(-143.000000, -1209.000000)" fill="#212121" fill-rule="nonzero">
+            <g id="icon-Play" transform="translate(143.000000, 1209.000000)">
+                <path d="M8.35714286,0.642850714 C3.72734357,0.642850714 0,4.37020071 0,8.99999357 L0,27.0000129 C0,31.6298057 3.72734357,35.3571557 8.35714286,35.3571557 L40.5,35.3571557 C45.1297993,35.3571557 48.8571429,31.6298057 48.8571429,27.0000129 L48.8571429,8.99999357 C48.8571429,4.37020071 45.1297993,0.642850714 40.5,0.642850714 L8.35714286,0.642850714 Z M19.2857143,10.2857079 L32.1428571,18.0000129 L19.2857143,25.7142986 L19.2857143,10.2857079 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
