@@ -1,0 +1,16 @@
+@import "../../../css/_settings.scss";
+
+.bottom-bar {
+  border: 0;
+  &.callout.secondary {
+    background-color: #ffffff;
+  }
+  .columns {
+    a {
+      font-weight: $global-weight-bold;
+    }
+    .copyright-info {
+      text-align: center;
+    }
+  }
+}
