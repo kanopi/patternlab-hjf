@@ -1,0 +1,37 @@
+@import "../../../css/_settings.scss";
+
+.block-considerhelping {
+  max-width: rem-calc(720);
+  color: #ffffff;
+  padding: rem-calc(68 0);
+  .block-title {
+    font-size: $normal-heading-size;
+    text-align: right;
+    max-width: rem-calc(461);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    max-width: rem-calc(461);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    font-weight: $global-weight-bold;
+    font-family: $font-family-monospace;
+    line-height: 1.2;
+    font-size: rem-calc(24);
+    .button {
+      font-family: $body-font-family;
+      margin-bottom: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @include breakpoint(small only) {
+    padding: rem-calc(40 30);
+    p, .block-title {
+      text-align: center;
+    }
+  }
+}
