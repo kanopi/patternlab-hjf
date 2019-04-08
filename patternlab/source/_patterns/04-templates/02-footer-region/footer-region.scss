@@ -1,0 +1,38 @@
+@import "../../../css/_settings.scss";
+
+footer {
+  background-color:  $medium-blue;
+  background-image: url("../../images/svg/HJF-branding-med-blue.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  padding: rem-calc(38 0);
+  .grid-container {
+    @include breakpoint(medium down) {
+      justify-content: space-between;
+    }
+    @include breakpoint(small only) {
+      #footer-first {
+        order: 3;
+      }
+      #footer-last {
+        order: 1;
+      }
+      #footer-middle {
+        order: 2;
+      }
+    }
+  }
+  .cell {
+    position:relative;
+    z-index: 20;
+    color: #ffffff;
+    .block-hjf-footer a {
+      color: #ffffff;
+      &:hover,
+      &.active {
+        color: $light-blue;
+      }
+    }
+  }
+}

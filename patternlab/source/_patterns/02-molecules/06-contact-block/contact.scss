@@ -1,0 +1,20 @@
+@import "../../../css/_settings.scss";
+
+
+.block-contactus {
+  font-size: rem-calc(14);
+  h2 {
+    font-size: $header-block-title;
+    font-weight: $global-weight-bold;
+    margin-bottom: 1rem;
+  }
+  h5 {
+    font-weight: $global-weight-bold;
+    font-size: rem-calc(14);
+    margin-bottom: 0;
+  }
+  @include breakpoint(small only) {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+}
