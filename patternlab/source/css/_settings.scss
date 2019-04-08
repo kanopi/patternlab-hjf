@@ -211,6 +211,7 @@ $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
 $subheader-margin-bottom: 0.5rem;
 $stat-font-size: 2.5rem;
+$normal-heading-size: rem-calc(18);
 
 // 6. Abide
 // --------
@@ -283,19 +284,20 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // ----------
 
 $button-font-family: inherit;
-$button-padding: 1em;
+$button-padding: rem-calc(14 30);
 $button-margin: $global-margin 0;
 $button-fill: solid;
 $button-background: $warning-color;
 $button-background-hover: $light-blue;
-$button-color: $primary-color;
+$button-color: $darkest-gray;
 $button-color-alt: $black;
 $button-radius: rem-calc(75);
 $button-hollow-border-width: 1px;
+$button-font-weight: $global-weight-bold;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: 0.9rem,
+  default: 1rem,
   large: 1.25rem,
 );
 $button-palette: $foundation-palette;
