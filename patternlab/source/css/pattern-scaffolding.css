@@ -54,7 +54,7 @@
 }
 
 .patternLink {
-  text-transform: capitalize;  
+  text-transform: capitalize;
 }
 
 
@@ -69,4 +69,9 @@
 .example-container.hero-overlay img {
   width: 100%;
   max-height: 700px;
+}
+
+.block-hjf-footer {
+  background-color: #206178;
+  padding: 38px 1em;
 }
