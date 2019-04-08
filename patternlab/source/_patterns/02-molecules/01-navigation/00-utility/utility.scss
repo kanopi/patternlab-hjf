@@ -1,8 +1,11 @@
-@import "../../../css/_settings.scss";
+@import "../../../../css/_settings.scss";
 
 nav.block-utilitymenu {
   padding: rem-calc(15 0);
   text-align: right;
+  @include breakpoint(small only) {
+    display: none;
+  }
   .menu {
     justify-content: flex-end;
   }
