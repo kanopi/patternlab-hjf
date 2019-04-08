@@ -1,0 +1,27 @@
+@import "../../../../css/_settings.scss";
+
+nav.block-hjf-footer {
+  font-weight: $global-weight-bold;
+  @include breakpoint(small only) {
+    text-align: center;
+  }
+  h2 {
+    font-size: $header-block-title;
+    font-weight: $global-weight-bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  ul.menu {
+    display: block;
+  }
+  a {
+    padding-left: 0;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 0;
+    &:hover,
+    &.active {
+      color: $light-blue;
+    }
+  }
+}

@@ -159,6 +159,7 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
 );
+$header-block-title: rem-calc(22);
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
