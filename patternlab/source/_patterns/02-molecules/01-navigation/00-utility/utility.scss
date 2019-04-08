@@ -1,0 +1,35 @@
+@import "../../../../css/_settings.scss";
+
+nav.block-utilitymenu {
+  padding: rem-calc(15 0);
+  text-align: right;
+  @include breakpoint(small only) {
+    display: none;
+  }
+  .menu {
+    justify-content: flex-end;
+  }
+  li {
+    padding: 0;
+    line-height: auto;
+    &:last-child {
+      padding-right: 0;
+    }
+    a {
+      padding: rem-calc(17 35 16 0);
+      margin-top: 0;
+      color: $darkest-gray;
+      font-size: rem-calc(14);
+      font-weight: 500;
+      &:not(.button) {
+        text-decoration: underline;
+      }
+      &.button {
+        padding: rem-calc(17 35 16);
+        font-weight: bold;
+        font-size: rem-calc(16);
+        margin-left: rem-calc(10);
+      }
+    }
+  }
+}

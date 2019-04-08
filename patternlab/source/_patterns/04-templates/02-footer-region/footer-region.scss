@@ -2,10 +2,7 @@
 
 footer {
   background-color:  $medium-blue;
-  background-image: url("../../images/svg/HJF-branding-med-blue.svg");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: contain;
+  
   padding: rem-calc(38 0);
   .grid-container {
     @include breakpoint(medium down) {
