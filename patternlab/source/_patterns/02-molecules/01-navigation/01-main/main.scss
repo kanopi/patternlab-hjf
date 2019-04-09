@@ -1,0 +1,86 @@
+@import "../../../../css/_settings.scss";
+
+header {
+  background-color: $medium-blue;
+  .dropdown.menu {
+     > li {
+       > a {
+        padding: rem-calc(25 20);
+        color: #ffffff;
+        font-weight: bold;
+        &:hover {
+          background-color: $primary-color;
+          color: #ffffff;
+        }
+      }
+      &.is-active {
+        > a {
+          background-color: $primary-color;
+          color: #ffffff;
+        }
+      }
+      &.is-dropdown-submenu-parent {
+        > a {
+          padding-right: rem-calc(52);
+          &:after {
+            border-top-color: #ffffff;
+            border-top-width: 7.5px;
+            right: 20px;
+          }
+        }
+      }
+      .is-dropdown-submenu {
+        background-color: $primary-color;
+        border: 0;
+        min-width: 348px;
+        a {
+          color: #ffffff;
+          padding: rem-calc(17 57 17 40);
+          font-weight: bold;
+          line-height: 1.5;
+          &:hover {
+            background-color: $light-blue;
+            color: $darkest-gray;
+            &:after {
+              border-left-color: $darkest-gray;
+            }
+          }
+        }
+        .is-dropdown-submenu-parent.opens-right {
+          > a {
+            &:after {
+              border-left-color: #ffffff;
+              right: 17px;
+              margin-top: -10px;
+              border-top-width: 10px;
+              border-bottom-width: 10px;
+              border-left-width: 10px;
+            }
+          }
+
+          &.is-active {
+            > a {
+              background-color: $light-blue;
+              color: $darkest-gray;
+              &:after {
+                border-left-color: $darkest-gray;
+              }
+            }
+          }
+
+          .is-dropdown-submenu {
+            top: calc(-100% + 1px);
+            background-color: $light-blue;
+            a {
+              color: $darkest-gray;
+              &:hover {
+                color: #ffffff;
+                background-color: $medium-blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

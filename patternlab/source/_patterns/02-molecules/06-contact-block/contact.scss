@@ -3,10 +3,12 @@
 
 .block-contactus {
   font-size: rem-calc(14);
+  line-height: 1.43;
   h2 {
     font-size: $header-block-title;
     font-weight: $global-weight-bold;
-    margin-bottom: 1rem;
+    margin-bottom: 1.7rem;
+    line-height: normal;
   }
   h5 {
     font-weight: $global-weight-bold;
@@ -16,5 +18,8 @@
   @include breakpoint(small only) {
     text-align: center;
     margin-top: 1.5rem;
+  }
+  a {
+    color: #ffffff;
   }
 }
