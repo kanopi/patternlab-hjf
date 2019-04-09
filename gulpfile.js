@@ -64,15 +64,21 @@ function copyJs() {
       .src(config.copy.src)
       .pipe(copy(config.copy.dest, {prefix: 1}));
 }
+function copyDocs() {
+  return gulp
+      .src(config.copy.src)
+      .pipe(copy('docs/js/', {prefix: 1}));
+}
 
 exports.compileCss = compileCss;
 exports.compileJs = compileJs;
 exports.minifyImages = minifyImages;
 exports.copyJs = copyJs;
+exports.copyDocs = copyDocs;
 exports.watch = watch;
 exports.generate = generate;
 
-var build = gulp.series(generate, compileCss, compileJs, copyJs, minifyImages);
+var build = gulp.series(generate, compileCss, compileJs, copyJs, copyDocs, minifyImages);
 exports.build = build;
 
 var defaultTasks = gulp.series(build, watch);
