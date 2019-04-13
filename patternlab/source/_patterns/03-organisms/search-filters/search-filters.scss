@@ -49,6 +49,10 @@
   max-width: 1197px;
   top: 241px!important;
   overflow: scroll;
+  &:focus,
+  &:active {
+    outline: none;
+  }
   .reveal-wrapper {
     display: flex;
     justify-content: center;
