@@ -1,0 +1,39 @@
+<div class="block-exposedformsearchsearch">
+  <div class="search-wrapper">
+    <form id="views-exposed-form-search-search">
+      <label>{{ 'What are you looking for?'|t }}</label>
+      {#{% for key, item in form if item['#type'] == 'text' %}#}
+      {#{{ item }}#}
+      {#{% endfor %}#}
+      <div class="keyword-wrapper">
+        {# I would prefer to include the text-search-filter atom, but you can't have a form element inside a form element. #}
+        <div class="js-form-item-keyword">
+          <div class="input-wrapper">
+            <input data-drupal-selector="edit-keyword" type="text" id="edit-keyword" placeholder="personnel" name="keyword" value="" size="30" maxlength="128" class="form-text">
+          </div>
+        </div>
+      </div>
+      {# Filters modal. #}
+      <div class="reveal" id="filterModal1" data-reveal data-overlay="false">
+        <div class="reveal-wrapper">
+          {# Todo: these raw filters are OK for Patternlab, but they're not going to work for drupal. Is there a way to #}
+          {# specify raw filter in the json file? #}
+          {{ service|raw }}
+          {{ research_area|raw }}
+          {{ user_group|raw }}
+          {{ resource_type|raw }}
+        </div>
+        {# Render Submit and Reset Buttons. #}
+        <div id="edit-actions">
+          {{ submit|raw }}
+          {{ reset|raw }}
+        </div>
+        {# Modal close button. #}
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </form>
+    <button class="button rectangular" data-open="filterModal1">{{ 'Filters'|t }}</button>
+  </div>
+</div>

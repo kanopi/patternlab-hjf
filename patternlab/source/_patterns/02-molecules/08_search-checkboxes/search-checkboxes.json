@@ -1,0 +1,85 @@
+{
+  "id": "views-exposed-form-search-search",
+  "legend": "Area of Research",
+  "checkbox1": {
+    "include()": {
+      "pattern": "atoms-checkbox-filter",
+      "with": {
+        "option": "Cancer",
+        "selector": "edit-research-area-1"
+      },
+      "only": true
+    }
+  },
+  "checkbox2": {
+    "include()": {
+      "pattern": "atoms-checkbox-filter",
+      "with": {
+        "option": "Chemical, Biological, and Radial Defense",
+        "selector": "edit-research-area-2"
+      },
+      "only": true
+    }
+  },
+  "checkbox3": {
+    "include()": {
+      "pattern": "atoms-checkbox-filter",
+      "with": {
+        "option": "Clinical & Rehabilitated Research",
+        "selector": "edit-research-area-3"
+      },
+      "only": true
+    }
+  },
+  "checkbox4": {
+    "include()": {
+      "pattern": "atoms-checkbox-filter",
+      "with": {
+        "option": "Combat Casualty",
+        "selector": "edit-research-area-4"
+      },
+      "only": true
+    }
+  },
+  "checkbox5": {
+    "include()": {
+      "pattern": "atoms-checkbox-filter",
+      "with": {
+        "option": "Infectious Disease",
+        "selector": "edit-research-area-5"
+      },
+      "only": true
+    }
+  },
+  "checkbox6": {
+    "include()": {
+      "pattern": "atoms-checkbox-filter",
+      "with": {
+        "option": "Human Performance",
+        "selector": "edit-research-area-6"
+      },
+      "only": true
+    }
+  },
+  "checkbox7": {
+    "include()": {
+      "pattern": "atoms-checkbox-filter",
+      "with": {
+        "option": "Precision Medicine",
+        "selector": "edit-research-area-7"
+      },
+      "only": true
+    }
+  },
+  "checkbox8": {
+    "include()": {
+      "pattern": "atoms-checkbox-filter",
+      "with": {
+        "option": "PTSD​​​​​​​",
+        "selector": "edit-research-area-8"
+      },
+      "only": true
+    }
+  }
+
+}

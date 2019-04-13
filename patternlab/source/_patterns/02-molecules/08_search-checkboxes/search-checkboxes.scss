@@ -1,0 +1,37 @@
+@import "../../../css/_settings.scss";
+
+#checkboxes-wrapper {
+  @include breakpoint(small down) {
+    width: 100%;
+  }
+  .fieldset-wrapper {
+    margin: 0;
+    padding: 4em 0;
+    border: 0;
+    background-color: $medium-blue;
+    @include breakpoint(small down) {
+      padding: 0 0 2rem;
+    }
+  }
+  .fieldset-legend {
+    margin: 0 25px 3rem;
+  }
+  fieldset {
+    margin: 1rem;
+  }
+  legend {
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    top: 2.5rem;
+    @include breakpoint(small down) {
+      top: 0;
+    }
+  }
+}
