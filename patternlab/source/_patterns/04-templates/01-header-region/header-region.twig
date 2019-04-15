@@ -1,0 +1,36 @@
+<header id="page-header" role="banner" aria-label="Site header">
+  <div class="grid-container grid-x">
+    <div class="small-1 cell">
+      {% include "atoms-logo" %}
+    </div>
+    <div class="small-11 cell">
+      <div class="show-for-small-only">
+        <div class="hamburger-wrapper">
+          <button class="mobile-open" type="button" data-open="offCanvasTop">Menu</button>
+          <button class="mobile-close" type="button" data-close="offCanvasTop">Close</button>
+        </div>
+      </div>
+      <div class="show-for-medium">
+        {% include "molecules-utility" %}
+      </div>
+    </div>
+  </div>
+</header>
+<div class="region region--navigation">
+  <div class="grid-container grid-x show-for-medium">
+    {% include "molecules-main" %}
+  </div>
+
+  <div class="off-canvas position-top show-for-small-only" id="offCanvasTop" data-off-canvas data-content-overlay="false">
+  <div class="row">
+    <div class="columns">
+    {% include "molecules-main" %}
+</div>
+</div>
+<div class="row">
+  <div class="columns">
+      {% include "molecules-utility" %}
+      </div>
+      </div>
+  </div>
+</div>

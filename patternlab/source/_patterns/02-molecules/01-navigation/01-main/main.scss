@@ -1,6 +1,7 @@
 @import "../../../../css/_settings.scss";
 
-header {
+.region--navigation {
+  @include breakpoint(medium) {
   background-color: $medium-blue;
   .dropdown.menu {
      > li {
@@ -78,6 +79,86 @@ header {
                 background-color: $medium-blue;
               }
             }
+          }
+        }
+      }
+    }
+  }
+ }
+
+// Mobile navigation
+  @include breakpoint(small) {
+    .is-drilldown {
+      max-width: 100% !important;
+    }
+    .drilldown {
+      a {
+        background-color: $medium-blue;
+        color: #ffffff;
+        padding: 15px 30px 15px 58px;
+        font-size: 1.143rem;
+        line-height: 1.5;
+        text-align: right;
+        font-weight: $global-weight-bold;
+        &:after {
+          right: unset;
+          left: 28px;
+          border: 0;
+          width: 15px;
+          height: 15px;
+          display: block;
+          transform: rotate(90deg);
+          background-color: #ffffff;
+          -webkit-mask-image: url('../images/svg/icon-DownArrow.svg');
+          mask-image: url('../images/svg/icon-DownArrow.svg');
+          mask-size: contain;
+          mask-repeat: no-repeat;
+        }
+        &:hover {
+          background-color: $light-blue;
+          color: $darkest-gray;
+          &:after {
+            background-color: $darkest-gray;
+          }
+        }
+      }
+      .js-drilldown-back {
+        a {
+          text-align: left;
+          &:before {
+            right: 15px;
+            top: 20px;
+            left: unset;
+            border: 0;
+            width: 15px;
+            height: 15px;
+            display: block;
+            position: absolute;
+            transform: rotate(-90deg);
+            background-color: #ffffff;
+            -webkit-mask-image: url('../images/svg/icon-DownArrow.svg');
+            mask-image: url('../images/svg/icon-DownArrow.svg');
+            mask-size: contain;
+            mask-repeat: no-repeat;
+          }
+        }
+      }
+      ul {
+        padding-bottom: 0;
+        background-color: $primary-color;
+        width: 100%;
+        &.is-dropdown-submenu {
+          border: 0;
+        }
+        a {
+          color: #ffffff;
+          background-color: $primary-color;
+        }
+        .js-drilldown-back a {
+          background-color: $medium-blue;
+          color: #ffffff;
+          &:hover {
+            background-color: $primary-color;
           }
         }
       }
