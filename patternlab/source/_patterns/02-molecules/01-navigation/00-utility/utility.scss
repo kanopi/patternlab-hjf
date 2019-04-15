@@ -1,11 +1,9 @@
 @import "../../../../css/_settings.scss";
 
 nav.block-utilitymenu {
+  @include breakpoint(medium) {
   padding: rem-calc(15 0);
   text-align: right;
-  @include breakpoint(small only) {
-    display: none;
-  }
   .menu {
     justify-content: flex-end;
   }
@@ -29,6 +27,32 @@ nav.block-utilitymenu {
         font-weight: bold;
         font-size: rem-calc(16);
         margin-left: rem-calc(10);
+      }
+     }
+    }
+  }
+
+  @include breakpoint(small only) {
+    .menu {
+      flex-direction: column;
+      margin: rem-calc(30 0);
+      li {
+        text-align: right;
+        a {
+          color: #ffffff;
+          font-weight: $global-weight-bold;
+          padding: 15px 30px;
+          line-height: 1.71;
+          &:hover {
+            background-color: $light-blue;
+            color: $darkest-gray;
+          }
+          &.button {
+            background-color: unset;
+            text-align: right;
+            margin: 0;
+          }
+        }
       }
     }
   }
