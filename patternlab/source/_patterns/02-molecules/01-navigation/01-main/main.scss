@@ -24,9 +24,18 @@
         > a {
           padding-right: rem-calc(52);
           &:after {
-            border-top-color: #ffffff;
-            border-top-width: 7.5px;
             right: 20px;
+            left: unset;
+            border: 0;
+            width: 13.6px;
+            height: 8.5px;
+            display: block;
+            position: absolute;
+            background-color: #ffffff;
+            -webkit-mask-image: url('../images/svg/icon-DownArrow.svg');
+            mask-image: url('../images/svg/icon-DownArrow.svg');
+            mask-size: contain;
+            mask-repeat: no-repeat;
           }
         }
       }
@@ -50,12 +59,19 @@
         .is-dropdown-submenu-parent.opens-right {
           > a {
             &:after {
-              border-left-color: #ffffff;
               right: 17px;
-              margin-top: -10px;
-              border-top-width: 10px;
-              border-bottom-width: 10px;
-              border-left-width: 10px;
+              left: unset;
+              border: 0;
+              width: 15px;
+              height: 15px;
+              display: block;
+              position: absolute;
+              background-color: #ffffff;
+              -webkit-mask-image: url('../images/svg/icon-DownArrow.svg');
+              mask-image: url('../images/svg/icon-DownArrow.svg');
+              mask-size: contain;
+              mask-repeat: no-repeat;
+              transform: rotate(-90deg);
             }
           }
 
@@ -64,7 +80,7 @@
               background-color: $light-blue;
               color: $darkest-gray;
               &:after {
-                border-left-color: $darkest-gray;
+                background-color: $darkest-gray;
               }
             }
           }
