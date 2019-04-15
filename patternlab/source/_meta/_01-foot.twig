@@ -1,23 +1,20 @@
 
   <!--DO NOT REMOVE-->
   {{ patternLabFoot | raw }}
-
-  <script src="../../js/jquery/dist/jquery.min.js?{{ cacheBuster }}"></script>
-  <script src="../../js/foundation-sites/dist/js/foundation.min.js?{{ cacheBuster }}"></script>
-  <script src="../../js/motion-ui/dist/motion-ui.min.js?{{ cacheBuster }}"></script>
-
-  <script>
-  //<![CDATA[
-    jQuery(document).foundation();
-  //]]>
-  </script>
-  <script src="../../js/components.js?{{ cacheBuster }}"></script>
-
-
-  <!-- This makes attach_library work wherever it is in the document flow. -->
-  <script src="../../js/reload-scripts.js?{{ cacheBuster }}"></script>
-  <script id="__bs_script__">//<![CDATA[
-      document.write("<script async src='//HOST:3000/browser-sync/browser-sync-client.js'><\/script>".replace("HOST", location.hostname));
-  //]]></script>
+  
+    <script src="../../js/jquery/dist/jquery.min.js?{{ cacheBuster }}"></script>
+    <script src="../../js/foundation-sites/dist/js/foundation.min.js?{{ cacheBuster }}"></script>
+    <script src="../../js/motion-ui/dist/motion-ui.min.js?{{ cacheBuster }}"></script>
+  
+    <script>
+    //<![CDATA[
+      jQuery(document).foundation();
+    //]]>
+    </script>
+    <script src="../../js/components.js?{{ cacheBuster }}"></script>
+  
+  
+    <!-- This makes attach_library work wherever it is in the document flow. -->
+    <script src="../../js/reload-scripts.js?{{ cacheBuster }}"></script>
   </body>
 </html>
