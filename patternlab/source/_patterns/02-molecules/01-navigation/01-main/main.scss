@@ -139,8 +139,12 @@
         }
       }
       .js-drilldown-back {
+        width: 70px;
+        float: right;
+        background-color: transparent;
         a {
           text-align: left;
+          background-color: transparent;
           &:before {
             right: 15px;
             top: 20px;
@@ -150,12 +154,22 @@
             height: 15px;
             display: block;
             position: absolute;
-            transform: rotate(-90deg);
-            background-color: #ffffff;
-            -webkit-mask-image: url('../images/svg/icon-DownArrow.svg');
-            mask-image: url('../images/svg/icon-DownArrow.svg');
-            mask-size: contain;
-            mask-repeat: no-repeat;
+            background-image: url('../images/svg/icon-menu-back.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      .is-submenu-parent-item {
+        a {
+          background-color: $medium-blue;
+          text-align: left;
+        }
+        &:hover {
+          background-color: $light-blue;
+          a {
+            background-color: $light-blue;
+            color: $darkest-gray;
           }
         }
       }
