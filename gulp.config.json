@@ -37,7 +37,8 @@
       "src": [
         "patternlab/source/_patterns/01-atoms/**/*.js",
         "patternlab/source/_patterns/02-molecules/**/*.js",
-        "patternlab/source/_patterns/03-organisms/**/*.js"
+        "patternlab/source/_patterns/03-organisms/**/*.js",
+        "patternlab/source/_patterns/04-templates/**/*.js"
       ]
     }
   },
@@ -64,4 +65,3 @@
     "dest": "dist/js/"
   }
 }
-

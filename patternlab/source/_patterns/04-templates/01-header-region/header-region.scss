@@ -1,0 +1,137 @@
+@import "../../../css/_settings.scss";
+
+header {
+  .logo {
+    max-width: 52px;
+    margin: rem-calc(15 0);
+    @include breakpoint(small only) {
+      margin: rem-calc(5 0);
+    }
+  }
+
+.show-for-small-only {
+  text-align: right;
+
+
+  .hamburger-wrapper {
+    width: 53px;
+    cursor: pointer;
+    position:absolute;
+    right: 0;
+    color: $primary-color;
+    margin: rem-calc(5 20);
+
+    span {
+      font-weight: $global-weight-bold;
+      margin-top: 5px;
+      color: $medium-blue;
+      display: block;
+      font-family: $body-font-family;
+    }
+
+    button {
+      width: 53px;
+      height: 43px;
+      padding-top: 30px;
+      background-position: top center;
+      background-size: 30px 23px;
+      font-weight: $global-weight-bold;
+      background-repeat: no-repeat;
+      margin-top: 5px;
+      cursor: pointer;
+      color: $medium-blue;
+      &.mobile-open {
+        background-image: url('../images/svg/icon-Hamburger.svg');
+      }
+      &.mobile-close {
+        background-image: url('../images/svg/icon-Close.svg');
+        background-size: 23px 23px;
+      }
+    }
+
+    button[aria-expanded="true"] {
+      &.mobile-open {
+        display: none;
+      }
+    }
+    button[aria-expanded="false"] {
+      &.mobile-close {
+        display: none;
+      }
+    }
+  }
+ }
+}
+
+.region--navigation {
+  .offCanvasTop {
+    display: none;
+  }
+  .off-canvas {
+    background-color: $medium-blue;
+  }
+  .position-top.is-open {
+    top: 58px;
+    height: 80vh;
+    min-height: 140px;
+    max-height: 880px;
+  }
+  #search-block-form {
+    position: relative;
+    padding: 0;
+    max-height: 65px;
+
+    .search-toggle {
+      display: block;
+      height: 66px;
+      width: 70px;
+      background-size: 35px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('../images/svg/icon-Search-white.svg');
+      display: inline-block;
+      &:hover {
+        background-color: $light-blue;
+        background-image: url('../images/svg/icon-Search-blue.svg');
+      }
+    }
+
+    .field-wrapper {
+      background-color: $medium-blue;
+      width: calc(100% - 105px);
+      float: left;
+      display: block;
+      padding: 15.5px;
+      transition: all 0.5s ease;
+
+      .form-search {
+        width: 0;
+        background-color: $primary-color;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        height: 35px;
+        box-shadow: unset !important;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+        transition: all 0.5s ease;
+      }
+    }
+
+    &.expanded {
+      .field-wrapper {
+        background-color: $primary-color;
+
+        .form-search {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+      .search-toggle {
+        background-color: $light-blue;
+        background-image: url('../images/svg/icon-Search-blue.svg');
+      }
+    }
+  }
+}
