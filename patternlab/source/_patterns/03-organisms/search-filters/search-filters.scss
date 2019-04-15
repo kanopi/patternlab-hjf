@@ -1,0 +1,106 @@
+@import "../../../css/_settings.scss";
+
+.block-exposedformsearchsearch {
+  background-color: $card-bg-gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4em 0 3em;
+  .search-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 760px;
+    justify-content: left;
+    padding: 0 1rem;
+    .button.rectangular {
+      position: relative;
+      display: block;
+      max-height: 50px;
+      top: 46px;
+    }
+    form {
+      width: 100%;
+      max-width: 750px;
+    }
+    .keyword-wrapper {
+      display: flex;
+      width: 100%;
+      max-width: 570px;
+      justify-content: center;
+      align-items: center;
+    }
+    @include breakpoint(medium down) {
+      form {
+        width: 75%;
+      }
+      .keyword-wrapper {
+        max-width: 490px;
+      }
+      .button.rectangular {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+// Filter modal.
+.reveal {
+  background-color: $medium-blue;
+  width: 100%;
+  max-width: 1197px;
+  top: 241px!important;
+  overflow: scroll;
+  &:focus,
+  &:active {
+    outline: none;
+  }
+  .reveal-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #edit-actions {
+    display: inline-flex;
+    position: absolute;
+    bottom: 39px;
+    left: calc(50% - 110px);
+    .button.submit {
+      padding: 15px 48px;
+    }
+    .button.reset {
+      background-color: $card-bg-gray;
+      position: relative;
+      right: 15px;
+      padding: 15px 30px;
+    }
+    @include breakpoint(small down) {
+      top: 52px;
+      bottom: unset;
+      left: calc(73% - 110px);
+    }
+  }
+  .close-button {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 3em;
+  }
+}
+
+.js-form-item-keyword {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+label {
+  font-family: $body-font-family;
+  font-size: 22px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: 0.1px;
+  color: $darkest-blue;
+  margin-bottom: 1.5em;
+}

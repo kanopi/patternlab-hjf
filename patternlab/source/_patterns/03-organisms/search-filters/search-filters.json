@@ -1,0 +1,300 @@
+{
+  "service": {
+    "#type": "checkboxes",
+    "include()": {
+      "pattern": "molecules-search-checkboxes",
+      "with": {
+        "id": "views-exposed-form-search-search",
+        "legend": "Service",
+        "checkbox1": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Research Funding",
+              "selector": "edit-service-1"
+            },
+            "only": true
+          }
+        },
+        "checkbox2": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Proposal Development",
+              "selector": "edit-service-2"
+            },
+            "only": true
+          }
+        },
+        "checkbox3": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "ESP Services",
+              "selector": "edit-service-3"
+            },
+            "only": true
+          }
+        },
+        "checkbox4": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Build Your Team",
+              "selector": "edit-service-4"
+            },
+            "only": true
+          }
+        },
+        "checkbox5": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Research Administration",
+              "selector": "edit-service-5"
+            },
+            "only": true
+          }
+        },
+        "checkbox6": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Technology Transfer & Commercialization",
+              "selector": "edit-service-6"
+            },
+            "only": true
+          }
+        }
+      },
+      "only": true
+    }
+  },
+  "research_area": {
+    "#type": "checkboxes",
+    "include()": {
+      "pattern": "molecules-search-checkboxes",
+      "with": {
+        "id": "views-exposed-form-search-search",
+        "legend": "Area of Research",
+        "checkbox1": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Cancer",
+              "selector": "edit-research-area-1"
+            },
+            "only": true
+          }
+        },
+        "checkbox2": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Chemical, Biological, and Radial Defense",
+              "selector": "edit-research-area-2"
+            },
+            "only": true
+          }
+        },
+        "checkbox3": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Clinical & Rehabilitated Research",
+              "selector": "edit-research-area-3"
+            },
+            "only": true
+          }
+        },
+        "checkbox4": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Combat Casualty",
+              "selector": "edit-research-area-4"
+            },
+            "only": true
+          }
+        },
+        "checkbox5": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Infectious Disease",
+              "selector": "edit-research-area-5"
+            },
+            "only": true
+          }
+        },
+        "checkbox6": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Human Performance",
+              "selector": "edit-research-area-6"
+            },
+            "only": true
+          }
+        },
+        "checkbox7": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Precision Medicine",
+              "selector": "edit-research-area-7"
+            },
+            "only": true
+          }
+        },
+        "checkbox8": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "PTSD​​​​​​​",
+              "selector": "edit-research-area-8"
+            },
+            "only": true
+          }
+        }
+
+      },
+      "only": true
+    }
+  },
+  "user_group": {
+    "#type": "checkboxes",
+    "include()": {
+      "pattern": "molecules-search-checkboxes",
+      "with": {
+        "id": "views-exposed-form-search-search",
+        "legend": "Area of Research",
+        "checkbox1": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Primary Investigator",
+              "selector": "edit-user-1"
+            },
+            "only": true
+          }
+        },
+        "checkbox2": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Corporation or Government Entity",
+              "selector": "edit-user-2"
+            },
+            "only": true
+          }
+        },
+        "checkbox3": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "HJF Employee",
+              "selector": "edit-user-3"
+            },
+            "only": true
+          }
+        }
+      },
+      "only": true
+    }
+  },
+  "resource_type": {
+    "#type": "checkboxes",
+    "include()": {
+      "pattern": "molecules-search-checkboxes",
+      "with": {
+        "id": "views-exposed-form-search-search",
+        "legend": "Type",
+        "checkbox1": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Resource",
+              "selector": "edit-type-1"
+            },
+            "only": true
+          }
+        },
+        "checkbox2": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Research Paper",
+              "selector": "edit-type-2"
+            },
+            "only": true
+          }
+        },
+        "checkbox3": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Video",
+              "selector": "edit-type-3"
+            },
+            "only": true
+          }
+        },
+        "checkbox4": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Article",
+              "selector": "edit-type-4"
+            },
+            "only": true
+          }
+        },
+        "checkbox5": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Case Study",
+              "selector": "edit-type-5"
+            },
+            "only": true
+          }
+        },
+        "checkbox6": {
+          "include()": {
+            "pattern": "atoms-checkbox-filter",
+            "with": {
+              "option": "Event",
+              "selector": "edit-type-6"
+            },
+            "only": true
+          }
+        }
+      },
+      "only": true
+    }
+  },
+  "submit": {
+    "include()": {
+      "pattern": "atoms-button",
+      "with": {
+        "uri": "#",
+        "title": "Submit",
+        "classes": "submit"
+      },
+      "only": true
+    }
+  },
+  "reset": {
+    "include()": {
+      "pattern": "atoms-button",
+      "with": {
+        "uri": "#",
+        "title": "Reset",
+        "classes": "reset"
+      },
+      "only": true
+    }
+  }
+
+}

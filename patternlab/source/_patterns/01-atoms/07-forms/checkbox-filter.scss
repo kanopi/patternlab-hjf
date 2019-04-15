@@ -1,0 +1,34 @@
+@import "../../../css/_settings.scss";
+
+#views-exposed-form-search-search,
+#checkboxes-wrapper,
+.reveal {
+  .js-form-type-checkbox {
+    input[type="checkbox"] {
+      opacity: 0;
+      + label {
+        font-family: $body-font-family;
+        font-size: 16px;
+        font-weight: normal;
+        color: white;
+        background-color: $medium-blue;
+        padding: 10px;
+        text-transform: capitalize;
+        margin: 5px 0;
+        max-width: 220px;
+        line-height: 24px;
+      }
+      &:focus + label {
+        outline: rgb(59, 153, 252) auto 5px;
+      }
+    }
+    input[type="checkbox"]:checked {
+      + label {
+        font-weight: bold;
+        color: $gray;
+        background-color: $light-blue;
+      }
+    }
+  }
+}
+
