@@ -76,4 +76,62 @@ header {
     min-height: 140px;
     max-height: 880px;
   }
+  #search-block-form {
+    position: relative;
+    padding: 0;
+    max-height: 65px;
+
+    .search-toggle {
+      display: block;
+      height: 66px;
+      width: 70px;
+      background-size: 35px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('../images/svg/icon-Search-white.svg');
+      display: inline-block;
+      &:hover {
+        background-color: $light-blue;
+        background-image: url('../images/svg/icon-Search-blue.svg');
+      }
+    }
+
+    .field-wrapper {
+      background-color: $medium-blue;
+      width: calc(100% - 105px);
+      float: left;
+      display: block;
+      padding: 15.5px;
+      transition: all 0.5s ease;
+
+      .form-search {
+        width: 0;
+        background-color: $primary-color;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        height: 35px;
+        box-shadow: unset !important;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+        transition: all 0.5s ease;
+      }
+    }
+
+    &.expanded {
+      .field-wrapper {
+        background-color: $primary-color;
+
+        .form-search {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+      .search-toggle {
+        background-color: $light-blue;
+        background-image: url('../images/svg/icon-Search-blue.svg');
+      }
+    }
+  }
 }
