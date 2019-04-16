@@ -46,6 +46,7 @@ header {
       &.mobile-close {
         background-image: url('../images/svg/icon-Close.svg');
         background-size: 23px 23px;
+        display: none;
       }
     }
 
@@ -53,10 +54,8 @@ header {
       &.mobile-open {
         display: none;
       }
-    }
-    button[aria-expanded="false"] {
       &.mobile-close {
-        display: none;
+        display: block;
       }
     }
   }

@@ -2,7 +2,7 @@
 
 footer {
   background-color:  $medium-blue;
-  
+
   padding: rem-calc(38 0);
   .grid-container {
     @include breakpoint(medium down) {
@@ -29,6 +29,24 @@ footer {
       &:hover,
       &.active {
         color: $light-blue;
+      }
+    }
+  }
+}
+
+.bottom-bar {
+  &.callout {
+    margin-bottom: 0;
+  }
+  .copyright-info {
+    text-align: center;
+    a {
+      font-weight: $global-weight-bold;
+      margin-right: 1rem;
+      @include breakpoint(small only) {
+        display: block;
+        text-align: center;
+        margin: 0 auto 1rem;
       }
     }
   }
