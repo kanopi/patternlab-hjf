@@ -51,6 +51,10 @@ nav.block-utilitymenu {
             background-color: unset;
             text-align: right;
             margin: 0;
+            border-radius: unset;
+            &:hover {
+              background-color: $light-blue;
+            }
           }
         }
       }
