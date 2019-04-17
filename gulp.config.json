@@ -62,6 +62,7 @@
       "node_modules/foundation-sites/dist/js/foundation.min.js",
       "node_modules/motion-ui/dist/motion-ui.min.js"
     ],
+    "pl_dest": "docs/js/",
     "dest": "dist/js/"
   }
 }

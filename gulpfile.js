@@ -36,8 +36,9 @@ function compileJs() {
   return gulp.src(config.patternlab.javascript.src)
       .pipe(sourcemaps.init())
       .pipe(concat("components.js", {newLine: ';'}))
-      .pipe(sourcemaps.write())
-      .pipe(gulp.dest(config.paths.public + 'js/'))
+      .pipe(gulp.dest('patternlab/source/js/'))
+      .pipe(gulp.dest('dist/js/'))
+      .pipe(gulp.dest('docs/js/'))
       .pipe(browserSync.reload({stream: true, match: '**/*.js'}));
 }
 
@@ -55,6 +56,7 @@ function watch() {
 
     gulp.watch(config.css.src, compileCss);
     gulp.watch(config.js.src, compileJs);
+    gulp.watch(config.patternlab.javascript.src, compileJs);
     gulp.watch(config.images.src, minifyImages);
     gulp.watch(config.patternlab.src, build);
 }
@@ -62,23 +64,18 @@ function watch() {
 function copyJs() {
   return gulp
       .src(config.copy.src)
-      .pipe(copy(config.copy.dest, {prefix: 1}));
-}
-function copyDocs() {
-  return gulp
-      .src(config.copy.src)
-      .pipe(copy('docs/js/', {prefix: 1}));
+      .pipe(copy(config.copy.dest, {prefix: 1}))
+      .pipe(copy(config.copy.pl_dest, {prefix: 2}));
 }
 
 exports.compileCss = compileCss;
 exports.compileJs = compileJs;
 exports.minifyImages = minifyImages;
 exports.copyJs = copyJs;
-exports.copyDocs = copyDocs;
 exports.watch = watch;
 exports.generate = generate;
 
-var build = gulp.series(generate, compileCss, compileJs, copyJs, copyDocs, minifyImages);
+var build = gulp.series(generate, compileCss, compileJs, copyJs, minifyImages);
 exports.build = build;
 
 var defaultTasks = gulp.series(build, watch);

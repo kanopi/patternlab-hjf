@@ -1,21 +1,33 @@
+{% if page.footer_first or page.footer_middle or page.footer_last %}
 <footer class="footer-overlay">
-    <div class="grid-container grid-x">
-      <div id="footer-first" class="medium-3 cell">
-        {% include "molecules-contact" %}
-      </div>
-      <div id="footer-middle" class="medium-3 large-4 cell">
-        {% include "molecules-footer" %}
-      </div>
-      <div id="footer-last" class="medium-5 cell">
-        {% include "molecules-donation" %}
-      </div>
+  <div class="grid-container grid-x">
+  {% if page.footer_first %}
+    <div id="footer-first" class="medium-3 cell">
+      {{ page.footer_first }}
     </div>
+  {% endif %}
+  {% if page.footer_middle %}
+    <div id="footer-middle" class="medium-3 large-4 cell">
+      {{ page.footer_middle }}
+    </div>
+  {% endif %}
+  {% if page.footer_last %}
+    <div id="footer-last" class="medium-5 cell">
+      {{ page.footer_last }}
+    </div>
+  {% endif %}
+  </div>
 </footer>
+{% endif %}
 
 <div class="bottom-bar callout secondary">
-        <div class="grid-container grid-x">
-          <div class="large-12 cell">
-              <div class="copyright-info"><a href="#">Privacy Policy</a> © 2019 Henry M. Jackson Foundation  All rights reserved.</div>
-          </div>
-        </div>
-      </div>
+  <div class="grid-container grid-x">
+    <div class="large-12 cell">
+    {% if page.bottom_bar %}
+      {{ page.bottom_bar }}
+    {% endif %}
+      <div class="copyright-info">&copy; {{ "now"|date('Y') }} {{ site_name }} {{ site_slogan }} {{ 'All rights reserved.'|t }}</div>
+    </div>
+  </div>
+</div>
+

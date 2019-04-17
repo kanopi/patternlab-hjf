@@ -1,0 +1,29 @@
+<div class="region region--navigation">
+  <div class="grid-container grid-x show-for-medium">
+    <div class="medium-8 cell">
+      {{ main_menu }}
+    </div>
+    <div class="search-box medium-4 cell">
+{#       {{ search_form }} #}
+      <form action="/search" method="get" id="search-block-form" accept-charset="UTF-8">
+        <div class="field-wrapper">
+          <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keywords" type="search" id="edit-keywords" name="keywords" value="" size="15" maxlength="128" class="form-search">
+        </div>
+        <a class="search-toggle"></a>
+      </form>
+    </div>
+  </div>
+
+  <div class="off-canvas position-top show-for-small-only" id="offCanvasTop" data-off-canvas data-content-overlay="false">
+    <div class="row">
+      <div class="columns">
+      {{ main_menu }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns">
+      {{ utility_menu }}
+      </div>
+    </div>
+  </div>
+</div>

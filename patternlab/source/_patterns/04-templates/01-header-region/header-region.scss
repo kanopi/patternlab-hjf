@@ -63,6 +63,10 @@ header {
 }
 
 .region--navigation {
+  .dropdown.menu>li>a {
+    background: transparent;
+  }
+
   .offCanvasTop {
     display: none;
   }

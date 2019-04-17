@@ -1,8 +1,9 @@
-<header id="page-header" role="banner" aria-label="Site header">
+<header role="banner" aria-label="{{ 'Site header'|t }}">
   <div class="grid-container grid-x">
     <div class="small-1 cell">
-      {% include "atoms-logo" %}
+      {{ linked_logo }}
     </div>
+
     <div class="small-11 cell">
       <div class="show-for-small-only">
         <div class="hamburger-wrapper">
@@ -10,32 +11,18 @@
           <button class="mobile-close" type="button" data-close="offCanvasTop">Close</button>
         </div>
       </div>
+
+      {% if page.header %}
       <div class="show-for-medium">
-        {% include "molecules-utility" %}
+        {{ page.header }}
       </div>
-    </div>
-  </div>
-</header>
-<div class="region region--navigation">
-  <div class="grid-container grid-x show-for-medium">
-    <div class="medium-8 cell">
-    {% include "molecules-main" %}
-    </div>
-    <div class="search-box medium-4 cell">
-        {% include "atoms-search-block-text" %}
-    </div>
+      {% endif %}
+
     </div>
 
-  <div class="off-canvas position-top show-for-small-only" id="offCanvasTop" data-off-canvas data-content-overlay="false">
-  <div class="row">
-    <div class="columns">
-    {% include "molecules-main" %}
-</div>
-</div>
-<div class="row utility-menu">
-  <div class="columns">
-      {% include "molecules-utility" %}
-      </div>
-      </div>
   </div>
-</div>
+</header>
+
+{% if page.navigation %}
+  {{ page.navigation }}
+{% endif %}

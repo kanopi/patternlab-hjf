@@ -18,15 +18,15 @@
         <div class="reveal-wrapper">
           {# Todo: these raw filters are OK for Patternlab, but they're not going to work for drupal. Is there a way to #}
           {# specify raw filter in the json file? #}
-          {{ service|raw }}
-          {{ research_area|raw }}
-          {{ user_group|raw }}
-          {{ resource_type|raw }}
+          {{ service }}
+          {{ research_area }}
+          {{ user_group }}
+          {{ resource_type }}
         </div>
         {# Render Submit and Reset Buttons. #}
         <div id="edit-actions">
-          {{ submit|raw }}
-          {{ reset|raw }}
+          {{ submit }}
+          {{ reset }}
         </div>
         {# Modal close button. #}
         <button class="close-button" data-close aria-label="Close modal" type="button">
