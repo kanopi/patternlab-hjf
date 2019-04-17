@@ -1,4 +1,7 @@
 {
+  "form_id": "views-exposed-form-search-search",
+  "method": "get",
+  "action": "#",
   "service": {
     "#type": "checkboxes",
     "include()": {

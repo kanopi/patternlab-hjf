@@ -1,6 +1,6 @@
 @import "../../../css/_settings.scss";
 
-#checkboxes-wrapper {
+.checkboxes-wrapper {
   @include breakpoint(small down) {
     width: 100%;
   }
