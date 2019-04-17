@@ -1,0 +1,22 @@
+{
+  "page": true,
+  "node": {
+    "id": 2019
+  },
+  "attributes": {
+    "Attribute()": {
+      "id": "block-hjf-content",
+      "class": ["block-hjf-content"]
+    }
+  },
+  "display_submitted": false,
+  "url": "http://kanopistudios.com",
+  "content": {
+    "join()": [
+      "organisms-wysiwyg",
+      "organisms-wysiwyg-image",
+      "organisms-wysiwyg-title",
+      "organisms-wysiwyg"
+    ]
+  }
+}

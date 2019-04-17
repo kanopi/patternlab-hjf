@@ -55,7 +55,6 @@ function watch() {
     });
 
     gulp.watch(config.css.src, compileCss);
-    gulp.watch(config.js.src, compileJs);
     gulp.watch(config.patternlab.javascript.src, compileJs);
     gulp.watch(config.images.src, minifyImages);
     gulp.watch(config.patternlab.src, build);
