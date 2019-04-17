@@ -42,18 +42,20 @@
     font-family: $font-family-monospace;
     line-height: 1.2;
     font-size: rem-calc(24);
-    padding-bottom: rem-calc(25);
+    padding-bottom: rem-calc(18);
     margin-bottom: 0;
     color: $medium-blue;
     @include breakpoint(small only) {
-      padding-bottom: rem-calc(20);
+      padding-bottom: 16px;
+      font-size: 20px;
     }
   }
 
   .top {
     margin-bottom: $global-padding * 2;
     @include breakpoint(small down) {
-      margin-bottom: $global-padding;
+      margin-bottom: 10px;
+      margin-top: 1rem;
     }
     .type {
       background-color: $light-blue;
@@ -65,7 +67,9 @@
       @include breakpoint(small down) {
         display: block;
         padding-left: 0;
-        margin-top: $global-padding;
+        margin-top: rem-calc(14);
+        padding-bottom: 0;
+        font-size: 16px;
       }
     }
   }
@@ -94,7 +98,11 @@
 
     .author {
       font-weight: $global-weight-bold;
-      margin-bottom: $global-padding;
+      margin-bottom: rem-calc(10);
+      @include breakpoint(small down) {
+        font-size: 16px;
+        margin-top: 0;
+      }
     }
   }
 
