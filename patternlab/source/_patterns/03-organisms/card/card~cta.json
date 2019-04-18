@@ -1,0 +1,22 @@
+{
+  "type": "",
+  "date": "",
+  "date_overlay": "",
+  "heading_overlay": "",
+  "author_overlay" : "",
+  "card_variation": "--cta",
+  "image": "../../../images/hero-1.jpg",
+  "heading": "Are you part of a research team?",
+  "summary": "We can get your project off the ground.",
+  "button": {
+    "include()": {
+      "pattern": "atoms-button",
+      "with": {
+        "uri": "#",
+        "title": "Let's Talk",
+        "classes": "warning"
+      },
+      "only": true
+    }
+  }
+}
