@@ -1,0 +1,29 @@
+@import "card.scss";
+
+//.c-card styles
+.c-card {
+  $self: &;
+  // c-card--text styles
+  &--cta {
+    @include breakpoint(medium) {
+      max-width: 318px;
+    }
+
+    #{ $self }__heading {
+      padding-bottom: rem-calc(21);
+      margin-bottom: 0;
+      color: $white;
+    }
+
+    #{ $self }__overlay {
+      color: $white;
+    }
+
+    .button {
+      &:hover {
+        background-color: $light-blue;
+      }
+    }
+
+  } // .c-card--text
+} // .c-card
