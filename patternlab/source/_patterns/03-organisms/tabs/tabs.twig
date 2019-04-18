@@ -1,7 +1,7 @@
 <div class="c-tabs grid-container">
   <div class="grid-x" data-equalizer>
     <div class="c-tabs--image show-for-xlarge" data-equalizer-watch>
-      {{ image | raw }}
+      {{ image }}
     </div>
     <div class="c-tabs--tab-list" data-equalizer-watch>
 
@@ -17,7 +17,7 @@
           <div class="tabs-panel {{ tab_content.active }}" id="tab-{{ key }}">
             <h2>{{ tab_content.heading }}</h2>
             <div class="tabs-panel__summary">{{ tab_content.summary }}</div>
-            <div class="tabs-panel__button">{{ tab_content.button | raw }}</div>
+            <div class="tabs-panel__button">{{ tab_content.button }}</div>
             <div class="tabs-panel__footer">{{ tab_content.footer }}</div>
           </div>
       {% endfor %}
