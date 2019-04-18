@@ -1,0 +1,31 @@
+@import "../../../css/_settings.scss";
+
+.c-card--img_right {
+  @include breakpoint(medium) {
+    .c-card--image {
+      order: 2;
+    }
+    .c-card--content {
+      order: 1;
+    }
+  }
+}
+
+.c-card--img_left,
+.c-card--img_right {
+  .c-card--image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .c-card--content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content-wrapper {
+      width: 56%;
+    }
+  }
+}

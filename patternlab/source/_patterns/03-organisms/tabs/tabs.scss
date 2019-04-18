@@ -6,7 +6,10 @@
   background-color: transparent;
   max-width: rem-calc(1200);
   margin-bottom: rem-calc(30);
+
   @include breakpoint(medium) {
+    position: relative;
+    top: -40px;
     margin-bottom: rem-calc(70);
   }
   &--image {

@@ -1,0 +1,52 @@
+@import "../../../css/_settings.scss";
+
+.c-card--img_right_inset {
+  @include breakpoint(medium) {
+    .c-card--image {
+      order: 2;
+    }
+    .c-card--content {
+      order: 1;
+    }
+  }
+}
+
+.c-card--img_left_inset,
+.c-card--img_right_inset {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .c-card--image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .c-card--content {
+    background-color: $primary-color;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    .content-wrapper {
+      width: 70%;
+      z-index: 1;
+    }
+    
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 200px 540px;
+      border-color: transparent transparent #206178 transparent;
+      position: absolute;
+      top: 60%;
+      left: 25%;
+      z-index: 0;
+    }
+  }
+}
