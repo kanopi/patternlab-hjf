@@ -3,7 +3,9 @@
   {% if card_variation == '--reveal' %}
     <div class="c-card__image">
       {{ image }}
+      {% if type|render %}
       <div class="c-card__type">{{ type }}</div>
+      {% endif %}
     </div>
   {% endif %}
   <div class="c-card__content">
