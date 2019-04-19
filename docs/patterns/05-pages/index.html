@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width" />
 
     <link rel="stylesheet" href="https://use.typekit.net/moj4ryx.css">
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1555630343" media="all"/>
-    <link rel="stylesheet" href="../../css/styles.css?1555630343" media="all">
-    <link rel="stylesheet" href="../../css/helpers.css?1555630343" media="all">
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1555697109" media="all"/>
+    <link rel="stylesheet" href="../../css/styles.css?1555697109" media="all">
+    <link rel="stylesheet" href="../../css/helpers.css?1555697109" media="all">
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 		<!-- never cache patterns -->
@@ -18,12 +18,12 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1555630343" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1555630343" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1555697109" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1555697109" media="all" />
 		<!-- End Pattern Lab -->
-		<script src="../../js/jquery/dist/jquery.min.js?1555630343"></script>
-		<script src="../../js/foundation-sites/dist/js/foundation.min.js?1555630343"></script>
-		<script src="../../js/motion-ui/dist/motion-ui.min.js?1555630343"></script>
+		<script src="../../js/jquery/dist/jquery.min.js?1555697109"></script>
+		<script src="../../js/foundation-sites/dist/js/foundation.min.js?1555697109"></script>
+		<script src="../../js/motion-ui/dist/motion-ui.min.js?1555697109"></script>
 
 	</head>
 	<body class="">
@@ -141,7 +141,8 @@
   <div class="sg-pattern-extra" id="sg-pattern-extra-pages-article"></div>
     
   <div class="sg-pattern-example">
-    <div class="off-canvas-wrapper">
+    
+<div class="off-canvas-wrapper">
   <div class="inner-wrap off-canvas-wrapper-inner" id="inner-wrap" data-off-canvas-wrapper>
     <div class="off-canvas-content" data-off-canvas-content>
       
@@ -252,7 +253,7 @@
     </div>
   </div>
 
-  <div class="off-canvas position-top show-for-small-only" id="offCanvasTop" data-off-canvas data-content-overlay="false">
+  <div class="off-canvas position-top show-for-small-only" id="offCanvasTop" data-off-canvas data-content-overlay="false" data-content-scroll="false">
     <div class="row">
       <div class="columns">
       
@@ -310,7 +311,7 @@
 
       </div>
     </div>
-    <div class="row">
+    <div class="row utility-menu">
       <div class="columns">
       <nav role="navigation" aria-labelledby="block-utilitymenu-menu" id="block-utilitymenu" class="contextual-region block-utilitymenu">
   <h2 class="block-title visually-hidden" id="block-utilitymenu-menu">Utility menu</h2>
@@ -334,6 +335,7 @@
     </div>
   </div>
 </div>
+
 
       
       
@@ -436,11 +438,31 @@
 
     </div>
   </div>
+    <div class="show-for-small-only search-box-mobile">
+  <div class="grid-x">
+    <div class="cell auto">
+      <a class="button search" href="#"><span>Search</span></a>
+    </div>
+    <div class="cell auto">
+      <a class="button contact" href="#">Contact us</a>
+    </div>
+  </div>
+  <div id="mobile-search-form" class="is-hidden">
+  <button class="close-button" data-close>&times;</button>
+    <form action="/search" method="get" id="search-block-form" accept-charset="UTF-8" >
+        <div class="field-wrapper">
+          <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keywords" type="search" id="edit-keywords" name="keywords" value="" size="15" maxlength="128" class="form-search">
+        </div>
+        <input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Search" class="button js-form-submit form-submit">
+      </form>
+    </div>
+  </div>
 </div>
+
   </div>
   
   <script type="text/json" id="sg-pattern-data-pages-article" class="sg-pattern-data">
-    {"lineage":[{"lineagePattern":"templates-header-region","lineagePath":"..\/..\/patterns\/05-pages-02-article-article\/05-pages-02-article-article.html"},{"lineagePattern":"templates-footer-region","lineagePath":"..\/..\/patterns\/05-pages-02-article-article\/05-pages-02-article-article.html"}],"lineageR":[],"patternBreadcrumb":{"patternType":"pages","patternSubtype":"article"},"patternDesc":"<p>Use the News Article content type to add News Articles and Press Releases to the site.<\/p>","patternExtension":"twig","patternName":"News Article","patternPartial":"pages-article","patternState":""}
+    {"lineage":[{"lineagePattern":"templates-header-region","lineagePath":"..\/..\/patterns\/05-pages-02-article-article\/05-pages-02-article-article.html"},{"lineagePattern":"templates-footer-region","lineagePath":"..\/..\/patterns\/05-pages-02-article-article\/05-pages-02-article-article.html"},{"lineagePattern":"molecules-fixed-search-block","lineagePath":"..\/..\/patterns\/05-pages-02-article-article\/05-pages-02-article-article.html"}],"lineageR":[],"patternBreadcrumb":{"patternType":"pages","patternSubtype":"article"},"patternDesc":"<p>Use the News Article content type to add News Articles and Press Releases to the site.<\/p>","patternExtension":"twig","patternName":"News Article","patternPartial":"pages-article","patternState":""}
   </script>
 </div><!--end .sg-pattern-->            </div> <!--end #sg-patterns-->
 </div><!--end .sg-main-->
@@ -480,10 +502,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1555630343">
+<script id="pl-js-polyfill-insert-1555697109">
   (function() {
     if (self != top) {
-      var cb = '1555630343';
+      var cb = '1555697109';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -493,29 +515,29 @@
   })();
 </script>
 
-<script id="pl-js-insert-1555630343">
+<script id="pl-js-insert-1555697109">
   (function() {
     if (self != top) {
-      var cb = '1555630343';
+      var cb = '1555697109';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
   })();
 </script>
   
-    <script src="../../js/jquery/dist/jquery.min.js?1555630343"></script>
-    <script src="../../js/foundation-sites/dist/js/foundation.min.js?1555630343"></script>
-    <script src="../../js/motion-ui/dist/motion-ui.min.js?1555630343"></script>
+    <script src="../../js/jquery/dist/jquery.min.js?1555697109"></script>
+    <script src="../../js/foundation-sites/dist/js/foundation.min.js?1555697109"></script>
+    <script src="../../js/motion-ui/dist/motion-ui.min.js?1555697109"></script>
   
     <script>
     //<![CDATA[
       jQuery(document).foundation();
     //]]>
     </script>
-    <script src="../../js/components.js?1555630343"></script>
+    <script src="../../js/components.js?1555697109"></script>
   
   
     <!-- This makes attach_library work wherever it is in the document flow. -->
-    <script src="../../js/reload-scripts.js?1555630343"></script>
+    <script src="../../js/reload-scripts.js?1555697109"></script>
   </body>
 </html>
