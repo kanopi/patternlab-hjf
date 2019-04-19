@@ -3,7 +3,8 @@
   <div class="grid-container grid-x">
   {% if page.footer_first %}
     <div id="footer-first" class="medium-3 cell">
-      {{ page.footer_first }}
+      {{ page.footer_first.contact }}
+      {{ page.footer_first.social }}
     </div>
   {% endif %}
   {% if page.footer_middle %}
@@ -30,4 +31,3 @@
     </div>
   </div>
 </div>
-

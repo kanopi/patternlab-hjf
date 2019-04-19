@@ -1,6 +1,9 @@
 {
   "page": {
-    "footer_first": "molecules-contact",
+    "footer_first": {
+      "contact": "molecules-contact",
+      "social" : "molecules-social"
+    },
     "footer_middle": "molecules-footer",
     "footer_last": "molecules-donation",
     "bottom_bar": "",
