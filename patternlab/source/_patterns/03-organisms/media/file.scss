@@ -1,0 +1,12 @@
+@import "../../../css/_settings.scss";
+
+.document-component {
+  margin-bottom: 20px;
+
+  .document-preview {
+    max-width: 502.7px;
+    max-height: 650px;
+    border: $darkest-blue;
+    display: block;
+  }
+}

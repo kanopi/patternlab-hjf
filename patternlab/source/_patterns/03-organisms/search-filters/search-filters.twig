@@ -1,6 +1,6 @@
 <div class="block-exposedformsearchsearch">
   <div class="search-wrapper">
-    <form id="views-exposed-form-search-search">
+    <form id="{{ form_id }}" action="{{ action }}" method="{{ method }}">
       <label>{{ 'What are you looking for?'|t }}</label>
       {#{% for key, item in form if item['#type'] == 'text' %}#}
       {#{{ item }}#}

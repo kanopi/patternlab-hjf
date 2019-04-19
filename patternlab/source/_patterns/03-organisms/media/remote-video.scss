@@ -1,0 +1,10 @@
+.responsive-embed,
+.flex-video {
+  iframe,
+  object,
+  embed,
+  video {
+    width: 100vw;
+    height: calc(100vw/1.77);
+  }
+}

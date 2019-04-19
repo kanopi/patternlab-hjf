@@ -1,0 +1,28 @@
+@import "../../../css/_settings.scss";
+
+.c-card--img_full {
+  display: flex;
+  align-items: center;
+
+  .c-card--content {
+    background-color: $white;
+    padding: 5% 0;
+
+    @include breakpoint(medium) {
+      margin-bottom: 5%;
+      margin-top: 5%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  @include breakpoint(small only) {
+    background: none !important;
+  }  
+
+  @include breakpoint(medium) {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

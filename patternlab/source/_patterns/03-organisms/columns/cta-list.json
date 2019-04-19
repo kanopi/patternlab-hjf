@@ -1,0 +1,21 @@
+{
+  "image":"../../../images/hero-1.jpg",
+  "title": "Let Us Help You",
+  "content": {
+    "join()": [
+      "<div class=\"grid-container\">",
+      "<div class=\"grid-x grid-padding-x\">",
+      "<div class=\"medium-4\">",
+      "organisms-card-cta",
+      "</div>",
+      "<div class=\"medium-4\">",
+      "organisms-card-cta",
+      "</div>",
+      "<div class=\"medium-4\">",
+      "organisms-card-cta",
+      "</div>",
+      "</div>",
+      "</div>"
+    ]
+  }
+}
