@@ -35,6 +35,9 @@ footer {
 }
 
 .bottom-bar {
+  @include breakpoint(small only) {
+    padding-bottom: 55px;
+  }
   &.callout {
     margin-bottom: 0;
   }

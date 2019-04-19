@@ -1,0 +1,83 @@
+@import "../../../css/_settings.scss";
+
+.search-box-mobile {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 500;
+  .button {
+    border-radius: 0;
+    display: block;
+    margin-bottom: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.15);
+    &.search {
+      background-color: $primary-color;
+      color: #ffffff;
+      span {
+        background-image: url('../images/svg/icon-Search-white.svg');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size:  15px;
+        padding-right: 25px;
+
+      }
+      &:hover {
+        background-color: $light-blue;
+        color: $darkest-gray;
+        span {
+          background-image: url('../images/svg/icon-Search-blue.svg');
+        }
+      }
+    }
+  }
+
+  form {
+    background-color: $primary-color;
+    padding: 0 20px 15px;
+    position: absolute;
+    left: 0;
+    top: -15px;
+    width: 100%;
+
+    .field-wrapper {
+      width: calc(100% - 65px);
+      margin-right: 5px;
+      display: inline-block;
+    }
+    .form-search {
+      background-color: $primary-color;
+      border: none;
+      border-bottom: 1px solid #ffffff;
+      height: 40px;
+      font-size: 14px;
+      font-weight: $global-weight-bold;
+      box-shadow: unset !important;
+      color: #ffffff;
+      display: inline-block;
+      margin-bottom: 0;
+      padding-top: 0;
+      margin-top: 20px;
+    }
+    .form-submit {
+      display: block;
+      height: 45px;
+      width: 45px;
+      padding: 0;
+      margin-top: 0;
+      background-size: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: inline-block;
+      background-color: $light-blue;
+      background-image: url('../images/svg/icon-Search-blue.svg');
+      text-indent: -500px;
+      overflow: hidden;
+      &:hover {
+        background-color: $warning-color;
+        background-image: url('../images/svg/icon-Search-white.svg');
+      }
+    }
+  }
+}
