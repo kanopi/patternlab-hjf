@@ -6,23 +6,54 @@
 
   .c-card--content {
     background-color: $white;
-    padding: 5% 0;
-
     @include breakpoint(medium) {
-      margin-bottom: 5%;
-      margin-top: 5%;
-      padding-left: 5%;
-      padding-right: 5%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding: rem-calc(75px 66px);
+    }
+    @include breakpoint(large) {
+      margin-top: 126px;
+      margin-bottom: 126px;
+    }
+    h3 {
+      font-family: $font-family-monospace;
+      font-size: rem-calc(35);
+      line-height: 1.29;
+      letter-spacing: 0.2px;
+      font-weight: bold;
+      margin-bottom: 15px;
     }
   }
 
   @include breakpoint(small only) {
-    background: none !important;
-  }  
+
+    background-image: none !important;
+
+    h3 {
+      margin-top: 19px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      text-align: center;
+    }
+    .button-wrapper {
+      text-align: center;
+      .button {
+        margin-top: 30px;
+      }
+    }
+  }
 
   @include breakpoint(medium) {
     background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+.c-card--img_left_full .grid-x {
+  flex-direction: row wrap;
+}
+
+.c-card--img_right_full .grid-x {
+  flex-direction: row-reverse;
 }

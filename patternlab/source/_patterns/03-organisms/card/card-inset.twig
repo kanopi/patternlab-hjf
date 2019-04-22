@@ -1,14 +1,15 @@
 <div class="c-card c-card{{ card_variation }}">
   <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-      <div class="c-card--image medium-6">
+    <div class="grid-x">
+      <div class="c-card--image small-12 medium-6">
         {{ image }}
       </div>
-      <div class="c-card--content medium-6">
+      <div class="c-card--content small-12 medium-6 card-overlay">
         <div class="content-wrapper">
+          <div class="category">{{ category }}</div>
           <h3>{{ heading }}</h3>
-          {{ summary }}
-          {{ button }}
+          <div>{{ summary }}</div>
+          <div class="button-wrapper">{{ button }}</div>
         </div>
       </div>
     </div>
