@@ -3,5 +3,15 @@
   "image": "../../../images/rectangle-1.jpg",
   "title": "Far Reaching Options",
   "summary": "<p>Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-  "button": "<a href=\"#\" class=\"button\">Watch Video</a>"
+  "button": {
+    "include()": {
+      "pattern": "atoms-button",
+      "with": {
+        "uri": "#",
+        "title": "Read More",
+        "classes": "warning"
+      },
+      "only": true
+    }
+  }
 }
