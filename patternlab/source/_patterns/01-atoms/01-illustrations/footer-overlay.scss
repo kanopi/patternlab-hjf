@@ -4,7 +4,7 @@
   background-image: url("../images/svg/HJF-branding-med-blue.svg");
   background-repeat: no-repeat;
   background-position: bottom right;
-    background-size: contain;
+  background-size: contain;
   @include breakpoint(medium up) {
     background-size: 50% auto;
   }
