@@ -4,7 +4,7 @@
   "content": {
     "join()": [
       "<div class=\"grid-container\">",
-      "<div class=\"grid-x grid-padding-x\">",
+      "<div class=\"grid-x\">",
       "<div class=\"medium-4\">",
       "organisms-card-cta",
       "</div>",
