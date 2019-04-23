@@ -1,0 +1,44 @@
+@import "../../../css/_settings.scss";
+@import 'foundation';
+
+
+.block-social {
+  @include breakpoint(small only) {
+    ul {
+      justify-content: center;
+    }
+  }
+  li {
+    a {
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      -webkit-mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: contain;
+      background-color: #ffffff;
+      width: 25px;
+      height: 19px;
+      text-indent: -500px;
+      overflow: hidden;
+      padding: 0;
+      &:hover {
+        background-color: $light-blue;
+      }
+      &.facebook {
+        -webkit-mask-image: url(../images/svg/icon-Facebook.svg);
+        mask-image: url(../images/svg/icon-Facebook.svg);
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      &.twitter {
+        -webkit-mask-image: url(../images/svg/icon-Twitter.svg);
+        mask-image: url(../images/svg/icon-Twitter.svg);
+      }
+      &.linkedin {
+        -webkit-mask-image: url(../images/svg/icon-Linkedin.svg);
+        mask-image: url(../images/svg/icon-Linkedin.svg);
+      }
+    }
+  }
+}
