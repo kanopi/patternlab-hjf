@@ -14,7 +14,7 @@ patternStates:
     - inreview
     - complete
 styleGuideExcludes: ''
-cacheBusterOn: 'true'
+cacheBusterOn: 'false'
 exportDir: export
 publicDir: ../docs
 sourceDir: source

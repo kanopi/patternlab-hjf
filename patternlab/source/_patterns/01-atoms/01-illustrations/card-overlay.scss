@@ -1,0 +1,20 @@
+@import "../../../css/_settings.scss";
+
+.card-overlay {
+  background-color: $primary-color;
+  background-image: url("../images/svg/HJF-branding-med-blue.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 66% auto;
+  &--hero {
+    background-color: $medium-blue;
+    background-image: url("../images/svg/HJF-branding-dark-blue.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 66% auto;
+    @include breakpoint(medium) {
+      background-color: unset;
+      background-image: unset;
+    }
+  }
+}

@@ -5,8 +5,14 @@
   $self: &;
   // c-card--text styles
   &--cta {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 5px transparent;
+    color: $white;
+    display: block;
+    padding: rem-calc(40);
     @include breakpoint(medium) {
-      max-width: 318px;
+      max-width: 360px;
+      padding: rem-calc(50 55 55);
     }
 
     #{ $self }__heading {
@@ -19,9 +25,26 @@
       color: $white;
     }
 
-    .button {
-      &:hover {
+    .c-card__content {
+      padding: 0;
+    }
+
+    .c-card__overlay-button {
+      width: 0;
+      transition: width .8s ease;
+      white-space: nowrap;
+    }
+
+
+    &:hover {
+      .button {
         background-color: $light-blue;
+      }
+      border: solid 5px #c4e2f5;
+      .c-card__overlay-button {
+        text-align: center;
+        width: 100%;
+        transition: width .8s ease;
       }
     }
 
