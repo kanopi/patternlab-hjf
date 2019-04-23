@@ -21,7 +21,7 @@
     background-color: transparent;
     border: 0;
     color: $darkest-gray;
-    padding: 25px 12.5px;
+    padding: 30px 12.5px 0;
     @include breakpoint(small only) {
       padding-left: 0;
       padding-right: 0;
@@ -31,6 +31,9 @@
       .c-card__overlay {
         max-width: 300px;
         margin: 0 auto;
+      }
+      .button {
+        margin-bottom: 0;
       }
     }
 
