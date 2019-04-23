@@ -1,4 +1,6 @@
-@import "../../../../css/_settings.scss";
+@import "../../../css/_settings.scss";
+@import 'foundation';
+
 
 .block-social {
   @include breakpoint(small only) {
