@@ -9,6 +9,10 @@
     </div>
   {% endif %}
   <div class="c-card__content">
+  {% if type %}
+    <div class="c-card__type">{{ type }}</div>
+  {% endif %}
+
     {% if card_variation|render == '--text' and type %}
       <div class="c-card__type">{{ type }}</div>
     {% endif %}
