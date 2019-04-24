@@ -6,25 +6,79 @@
   background-size: cover;
   padding-bottom: 70px;
 
+  .grid-x {
+    @include breakpoint(small only) {
+      justify-content: center;
+    }
+  }
+
   .list-title {
-    margin: 56px auto;
+    margin: 30px auto 20px;
     font-family: $font-family-monospace;
-    font-size: 35px;
+    font-size: 24px;
     font-weight: $global-weight-bold;
     text-align: center;
     color: $white;
+    @include breakpoint(medium up) {
+      margin: 56px auto;
+      font-size: 35px;
+    }
   }
 
   .list-content {
-    background-color: rgba(0,0,0,0.5);
+    @include breakpoint(medium up) {
+      background-color: rgba(0,0,0,0.5);
+    }
+    .medium-4 {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      @include breakpoint(medium) {
+        margin-bottom: 0;
+      }
+    }
   }
-  
+
   .list-title,
   .list-content {
     z-index: 1;
   }
-  
-  .c-card {
+
+  .c-card--cta {
     margin: 0;
+    max-width: 318px;
+
+    @include breakpoint(small only) {
+      h3 {
+        text-align: center;
+      }
+      .c-card__overlay-button {
+        width: 100%;
+        text-align: center;
+        .button {
+          margin-top: 0;
+        }
+      }
+      .c-card__overlay-summary {
+        display: none;
+      }
+    }
+
+    @include breakpoint(medium up) {
+      background-color: unset;
+      &:hover {
+        border-color: transparent;
+      }
+    }
+    @include breakpoint(medium only) {
+      padding: rem-calc(40 16);
+    }
+    .c-card__heading.small {
+      font-size: 28px;
+      @include breakpoint(medium down) {
+        font-size: 22px;
+      }
+    }
   }
 }
