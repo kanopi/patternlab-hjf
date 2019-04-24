@@ -1,8 +1,10 @@
 {
   "page": {
     "footer_first": {
-      "contact": "molecules-contact",
-      "social" : "molecules-social"
+      "join()": [
+        "molecules-contact",
+        "molecules-social"
+      ]
     },
     "footer_middle": "molecules-footer",
     "footer_last": "molecules-donation",
