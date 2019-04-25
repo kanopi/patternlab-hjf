@@ -1,0 +1,16 @@
+@import "../../../css/_settings.scss";
+
+.category-chip {
+  background-color: $light-blue;
+  color: $darkest-gray;
+  display: inline-block;
+  font-size: $cite-font-size;
+  font-weight: $global-weight-bold;
+  padding: rem-calc(10 15);
+  margin: 1rem 0;
+  
+  &:hover {
+    background-color: $primary-color;
+    color: $white;
+  }
+}

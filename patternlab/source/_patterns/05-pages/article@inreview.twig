@@ -1,54 +1,5 @@
+{% include "templates-page" %}
 
-<div class="off-canvas-wrapper">
-  <div class="inner-wrap off-canvas-wrapper-inner" id="inner-wrap" data-off-canvas-wrapper>
-    <div class="off-canvas-content" data-off-canvas-content>
-      {% if page.meta_header %}
-        {% if meta_header_grid %}
-          <div class="grid-container grid-x">
-            <div class="large-12 cell">
-        {% endif %}
-        {{ page.meta_header }}
-        {% if meta_header_grid %}
-            </div>
-          </div>
-        {% endif %}
-      {% endif %}
-
-      {% include "templates-header-region" %}
-
-      {% if messages and not zurb_foundation_messages_modal %}
-      <div class="l-messages grid-container grid-x">
-        <div class="large-12 cell">
-          {{ messages }}
-        </div>
-      </div>
-      {% endif %}
-
-      {% if page.help %}
-      <div class="l-help grid-container grid-x">
-        <div class="large-12 cell">
-          {{ page.help }}
-        </div>
-      </div>
-      {% endif %}
-
-      <main id="main" class="main" role="main">
-        {% if page.highlighted %}
-          {% spaceless %}
-            {{ page.highlighted }}
-          {% endspaceless %}
-        {% endif %}
-        <a id="main-content"></a>
-        {% if breadcrumb %} {{ breadcrumb }} {% endif %}
-
-        <section>
-          {{ page.content }}
-        </section>
-      </main>
-
-      {% include "templates-footer-region" %}
-
-    </div>
-  </div>
-    {% include "molecules-fixed-search-block" %}
-</div>
+{% if show_grid %}
+{% include "atoms-grid-debug" %}
+{% endif %}

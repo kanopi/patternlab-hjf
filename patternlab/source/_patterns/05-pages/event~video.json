@@ -1,3 +1,9 @@
 {
-  "page": {}
+  "page": {
+    "content": {
+      "join()": [
+        "molecules-hero"
+      ]
+    }
+  }
 }
