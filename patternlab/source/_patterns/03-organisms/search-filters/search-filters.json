@@ -2,6 +2,8 @@
   "form_id": "views-exposed-form-search-search",
   "method": "get",
   "action": "#",
+  "title": false,
+  "keyword": "atoms-text-search-filter",
   "service": {
     "#type": "checkboxes",
     "include()": {
