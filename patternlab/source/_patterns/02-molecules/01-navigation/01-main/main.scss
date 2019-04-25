@@ -150,6 +150,8 @@
         a {
           text-align: left;
           background-color: transparent;
+          text-indent: -500px;
+          overflow: hidden;
           &:before {
             right: 15px;
             top: 20px;
