@@ -1,3 +1,5 @@
-<div{{ attributes }}>
-  {{ content }}
-</div>
+{% if content %}
+  <div{{ attributes }}>
+    {{ content }}
+  </div>
+{% endif %}
