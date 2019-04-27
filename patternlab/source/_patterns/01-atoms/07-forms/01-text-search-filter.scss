@@ -1,42 +1,43 @@
 @import "../../../css/_settings.scss";
 
-#views-exposed-form-search-search {
-  .js-form-item-keyword {
-    border-bottom: solid 1px $darkest-gray;
+.js-form-item-keyword {
+  border-bottom: solid 1px $darkest-gray;
+  width: 100%;
+  max-width: 570px;
+  input[type="text"] {
+    border-width: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-family: $body-font-family;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 0.93;
+    letter-spacing: 0.2px;
+    color: $darkest-blue;
+    padding: 23px;
+    margin: 0;
+  }
+  input {
+    background: transparent url(../images/svg/icon-Search-med-blue.svg) right no-repeat;
+    background-size: 35px;
     width: 100%;
-    input[type="text"] {
-      border-width: 0;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none;
-      font-family: $body-font-family;
-      font-size: 28px;
-      font-weight: normal;
-      line-height: 0.93;
-      letter-spacing: 0.2px;
-      color: $darkest-blue;
-      padding: 23px;
-    }
-    input {
+  }
+
+  @-webkit-keyframes autofill {
+    to {
       background: transparent;
     }
-    .input-wrapper {
-      background: transparent url(../../../images/svg/icon-Search-med-blue.svg) right no-repeat;
-      background-size: 35px;
-      width: 100%;
-    }
-    @-webkit-keyframes autofill {
-      to {
-        background: transparent;
-      }
-    }
-    input:-webkit-autofill,
-    input:-webkit-autofill:hover,
-    input:-webkit-autofill:focus,
-    input:-webkit-autofill:active {
-      -webkit-animation-name: autofill;
-      -webkit-animation-fill-mode: both;
-      background: transparent url(../../../images/svg/icon-Search-med-blue.svg) right no-repeat;
-    }
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+    background: transparent url(../images/svg/icon-Search-med-blue.svg) right no-repeat;
   }
 }
+
+

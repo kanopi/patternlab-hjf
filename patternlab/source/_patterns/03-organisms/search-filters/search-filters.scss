@@ -6,28 +6,33 @@
   flex-direction: row;
   justify-content: center;
   padding: 4em 0 3em;
+  box-shadow: 0 2px 15px 2px rgba(200, 166, 166, 0.2);
+  max-height: 235px;
   .search-wrapper {
     display: flex;
     width: 100%;
-    max-width: 760px;
+    max-width: 850px;
     justify-content: left;
     padding: 0 1rem;
     .button.rectangular {
-      position: relative;
       display: block;
       max-height: 50px;
-      top: 46px;
+      position: relative;
+      right: 90px;
     }
     form {
       width: 100%;
       max-width: 750px;
+      display: flex;
+      justify-content: center;
     }
     .keyword-wrapper {
-      display: flex;
+      display: block;
       width: 100%;
-      max-width: 570px;
-      justify-content: center;
-      align-items: center;
+      padding-right: 2em;
+    }
+    .button.rectangular {
+      margin-top: 3.5em;
     }
     @include breakpoint(medium down) {
       form {
@@ -41,14 +46,82 @@
       }
     }
   }
+  .keyword-wrapper .button.reset,
+  .keyword-wrapper #edit-reset.button {
+    color: #ffffff;
+    background-color: #5d6671;
+    position: relative;
+    right: -188px;
+    padding: 17px 30px;
+    top: -76px;
+    float: right;
+    border-radius: 25px;
+  }
+}
+
+.block-exposedformsearchsearch.smaller {
+  padding: 1em 0 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 38px;
+  z-index: 999;
+  max-height: 90px;
+  .keyword-wrapper {
+    label {
+      display: none;
+    }
+  }
+  .search-wrapper .button.rectangular {
+    margin-top: 0;
+    transition: margin-top 0.3s;
+  }
+  .js-form-item-keyword input[type="text"] {
+    font-size: 18px;
+    padding: 13px;
+    transition: font-size 0.3s;
+  }
+  .js-form-item-keyword input {
+    background-size: 25px;
+    transition: background-size 0.3s;
+  }
+  .js-form-item-keyword {
+    max-width: 486px;
+    transition: max-width 0.3s;
+  }
+  .filters-modal {
+    top: 98px;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+  }
+  .input-wrapper > .button.reset,
+  .input-wrapper > #edit-reset.button {
+    right: -103px;
+    top: -68px;
+  }
+  .search-wrapper .button.rectangular {
+    right: 177px;
+  }
 }
 // Filter modal.
-.reveal {
+.filters-modal.closed {
+  display: none;
+}
+.filters-modal {
   background-color: $medium-blue;
   width: 100%;
   max-width: 1197px;
-  top: 241px!important;
+  top: 380px;
   overflow: scroll;
+  position: absolute;
+  z-index: 99;
+  display: block;
+  @include breakpoint(small down) {
+    max-width: 97%;
+    top: 212px;
+    left: 5px;
+    right: 5px;
+  }
   &:focus,
   &:active {
     outline: none;
@@ -60,13 +133,25 @@
   }
   #edit-actions {
     display: inline-flex;
-    position: absolute;
+    position: relative;
     bottom: 39px;
     left: calc(50% - 110px);
-    .button.submit {
-      padding: 15px 48px;
+    [type='submit'] {
+      padding: .875rem 1.875rem;
+      border: 1px solid transparent;
+      border-radius: 4.6875rem;
     }
-    .button.reset {
+    .button.success.submit,
+    #edit-submit-search.button.success {
+      padding: 15px 48px;
+      background-color: $warning-color;
+      &:hover, &:focus {
+        background-color: #c4e2f5;
+        color: #212121;
+      }
+    }
+    .button.reset,
+    #edit-reset.button {
       background-color: $card-bg-gray;
       position: relative;
       right: 15px;

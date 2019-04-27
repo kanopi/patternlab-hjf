@@ -27,20 +27,24 @@
 
 	</head>
 	<body class="">
-<div class="block-exposedformsearchsearch">
+<div id="block-exposedformsearchsearch" class="block-exposedformsearchsearch">
   <div class="search-wrapper">
     <form id="views-exposed-form-search-search" action="#" method="get">
-      <label>What are you looking for?</label>
-                        <div class="keyword-wrapper">
-                <div class="js-form-item-keyword">
+      <div class="keyword-wrapper">
+        <label>What are you looking for?</label>
+        <div class="input-wrapper">
           <div class="input-wrapper">
-            <input data-drupal-selector="edit-keyword" type="text" id="edit-keyword" name="keyword" value="" size="30" maxlength="128" class="form-text">
-          </div>
+  <div class="js-form-item-keyword">
+    <input data-drupal-selector="edit-keyword" type="text" id="edit-keyword" name="keyword" value="" size="30" maxlength="128" class="form-text" placeholder="Search...">
+  </div>
+</div>
+<a id="" href="#" class="button reset">Reset</a>
+
         </div>
       </div>
-            <div class="reveal" id="filterModal1" data-reveal data-overlay="false">
+            <div id="filters-modal" class="filters-modal closed">
         <div class="reveal-wrapper">
-                              <div class="checkboxes-wrapper">
+          <div class="checkboxes-wrapper">
   <fieldset data-drupal-selector="edit-research-area" id="edit-research-area--wrapper" class="fieldgroup form-composite js-form-item form-item js-form-wrapper form-wrapper">
     <legend>
       <span class="fieldset-legend">Service</span>
@@ -48,34 +52,46 @@
     <div class="fieldset-wrapper">
       <div id="edit-research-area" class="form-checkboxes">
         <div data-drupal-selector="edit-research-area" id="edit-research-area--wrapper" class="fieldgroup form-composite form-checkboxes">
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-service-1" type="checkbox" id="edit-service-1" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-service-1" class="option">Research Funding</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-service-1" type="checkbox" id="edit-service-1" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-service-1" class="option">Research Funding</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-service-2" type="checkbox" id="edit-service-2" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-service-2" class="option">Proposal Development</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-service-2" type="checkbox" id="edit-service-2" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-service-2" class="option">Proposal Development</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-service-3" type="checkbox" id="edit-service-3" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-service-3" class="option">ESP Services</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-service-3" type="checkbox" id="edit-service-3" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-service-3" class="option">ESP Services</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-service-4" type="checkbox" id="edit-service-4" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-service-4" class="option">Build Your Team</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-service-4" type="checkbox" id="edit-service-4" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-service-4" class="option">Build Your Team</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-service-5" type="checkbox" id="edit-service-5" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-service-5" class="option">Research Administration</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-service-5" type="checkbox" id="edit-service-5" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-service-5" class="option">Research Administration</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-service-6" type="checkbox" id="edit-service-6" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-service-6" class="option">Technology Transfer & Commercialization</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-service-6" type="checkbox" id="edit-service-6" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-service-6" class="option">Technology Transfer & Commercialization</label>
+  </div>
 </div>
 
           
@@ -94,44 +110,60 @@
     <div class="fieldset-wrapper">
       <div id="edit-research-area" class="form-checkboxes">
         <div data-drupal-selector="edit-research-area" id="edit-research-area--wrapper" class="fieldgroup form-composite form-checkboxes">
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-research-area-1" type="checkbox" id="edit-research-area-1" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-research-area-1" class="option">Cancer</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-research-area-1" type="checkbox" id="edit-research-area-1" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-research-area-1" class="option">Cancer</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-research-area-2" type="checkbox" id="edit-research-area-2" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-research-area-2" class="option">Chemical, Biological, and Radial Defense</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-research-area-2" type="checkbox" id="edit-research-area-2" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-research-area-2" class="option">Chemical, Biological, and Radial Defense</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-research-area-3" type="checkbox" id="edit-research-area-3" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-research-area-3" class="option">Clinical & Rehabilitated Research</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-research-area-3" type="checkbox" id="edit-research-area-3" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-research-area-3" class="option">Clinical & Rehabilitated Research</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-research-area-4" type="checkbox" id="edit-research-area-4" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-research-area-4" class="option">Combat Casualty</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-research-area-4" type="checkbox" id="edit-research-area-4" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-research-area-4" class="option">Combat Casualty</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-research-area-5" type="checkbox" id="edit-research-area-5" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-research-area-5" class="option">Infectious Disease</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-research-area-5" type="checkbox" id="edit-research-area-5" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-research-area-5" class="option">Infectious Disease</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-research-area-6" type="checkbox" id="edit-research-area-6" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-research-area-6" class="option">Human Performance</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-research-area-6" type="checkbox" id="edit-research-area-6" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-research-area-6" class="option">Human Performance</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-research-area-7" type="checkbox" id="edit-research-area-7" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-research-area-7" class="option">Precision Medicine</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-research-area-7" type="checkbox" id="edit-research-area-7" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-research-area-7" class="option">Precision Medicine</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-research-area-8" type="checkbox" id="edit-research-area-8" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-research-area-8" class="option">PTSD​​​​​​​</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-research-area-8" type="checkbox" id="edit-research-area-8" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-research-area-8" class="option">PTSD​​​​​​​</label>
+  </div>
 </div>
 
         </div>
@@ -148,19 +180,25 @@
     <div class="fieldset-wrapper">
       <div id="edit-research-area" class="form-checkboxes">
         <div data-drupal-selector="edit-research-area" id="edit-research-area--wrapper" class="fieldgroup form-composite form-checkboxes">
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-user-1" type="checkbox" id="edit-user-1" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-user-1" class="option">Primary Investigator</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-user-1" type="checkbox" id="edit-user-1" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-user-1" class="option">Primary Investigator</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-user-2" type="checkbox" id="edit-user-2" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-user-2" class="option">Corporation or Government Entity</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-user-2" type="checkbox" id="edit-user-2" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-user-2" class="option">Corporation or Government Entity</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-user-3" type="checkbox" id="edit-user-3" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-user-3" class="option">HJF Employee</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-user-3" type="checkbox" id="edit-user-3" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-user-3" class="option">HJF Employee</label>
+  </div>
 </div>
 
           
@@ -182,34 +220,46 @@
     <div class="fieldset-wrapper">
       <div id="edit-research-area" class="form-checkboxes">
         <div data-drupal-selector="edit-research-area" id="edit-research-area--wrapper" class="fieldgroup form-composite form-checkboxes">
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-type-1" type="checkbox" id="edit-type-1" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-type-1" class="option">Resource</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-type-1" type="checkbox" id="edit-type-1" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-type-1" class="option">Resource</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-type-2" type="checkbox" id="edit-type-2" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-type-2" class="option">Research Paper</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-type-2" type="checkbox" id="edit-type-2" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-type-2" class="option">Research Paper</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-type-3" type="checkbox" id="edit-type-3" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-type-3" class="option">Video</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-type-3" type="checkbox" id="edit-type-3" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-type-3" class="option">Video</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-type-4" type="checkbox" id="edit-type-4" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-type-4" class="option">Article</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-type-4" type="checkbox" id="edit-type-4" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-type-4" class="option">Article</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-type-5" type="checkbox" id="edit-type-5" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-type-5" class="option">Case Study</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-type-5" type="checkbox" id="edit-type-5" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-type-5" class="option">Case Study</label>
+  </div>
 </div>
 
-          <div class="js-form-type-checkbox">
-  <input data-drupal-selector="edit-type-6" type="checkbox" id="edit-type-6" name="research_area[27]" value="27" class="form-checkbox">
-  <label for="edit-type-6" class="option">Event</label>
+          <div class="pl-checkboxes-wrapper">
+  <div class="js-form-type-checkbox">
+    <input data-drupal-selector="edit-type-6" type="checkbox" id="edit-type-6" name="research_area[27]" value="27" class="form-checkbox">
+    <label for="edit-type-6" class="option">Event</label>
+  </div>
 </div>
 
           
@@ -222,9 +272,9 @@
 
         </div>
                 <div id="edit-actions">
-          <a href="#" class="button submit">Submit</a>
+          <a id="" href="#" class="button submit">Submit</a>
 
-          <a href="#" class="button reset">Reset</a>
+          <a id="" href="#" class="button reset">Reset</a>
 
         </div>
                 <button class="close-button" data-close aria-label="Close modal" type="button">
@@ -232,13 +282,13 @@
         </button>
       </div>
     </form>
-    <button class="button rectangular" data-open="filterModal1">Filters</button>
+    <button id="filter-button" class="button rectangular">Filters</button>
   </div>
 </div>
 
   <!--DO NOT REMOVE-->
   <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
-  {"cssEnabled":false,"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"search filters"},"patternDesc":"","patternExtension":"twig","patternName":"search filters","patternPartial":"organisms-search-filters","patternState":"","extraOutput":[]}
+  {"cssEnabled":false,"lineage":[],"lineageR":[{"lineagePattern":"pages-search","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"search filters"},"patternDesc":"","patternExtension":"twig","patternName":"search filters","patternPartial":"organisms-search-filters","patternState":"","extraOutput":[]}
 </script>
 
 <script>

@@ -2,6 +2,13 @@
   "form_id": "views-exposed-form-search-search",
   "method": "get",
   "action": "#",
+  "keyword": {
+    "#type": "text",
+    "include()": {
+      "pattern": "atoms-text-search-filter",
+      "only": true
+    }
+  },
   "service": {
     "#type": "checkboxes",
     "include()": {
