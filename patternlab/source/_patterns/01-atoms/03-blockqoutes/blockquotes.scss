@@ -1,0 +1,16 @@
+@import "../../../css/_settings.scss";
+
+blockquote {
+  margin: 0;
+  border: none;
+  padding: 0;
+
+  & p {
+    font-family: $font-family-monospace;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.21;
+    letter-spacing: 0.2px;
+    color: $primary-color;
+  }
+}
