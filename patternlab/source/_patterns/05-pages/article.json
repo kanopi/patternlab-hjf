@@ -5,7 +5,11 @@
         "atoms-category-chip",
         "<div id=\"block-pagetitle\" class=\"block-pagetitle\">",
         "templates-page-title",
-        "</div></div>"
+        "</div></div>",
+        "organisms-wysiwyg",
+        "organisms-image",
+        "organisms-wysiwyg",
+        "organisms-wysiwyg"
       ]
     }
   }
