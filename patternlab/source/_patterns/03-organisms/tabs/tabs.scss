@@ -106,5 +106,9 @@
     @include breakpoint(small only) {
       text-align: center;
     }
+
+    a {
+      color: $white;
+    }
   }
 }
