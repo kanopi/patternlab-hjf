@@ -1,6 +1,6 @@
 @import "../../../css/_settings.scss";
 
-.info-grid {
+.info-grid-wrapper {
   background-color: $light-gray;
   padding: 0;
 
@@ -46,8 +46,14 @@
   }
 }
 
-.section-events .info-grid .cell:last-child {
+.section-events .info-grid-wrapper .cell:last-child {
   background-color: $primary-color;
   color: $white;
   text-align: center;
+}
+
+.hero-section + .info-grid {
+  position: relative;
+  top: -40px;
+  z-index: 2;
 }
