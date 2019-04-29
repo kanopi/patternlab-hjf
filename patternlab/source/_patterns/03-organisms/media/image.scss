@@ -1,0 +1,32 @@
+@import "../../../css/_settings.scss";
+
+figure {
+  margin: 0 0 30px 0;
+
+  &, figcaption {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0px;
+    color: $darkest-blue;
+    margin-top: 12px;
+  }
+
+  .caption-photographer {
+    background-image: url(../images/svg/icon-Camera.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-right: 29px;
+  }
+}

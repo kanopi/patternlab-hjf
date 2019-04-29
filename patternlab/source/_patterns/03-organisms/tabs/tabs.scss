@@ -4,7 +4,6 @@
   margin: 0 auto;
   border: 0;
   background-color: transparent;
-  max-width: rem-calc(1200);
   margin-bottom: rem-calc(30);
 
   @include breakpoint(medium) {
@@ -12,36 +11,13 @@
     top: -40px;
     margin-bottom: rem-calc(70);
   }
-  &--image {
-    max-width: 350px;
-  }
   &--tab-list {
     background-color: #ffffff;
     width: 100%;
-    @include breakpoint(medium) {
-      max-width: 40%;
-    }
-    @include breakpoint(large) {
-      width: auto;
-      max-width: 350px;
-    }
   }
   &--tab-content {
     height: 100%;
     background-color: $primary-color;
-    @include breakpoint(small only) {
-      width: 100%;
-    }
-    @include breakpoint(medium) {
-      max-width: 60%;
-    }
-    @include breakpoint(large) {
-      max-width: calc(100% - 350px);
-    }
-    @include breakpoint(xlarge) {
-      max-width: auto;
-      width: calc(100% - 700px);
-    }
     .tabs-content {
       height: 100%;
     }
@@ -69,7 +45,7 @@
       margin-bottom: 1rem;
     }
     @include breakpoint(large) {
-      padding: rem-calc(0 60);
+      padding: rem-calc(0 40);
     }
     a {
       color: $darkest-gray;
@@ -129,6 +105,10 @@
     font-weight: 600;
     @include breakpoint(small only) {
       text-align: center;
+    }
+
+    a {
+      color: $white;
     }
   }
 }

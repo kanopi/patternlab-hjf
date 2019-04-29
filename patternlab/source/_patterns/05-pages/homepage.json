@@ -1,0 +1,14 @@
+{
+  "page": {
+    "content": {
+      "join()": [
+        "molecules-hero",
+        "organisms-tabs",
+        "organisms-statistics",
+        "organisms-card-full-right",
+        "organisms-card-inset-right",
+        "organisms-cta-list"
+      ]
+    }
+  }
+}

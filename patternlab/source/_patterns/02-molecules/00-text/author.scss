@@ -1,0 +1,32 @@
+.author-information {
+  width: 230px;
+  background-color: #eeeeee;
+  padding: 30px 20px;
+  text-align: center;
+
+  a {
+    font-weight: 600;
+  }
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  .top {
+    padding-bottom: 20px;
+  }
+
+  .bottom {
+    border-top: 1px solid #212121;
+    padding-top: 20px;
+  }
+}
+
+p.article-date {
+    display: inline;
+    padding-right: .5em;
+  & + p {
+    display: inline;
+  }
+}

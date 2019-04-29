@@ -1,1 +1,9 @@
-{{ content }}
+<figure id="">
+  {{ image }}
+  {% if caption or photographer %}
+  <figcaption>
+    <span class="caption-text">{{ caption }}</span>
+    <span class="caption-photographer">{{ photographer }}</span>
+  </figcaption>
+  {% endif %}
+</figure>

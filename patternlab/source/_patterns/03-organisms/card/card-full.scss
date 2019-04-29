@@ -1,4 +1,5 @@
 @import "../../../css/_settings.scss";
+@import "foundation";
 
 .c-card--img_full {
   display: flex;
@@ -6,12 +7,15 @@
 
   .c-card--content {
     background-color: $white;
+
     @include breakpoint(medium) {
+      @include xy-cell(7);
       margin-top: 40px;
       margin-bottom: 40px;
-      padding: rem-calc(75px 66px);
+      padding: rem-calc(75px 50px);
     }
     @include breakpoint(large) {
+      @include xy-cell(5);
       margin-top: 126px;
       margin-bottom: 126px;
     }
@@ -50,10 +54,22 @@
   }
 }
 
-.c-card--img_left_full .grid-x {
-  flex-direction: row wrap;
+.c-card--img_left_full {
+  .grid-x {
+    flex-direction: row;
+  }
+  
+  .c-card-content {
+    @include xy-cell-offset(1);
+  }
 }
 
-.c-card--img_right_full .grid-x {
-  flex-direction: row-reverse;
+.c-card--img_right_full {
+  .grid-x {
+    flex-direction: row-reverse;
+  }
+  .c-card--content {
+    margin-right: calc(8.333%);
+//     @include xy-cell-offset(6);
+  }
 }

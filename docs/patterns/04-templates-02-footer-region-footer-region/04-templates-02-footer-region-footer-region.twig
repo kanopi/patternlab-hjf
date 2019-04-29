@@ -1,28 +1,31 @@
 {% if page.footer_first or page.footer_middle or page.footer_last %}
 <footer class="footer-overlay">
   <div class="grid-container grid-x">
-  {% if page.footer_first %}
-    <div id="footer-first" class="medium-3 cell">
+    <div id="footer-first" class="medium-2 medium-offset-1 cell">
+    {% if page.footer_first %}
       {{ page.footer_first }}
+    {% endif %}
     </div>
-  {% endif %}
-  {% if page.footer_middle %}
-    <div id="footer-middle" class="medium-3 large-4 cell">
+    
+    <div id="footer-middle" class="medium-4 large-2 cell">
+    {% if page.footer_middle %}
       {{ page.footer_middle }}
+    {% endif %}
     </div>
-  {% endif %}
-  {% if page.footer_last %}
-    <div id="footer-last" class="medium-5 cell">
+    
+    <div id="footer-last" class="medium-4 medium-offset-2 cell">
+    {% if page.footer_last %}
       {{ page.footer_last }}
+    {% endif %}
     </div>
-  {% endif %}
+
   </div>
 </footer>
 {% endif %}
 
 <div class="bottom-bar callout secondary">
   <div class="grid-container grid-x">
-    <div class="large-12 cell">
+    <div class="large-8 large-offset-2 cell">
     {% if page.bottom_bar %}
       {{ page.bottom_bar }}
     {% endif %}

@@ -4,6 +4,10 @@
   flex: 1 1 0;
   text-align: center;
   
+  @include breakpoint(large) {
+    width: 25%;
+  }
+
   .stat-number {
     font-size: 80px;
     font-weight: $global-weight-bold;

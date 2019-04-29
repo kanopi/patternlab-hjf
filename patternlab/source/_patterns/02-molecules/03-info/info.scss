@@ -4,8 +4,45 @@
   background-color: $light-gray;
   padding: 0;
 
+  font-family: $font-family-monospace;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: $darkest-gray;
+
+  a {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.11;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  h6 {
+    font-family: $body-font-family;
+    font-weight: bold;
+    color: $darkest-blue;
+    margin-bottom: 20px;
+  }
+
   .cell {
-    padding: 50px 65px;
+    padding: 50px 35px;
+  }
+    
+  .field-event-dates {
+    font-family: $font-family-monospace;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.21;
+    letter-spacing: 0.2px;
   }
 }
 

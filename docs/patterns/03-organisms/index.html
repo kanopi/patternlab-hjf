@@ -235,10 +235,10 @@
     <div class="c-card c-card--img_full c-card--img_left_full" style="background-image: url('../../images/rectangle-1.jpg')">
   <div class="grid-container">
     <div class="grid-x">
-      <div class="c-card--image show-for-small-only small-12">
+      <div class="c-card--image show-for-small-only cell">
         <img src="../../images/rectangle-1.jpg" />
       </div>
-      <div class="c-card--content small-12 medium-7 large-5 cell">
+      <div class="c-card--content medium-7 large-5 cell">
         <h3>Far Reaching Options</h3>
         <div><p>Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
         <div class="button-wrapper"><a id="" href="#" class="button warning">Read More</a>
@@ -277,10 +277,10 @@
     <div class="c-card c-card--img_full c-card--img_right_full" style="background-image: url('../../images/rectangle-1.jpg')">
   <div class="grid-container">
     <div class="grid-x">
-      <div class="c-card--image show-for-small-only small-12">
+      <div class="c-card--image show-for-small-only cell">
         <img src="../../images/rectangle-1.jpg" />
       </div>
-      <div class="c-card--content small-12 medium-7 large-5 cell">
+      <div class="c-card--content medium-7 large-5 cell">
         <h3>Far Reaching Options</h3>
         <div><p>Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
         <div class="button-wrapper"><a id="" href="#" class="button warning">Read More</a>
@@ -729,10 +729,10 @@
   <div class="sg-pattern-example">
     <div class="cta-list hero-overlay" style="background-image:url('../../images/hero-1.jpg');">
   <div class="grid-container grid-x">
-    <div class="medium-12 large-10 large-offset-1 list-title">
+    <div class="medium-12 large-8 large-offset-2 list-title">
       Let Us Help You
     </div>
-    <div class="medium-12 large-10 large-offset-1 list-content">
+    <div class="medium-12 large-8 large-offset-2 list-content">
       <div class="grid-container"><div class="grid-x"><div class="medium-4"><a href="#" class="c-card c-card--cta">
     <div class="c-card__content">
   
@@ -842,7 +842,7 @@
   </div>
   
   <script type="text/json" id="sg-pattern-data-organisms-listing" class="sg-pattern-data">
-    {"lineage":[],"lineageR":[{"lineagePattern":"pages-search","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"listing"},"patternDesc":"","patternExtension":"twig","patternName":"listing","patternPartial":"organisms-listing","patternState":""}
+    {"lineage":[],"lineageR":[{"lineagePattern":"pages-search","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html","lineageState":"inreview"},{"lineagePattern":"pages-search-submitted","lineagePath":"..\/..\/patterns\/05-pages-search-submitted\/05-pages-search-submitted.html","lineageState":"inreview"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"listing"},"patternDesc":"","patternExtension":"twig","patternName":"listing","patternPartial":"organisms-listing","patternState":""}
   </script>
 </div><!--end .sg-pattern-->                        <div id="organisms-listing-noimage" class="sg-pattern">
   <div class="sg-pattern-head">
@@ -887,7 +887,7 @@
   </div>
   
   <script type="text/json" id="sg-pattern-data-organisms-listing-noimage" class="sg-pattern-data">
-    {"lineage":false,"lineageR":[{"lineagePattern":"pages-search","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"listing"},"patternDesc":"","patternExtension":"twig","patternName":"listing noimage","patternPartial":"organisms-listing-noimage","patternState":""}
+    {"lineage":false,"lineageR":[{"lineagePattern":"pages-search","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html","lineageState":"inreview"},{"lineagePattern":"pages-search-submitted","lineagePath":"..\/..\/patterns\/05-pages-search-submitted\/05-pages-search-submitted.html","lineageState":"inreview"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"listing"},"patternDesc":"","patternExtension":"twig","patternName":"listing noimage","patternPartial":"organisms-listing-noimage","patternState":""}
   </script>
 </div><!--end .sg-pattern-->                        <div id="viewall-organisms-media" class="sg-subtype">
   <h2>
@@ -990,9 +990,14 @@
   <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-image"></div>
     
   <div class="sg-pattern-example">
-    <img src="../../images/fpo_16x9.png" class="image" alt="Default Image" />
+    <figure id="">
+  <img src="../../images/fpo_16x9.png" class="image" alt="Default Image" />
 
-
+    <figcaption>
+    <span class="caption-text">This is the image caption</span>
+    <span class="caption-photographer">Photographer's name</span>
+  </figcaption>
+  </figure>
   </div>
   
   <script type="text/json" id="sg-pattern-data-organisms-image" class="sg-pattern-data">
@@ -1060,8 +1065,10 @@
   <div class="sg-pattern-example">
     <div id="block-exposedformsearchsearch" class="block-exposedformsearchsearch">
   <div class="search-wrapper">
-    <form id="views-exposed-form-search-search" action="#" method="get">
-      <div class="keyword-wrapper">
+          <h2>A title is what I am.</h2>
+        <form id="views-exposed-form-search-search" action="#" method="get">
+          <label>What are you looking for?</label>
+                        <div class="keyword-wrapper">
         <label>What are you looking for?</label>
         <div class="input-wrapper">
           <div class="input-wrapper">
@@ -1073,7 +1080,7 @@
 
         </div>
       </div>
-            <div id="filters-modal" class="filters-modal closed">
+                  <div id="filters-modal" class="filters-modal closed">
         <div class="reveal-wrapper">
           <div class="checkboxes-wrapper">
   <fieldset data-drupal-selector="edit-research-area" id="edit-research-area--wrapper" class="fieldgroup form-composite js-form-item form-item js-form-wrapper form-wrapper">
@@ -1320,7 +1327,7 @@
   </div>
   
   <script type="text/json" id="sg-pattern-data-organisms-search-filters" class="sg-pattern-data">
-    {"lineage":[],"lineageR":[{"lineagePattern":"pages-search","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"search filters"},"patternDesc":"","patternExtension":"twig","patternName":"search filters","patternPartial":"organisms-search-filters","patternState":""}
+    {"lineage":[],"lineageR":[{"lineagePattern":"pages-search","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html","lineageState":"inreview"},{"lineagePattern":"pages-search-submitted","lineagePath":"..\/..\/patterns\/05-pages-search-submitted\/05-pages-search-submitted.html","lineageState":"inreview"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"search filters"},"patternDesc":"","patternExtension":"twig","patternName":"search filters","patternPartial":"organisms-search-filters","patternState":""}
   </script>
 </div><!--end .sg-pattern-->                        <div id="viewall-organisms-statistics" class="sg-subtype">
   <h2>
@@ -1388,10 +1395,10 @@
   <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-statistics"></div>
     
   <div class="sg-pattern-example">
-    <div class="statistics">
-  <div class="grid-container">
-    <div class="grid-margin-x grid-x">
-      <h3 class="small-12 cell">We are passionate about the betterment of our future.</h3>
+    <div class="statistics grid-container">
+  <h3>We are passionate about the betterment of our future.</h3>
+  <div class="grid-margin-x grid-x">
+    <div class="large-10 large-offset-1 cell">
       <div class="statistic">
   <div class="stat-number">
     32
@@ -1428,6 +1435,7 @@
     </div>
   </div>
 </div>
+
   </div>
   
   <script type="text/json" id="sg-pattern-data-organisms-statistics" class="sg-pattern-data">
@@ -1466,20 +1474,21 @@
   <div class="sg-pattern-example">
     <div class="c-tabs grid-container">
   <div class="grid-x" data-equalizer>
-    <div class="c-tabs--image show-for-xlarge hero-overlay" data-equalizer-watch>
+    <div class="c-tabs--image show-for-large hero-overlay large-3 large-offset-1" data-equalizer-watch>
       <img src="../../images/tabs-1.png">
     </div>
-    <div class="c-tabs--tab-list" data-equalizer-watch>
-
-    <ul class="tabs" data-responsive-accordion-tabs="tabs small-accordion medium-tabs" id="tabs">
-    	        <li class="tabs-title is-active"><a href="#tab-0">Apply for Research Funding</a></li>
-              <li class="tabs-title "><a href="#tab-1">Develop Your Proposal</a></li>
-              <li class="tabs-title "><a href="#tab-2">Build your Team</a></li>
-              <li class="tabs-title "><a href="#tab-3">Manage The Administrative Tasks</a></li>
-              <li class="tabs-title "><a href="#tab-4">Facilitate the Transfer of Knowledge</a></li>
-          </ul>
+  
+    <div class="c-tabs--tab-list large-3" data-equalizer-watch>
+      <ul class="tabs" data-responsive-accordion-tabs="tabs small-accordion medium-tabs" id="tabs">
+      	          <li class="tabs-title is-active"><a href="#tab-0">Apply for Research Funding</a></li>
+                  <li class="tabs-title "><a href="#tab-1">Develop Your Proposal</a></li>
+                  <li class="tabs-title "><a href="#tab-2">Build your Team</a></li>
+                  <li class="tabs-title "><a href="#tab-3">Manage The Administrative Tasks</a></li>
+                  <li class="tabs-title "><a href="#tab-4">Facilitate the Transfer of Knowledge</a></li>
+              </ul>
     </div>
-    <div class="c-tabs--tab-content" data-equalizer-watch>
+  
+    <div class="c-tabs--tab-content large-4" data-equalizer-watch>
       <div class="tabs-content" data-tabs-content="tabs">
                 <div class="tabs-panel is-active" id="tab-0">
             <h2>We can help you apply for research funding.</h2>
@@ -1608,8 +1617,10 @@
     
   <div class="sg-pattern-example">
     <div class="c-content grid-container">
-  <div class="content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique lacinia velit, ac ornare tellus auctor a. Nullam purus velit, mattis nec arcu a, efficitur sagittis nulla. Aliquam dictum purus vel mauris facilisis, nec congue purus aliquet. Nulla facilisi. Nullam aliquet elementum purus, non pretium justo suscipit sed. Pellentesque eu justo risus. Duis in nibh metus. Sed iaculis ac dui sed tristique. Curabitur euismod tristique lacus, id accumsan est dictum nec. Donec eu tortor vel leo malesuada eleifend. Donec at lorem dolor.</p>
+  <div class="grid-x grid-margin-x">
+    <div class="content medium-6 medium-offset-3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique lacinia velit, ac ornare tellus auctor a. Nullam purus velit, mattis nec arcu a, efficitur sagittis nulla. Aliquam dictum purus vel mauris facilisis, nec congue purus aliquet. Nulla facilisi. Nullam aliquet elementum purus, non pretium justo suscipit sed. Pellentesque eu justo risus. Duis in nibh metus. Sed iaculis ac dui sed tristique. Curabitur euismod tristique lacus, id accumsan est dictum nec. Donec eu tortor vel leo malesuada eleifend. Donec at lorem dolor.</p>
+    </div>
   </div>
 </div>
 
