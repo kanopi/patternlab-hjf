@@ -1,12 +1,9 @@
 @import "../../../css/_settings.scss";
 
 .statistic {
-  flex: 1 1 0;
+  flex-grow: 1;
+  flex-basis: auto;
   text-align: center;
-  
-  @include breakpoint(large) {
-    width: 25%;
-  }
 
   .stat-number {
     font-size: 80px;
