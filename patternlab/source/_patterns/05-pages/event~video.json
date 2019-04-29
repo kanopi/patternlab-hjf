@@ -2,7 +2,17 @@
   "page": {
     "content": {
       "join()": [
-        "molecules-hero"
+        "molecules-hero",
+        "molecules-info-event",
+        "<div class=\"grid-container\"><div class=\"grid-x grid-margin-x\"><div class=\"medium-6 medium-offset-3\">",
+        "<h3>Event Information</h3>",
+        "</div></div></div>",
+        "organisms-wysiwyg",
+        "organisms-wysiwyg",
+        "<div class=\"grid-container\"><div class=\"grid-x grid-margin-x\"><div class=\"medium-6 medium-offset-3\">",
+        "organisms-remote-video",
+        "</div></div></div>",
+        "organisms-wysiwyg"
       ]
     }
   }
