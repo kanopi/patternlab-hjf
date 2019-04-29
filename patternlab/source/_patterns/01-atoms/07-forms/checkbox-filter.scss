@@ -1,8 +1,7 @@
 @import "../../../css/_settings.scss";
 
 #views-exposed-form-search-search,
-.checkboxes-wrapper,
-.reveal {
+.checkboxes-wrapper {
   .js-form-type-checkbox {
     input[type="checkbox"] {
       opacity: 0;
