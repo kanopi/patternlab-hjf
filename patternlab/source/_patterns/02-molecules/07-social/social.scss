@@ -9,6 +9,15 @@
     }
   }
   li {
+    margin: 0 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+
     a {
       -webkit-mask-repeat: no-repeat;
       -webkit-mask-position: center;
@@ -28,8 +37,7 @@
       &.facebook {
         -webkit-mask-image: url(../images/svg/icon-Facebook.svg);
         mask-image: url(../images/svg/icon-Facebook.svg);
-        margin-left: 10px;
-        margin-right: 10px;
+        width: 10px;
       }
       &.twitter {
         -webkit-mask-image: url(../images/svg/icon-Twitter.svg);
