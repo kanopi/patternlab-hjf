@@ -2,25 +2,51 @@
 
 .block-exposedformsearchsearch + header,
 .block-exposedformsearchsearch + .block-hjf-content header {
-    font-family: $body-font-family;
-    font-size: 22px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.18;
-    letter-spacing: 0.1px;
-    color: #252a35;
-    max-width: 60rem;
-    margin: 3rem 1rem 1rem;
+  font-family: $body-font-family;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: 0.1px;
+  color: #252a35;
+  margin: 3rem 2rem;
 }
 
 .path-search {
-    .views-element-container {
-        max-width: 60rem;
-        margin: 3rem auto 1rem;
+  .views-element-container {
+    max-width: 77rem;
+    margin: 3rem auto 1rem;
+    padding: 0;
+    @include breakpoint(large up) {
+      padding: 0 6.5rem;
     }
+  }
+  .view-search {
+    > h3 {
+      text-align: center;
+    }
+  }
 }
 .block-exposedformsearchsearch + header {
-    max-width: 60rem;
-    margin: 3rem auto 1rem;
+  max-width: 60rem;
+  margin: 3rem auto 1rem;
+}
+
+.view-recent-content {
+  h2 {
+    font-size: 35px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #212121;
+  }
+  .c-card--reveal {
+    width: 390px;
+    min-height: 440px;
+    margin: 0 .5rem;
+  }
 }

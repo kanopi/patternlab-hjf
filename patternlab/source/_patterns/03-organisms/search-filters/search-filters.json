@@ -2,7 +2,7 @@
   "form_id": "views-exposed-form-search-search",
   "method": "get",
   "action": "#",
-  "keyword": {
+  "keywords": {
     "#type": "text",
     "include()": {
       "pattern": "atoms-text-search-filter",

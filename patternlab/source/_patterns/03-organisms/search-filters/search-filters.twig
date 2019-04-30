@@ -1,18 +1,11 @@
 <div id="block-exposedformsearchsearch" class="block-exposedformsearchsearch">
   <div class="search-wrapper">
-    {% if title %}
-      <h2>{{ title }}</h2>
-    {% endif %}
     <form id="{{ form_id }}" action="{{ action }}" method="{{ method }}">
-    {% if keyword %}
-      <label>{{ 'What are you looking for?'|t }}</label>
-      {#{% for key, item in form if item['#type'] == 'text' %}#}
-      {#{{ item }}#}
-      {#{% endfor %}#}
-      <div class="keyword-wrapper">
+    {% if keywords %}
+      <div class="keywords-wrapper">
         <label>{{ 'What are you looking for?'|t }}</label>
         <div class="input-wrapper">
-          {{ keyword }}{{ reset }}
+          {{ keywords }}{{ reset }}
         </div>
       </div>
       {% endif %}

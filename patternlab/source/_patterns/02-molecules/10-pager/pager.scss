@@ -1,0 +1,28 @@
+@import "../../../css/_settings.scss";
+
+.pagination {
+  border-bottom: solid 1px $darkest-blue;
+  width: 100%;
+  max-width: 740px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .pager__item.pager__item--previous {
+    @extend .button!optional;
+    background-color: $card-bg-gray;
+    position: relative;
+    right: 2.3rem;
+  }
+  .current {
+    padding: 6px;
+    background-color: $light-blue;
+    color: $darkest-blue;
+  }
+  .pager__item.pager__item--next {
+    @extend .button!optional;
+    position: relative;
+    left: 5rem;
+  }
+}

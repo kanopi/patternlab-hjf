@@ -1,9 +1,12 @@
 @import "../../../css/_settings.scss";
 
-.js-form-item-keyword {
+.js-form-item-keywords {
   border-bottom: solid 1px $darkest-gray;
   width: 100%;
   max-width: 570px;
+  @include breakpoint(medium up) {
+    max-width: 82%;
+  }
   input[type="text"] {
     border-width: 0;
     -webkit-box-shadow: none;
@@ -19,9 +22,12 @@
     margin: 0;
   }
   input {
-    background: transparent url(../images/svg/icon-Search-med-blue.svg) right no-repeat;
     background-size: 35px;
     width: 100%;
+  }
+
+  input#edit-keywords {
+    background: transparent url(../images/svg/icon-Search-med-blue.svg) right no-repeat;
   }
 
   @-webkit-keyframes autofill {

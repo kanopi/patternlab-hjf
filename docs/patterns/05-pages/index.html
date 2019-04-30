@@ -269,15 +269,13 @@
         <section>
           <div id="block-exposedformsearchsearch" class="block-exposedformsearchsearch">
   <div class="search-wrapper">
-          <h2>A title is what I am.</h2>
-        <form id="views-exposed-form-search-search" action="#" method="get">
-          <label>What are you looking for?</label>
-                        <div class="keyword-wrapper">
+    <form id="views-exposed-form-search-search" action="#" method="get">
+          <div class="keywords-wrapper">
         <label>What are you looking for?</label>
         <div class="input-wrapper">
           <div class="input-wrapper">
-  <div class="js-form-item-keyword">
-    <input data-drupal-selector="edit-keyword" type="text" id="edit-keyword" name="keyword" value="" size="30" maxlength="128" class="form-text" placeholder="Search...">
+  <div class="js-form-item-keywords">
+    <input data-drupal-selector="edit-keywords" type="text" id="edit-keywords" name="keywords" value="" size="30" maxlength="128" class="form-text" placeholder="Search...">
   </div>
 </div>
 <a id="" href="#" class="button reset">Reset</a>
@@ -619,6 +617,77 @@
   </a>
 </div>
 
+          <nav class="pager" role="navigation" aria-labelledby="pagination-heading">
+  <h4 id="pagination-heading" class="visually-hidden">Pagination</h4>
+  <ul class="pagination pager__items js-pager__items">
+    <li class="pager__item pager__item--first">
+      <a href="?keywords=&amp;page=0" title="Go to first page">
+        <span class="visually-hidden">First page</span>
+        <span aria-hidden="true"> </span>
+      </a>
+    </li>
+    <li class="pager__item pager__item--previous">
+      <a href="?keywords=&amp;page=2" title="Go to previous page" rel="prev">
+        <span class="visually-hidden">Previous page</span>
+        <span aria-hidden="true">Previous</span>
+      </a>
+    </li>
+    <li class="pager__item">
+      <a href="?keywords=&amp;page=0" title="Go to page 1">
+            <span class="visually-hidden">
+              Page
+            </span>1</a>
+    </li>
+    <li class="pager__item">
+      <a href="?keywords=&amp;page=1" title="Go to page 2">
+            <span class="visually-hidden">
+              Page
+            </span>2</a>
+    </li>
+    <li class="pager__item">
+      <a href="?keywords=&amp;page=2" title="Go to page 3">
+            <span class="visually-hidden">
+              Page
+            </span>3</a>
+    </li>
+    <li class="pager__item is-active current">
+      <a href="?keywords=&amp;page=3" title="Current page">
+            <span class="visually-hidden">
+              Current page
+            </span>4</a>
+    </li>
+    <li class="pager__item">
+      <a href="?keywords=&amp;page=4" title="Go to page 5">
+            <span class="visually-hidden">
+              Page
+            </span>5</a>
+    </li>
+    <li class="pager__item">
+      <a href="?keywords=&amp;page=5" title="Go to page 6">
+            <span class="visually-hidden">
+              Page
+            </span>6</a>
+    </li>
+    <li class="pager__item">
+      <a href="?keywords=&amp;page=6" title="Go to page 7">
+            <span class="visually-hidden">
+              Page
+            </span>7</a>
+    </li>
+    <li class="pager__item pager__item--next">
+      <a href="?keywords=&amp;page=4" title="Go to next page" rel="next">
+        <span class="visually-hidden">Next page</span>
+        <span aria-hidden="true">Next</span>
+      </a>
+    </li>
+    <li class="pager__item pager__item--last">
+      <a href="?keywords=&amp;page=6" title="Go to last page">
+        <span class="visually-hidden">Last page</span>
+        <span aria-hidden="true"> </span>
+      </a>
+    </li>
+  </ul>
+</nav>
         </section>
       </main>
 
@@ -719,7 +788,7 @@
   </div>
   
   <script type="text/json" id="sg-pattern-data-pages-search" class="sg-pattern-data">
-    {"lineage":[{"lineagePattern":"templates-header-region","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"},{"lineagePattern":"organisms-search-filters","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"},{"lineagePattern":"organisms-listing","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"},{"lineagePattern":"templates-footer-region","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"},{"lineagePattern":"molecules-fixed-search-block","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"}],"lineageR":[],"patternBreadcrumb":{"patternType":"pages","patternSubtype":"search"},"patternDesc":"","patternExtension":"twig","patternName":"search","patternPartial":"pages-search","patternState":"inreview"}
+    {"lineage":[{"lineagePattern":"templates-header-region","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"},{"lineagePattern":"organisms-search-filters","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"},{"lineagePattern":"organisms-listing","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"},{"lineagePattern":"molecules-pager","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"},{"lineagePattern":"templates-footer-region","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"},{"lineagePattern":"molecules-fixed-search-block","lineagePath":"..\/..\/patterns\/05-pages-03-search-search\/05-pages-03-search-search.html"}],"lineageR":[],"patternBreadcrumb":{"patternType":"pages","patternSubtype":"search"},"patternDesc":"","patternExtension":"twig","patternName":"search","patternPartial":"pages-search","patternState":"inreview"}
   </script>
 </div><!--end .sg-pattern-->            </div> <!--end #sg-patterns-->
 </div><!--end .sg-main-->
