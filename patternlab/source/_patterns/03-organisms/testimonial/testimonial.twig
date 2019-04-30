@@ -1,14 +1,18 @@
 {# see: https://foundation.zurb.com/sites/docs/card.html #}
 <div class="c-testimonial grid-container">
-  <div class="c-testimonial__inner grid-x">
-    <div class="c-testimonial__image small-12 medium-3 small-order-2 medium-order-1">
-      {{ image }}
+  <div class="grid-x">
+    <div class="medium-10 medium-offset-1">
+      <div class="c-testimonial__inner grid-x">
+        <div class="c-testimonial__image small-12 medium-4 small-order-2 medium-order-1">
+          {{ image }}
+        </div>
+        <div class="c-testimonial__content small-12 medium-8 small-order-1 medium-order-2">
+          <div class="c-testimonial__type bold">{{ type }}</div>
+          <div class="c-testimonial__summary"> {{ summary }}</div>
+          <div class="c-testimonial__client"> {{ name }}</div>
+          <div class="c-testimonial__position bold">{{ position }}</div>
+        </div> <!-- /.c-testimonial__content -->
+      </div> <!-- /.c-testimonial__inner -->
     </div>
-    <div class="c-testimonial__content small-12 medium-9 small-order-1 medium-order-2">
-      <div class="c-testimonial__type bold">{{ type }}</div>
-      <div class="c-testimonial__summary"> {{ summary }}</div>
-      <div class="c-testimonial__client"> {{ name }}</div>
-      <div class="c-testimonial__position bold">{{ position }}</div>
-    </div> <!-- /.c-testimonial__content -->
-  </div> <!-- /.c-testimonial__inner -->
+  </div>
 </div> <!-- /.c-testimonial -->
