@@ -1,0 +1,17 @@
+{
+  "search": {
+    "filters": {
+      "include()": {
+        "pattern": "organisms-search-filters",
+        "only": true
+      }
+    },
+    "listing": {
+      "include()": {
+        "pattern": "organisms-listing",
+        "only": true
+      }
+    }
+  }
+
+}
