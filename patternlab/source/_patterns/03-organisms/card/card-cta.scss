@@ -15,6 +15,12 @@
       padding: rem-calc(50 55 55);
     }
 
+    #{ $self }__image {
+      margin-bottom: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
     #{ $self }__heading {
       padding-bottom: rem-calc(21);
       margin-bottom: 0;

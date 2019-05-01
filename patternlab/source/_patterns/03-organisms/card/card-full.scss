@@ -5,6 +5,12 @@
   display: flex;
   align-items: center;
 
+  .c-card__image {
+    margin-bottom: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
   .c-card--content {
     background-color: $white;
 
