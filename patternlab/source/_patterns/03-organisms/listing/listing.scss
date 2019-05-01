@@ -5,6 +5,7 @@
   margin-bottom: rem-calc(10);
   margin-right: auto;
   margin-left: auto;
+  background-color: $light-gray;
   color: $darkest-gray;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
 
@@ -37,7 +38,7 @@
     }
   }
 
-  h3 {
+  h3, h3 a {
     font-weight: $global-weight-bold;
     font-family: $font-family-monospace;
     line-height: 1.2;
@@ -61,9 +62,11 @@
       background-color: $light-blue;
       padding: rem-calc(10 15);
       font-weight: $global-weight-bold;
+      display: inline-block;
     }
     .date {
       padding: rem-calc(10 15);
+      display: inline-block;
       @include breakpoint(small down) {
         display: block;
         padding-left: 0;
@@ -115,7 +118,7 @@
     .type {
       color: $darkest-gray;
     }
-    h3 {
+    h3, h3 a {
       color: #ffffff;
     }
   }
