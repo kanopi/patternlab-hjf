@@ -86,7 +86,7 @@
           }
 
           .is-dropdown-submenu {
-            top: calc(-100% + 1px);
+            top: 1px;
             background-color: $light-blue;
             a {
               color: $darkest-gray;

@@ -12,7 +12,7 @@ $hero-height: 80vh;
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 
   @include breakpoint(small only) {
     padding-top: 219px;
