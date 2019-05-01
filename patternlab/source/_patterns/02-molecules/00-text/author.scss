@@ -16,17 +16,22 @@
   .top {
     padding-bottom: 20px;
   }
-
-  .bottom {
-    border-top: 1px solid #212121;
+  
+  .top + .bottom {
     padding-top: 20px;
+    border-top: 1px solid #212121;
   }
 }
 
 p.article-date {
-    display: inline;
-    padding-right: .5em;
+  display: inline;
+  padding-right: .5em;
   & + p {
     display: inline;
   }
+}
+
+.c-content .content .author-information {
+  float: left;
+  margin-right: 24px;
 }

@@ -7,10 +7,13 @@
   font-size: $cite-font-size;
   font-weight: $global-weight-bold;
   padding: rem-calc(10 15);
-  margin: 1rem 0;
+  margin: 4rem 0 2rem;
+  text-transform: capitalize;
   
+/*
   &:hover {
     background-color: $primary-color;
     color: $white;
   }
+*/
 }

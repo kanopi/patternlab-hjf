@@ -514,7 +514,7 @@
   </div>
   
   <script type="text/json" id="sg-pattern-data-atoms-category-chip" class="sg-pattern-data">
-    {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"buttons"},"patternDesc":"","patternExtension":"twig","patternName":"category chip","patternPartial":"atoms-category-chip","patternState":""}
+    {"lineage":[],"lineageR":[{"lineagePattern":"templates-page-title","lineagePath":"..\/..\/patterns\/04-templates-content-page-title\/04-templates-content-page-title.html","lineageState":"inreview"}],"patternBreadcrumb":{"patternType":"atoms","patternSubtype":"buttons"},"patternDesc":"","patternExtension":"twig","patternName":"category chip","patternPartial":"atoms-category-chip","patternState":""}
   </script>
 </div><!--end .sg-pattern-->                        <div id="atoms-rectangular-button" class="sg-pattern">
   <div class="sg-pattern-head">
@@ -1530,9 +1530,9 @@
   <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-info-event"></div>
     
   <div class="sg-pattern-example">
-    <div class="grid-container grid-x">
-  <div class="medium-8 medium-offset-2">
     <div class="grid-container grid-x info-grid section-events">
+  <div class="medium-8 medium-offset-2">
+    <div class="grid-container grid-x info-grid-wrapper">
       <div class="cell medium-4">
         <h6>Title Text</h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
@@ -1571,9 +1571,9 @@
   <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-info"></div>
     
   <div class="sg-pattern-example">
-    <div class="grid-container grid-x">
-  <div class="medium-8 medium-offset-2">
     <div class="grid-container grid-x info-grid section-case-study">
+  <div class="medium-8 medium-offset-2">
+    <div class="grid-container grid-x info-grid-wrapper">
       <div class="cell medium-4">
         <h6>Title Text</h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
@@ -2635,7 +2635,44 @@
   <div class="sg-pattern-body">
     
   </div>
-</div>                        <div id="organisms-cta-list-four" class="sg-pattern">
+</div>                        <div id="organisms-card-columns" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-organisms-columns-card-columns/03-organisms-columns-card-columns.html" class="patternLink" data-patternpartial="organisms-card-columns" title="Link to Pattern">
+        card columns
+        
+              </a>
+    </h3>
+    
+    <div class="sg-pattern-breadcrumb">
+      
+    </div>
+    
+    <a href="#" data-patternpartial="organisms-card-columns" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-card-columns" class="sg-pattern-extra-toggle">
+      <span>&#9660;</span>
+    </a>
+  </div>
+  
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-card-columns"></div>
+    
+  <div class="sg-pattern-example">
+    <div class="card-columns grid-container">
+  <div class="grid-x grid-padding-x">
+    <div class="medium-10 medium-offset-1 list-title">
+      A title is what I am.
+    </div>
+    <div class="medium-10 medium-offset-1 list-content">
+      
+    </div>
+  </div>
+</div>
+
+  </div>
+  
+  <script type="text/json" id="sg-pattern-data-organisms-card-columns" class="sg-pattern-data">
+    {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"columns"},"patternDesc":"","patternExtension":"twig","patternName":"card columns","patternPartial":"organisms-card-columns","patternState":""}
+  </script>
+</div><!--end .sg-pattern-->                        <div id="organisms-cta-list-four" class="sg-pattern">
   <div class="sg-pattern-head">
     <h3 class="sg-pattern-title">
       <a href="../../patterns/03-organisms-columns-cta-list-four/03-organisms-columns-cta-list-four.html" class="patternLink" data-patternpartial="organisms-cta-list-four" title="Link to Pattern">
@@ -3583,17 +3620,21 @@
     
   <div class="sg-pattern-example">
     <div class="c-testimonial grid-container">
-  <div class="c-testimonial__inner grid-x">
-    <div class="c-testimonial__image small-12 medium-3 small-order-2 medium-order-1">
-      <img src="../../images/testimonial-1.png">
+  <div class="grid-x">
+    <div class="medium-10 medium-offset-1">
+      <div class="c-testimonial__inner grid-x">
+        <div class="c-testimonial__image small-12 medium-4 small-order-2 medium-order-1">
+          <img src="../../images/testimonial-1.png">
+        </div>
+        <div class="c-testimonial__content small-12 medium-8 small-order-1 medium-order-2">
+          <div class="c-testimonial__type bold">Client Testimonial</div>
+          <div class="c-testimonial__summary"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus commodo elit, faucibus bibendum mi. Vestibulum varius efficitur orci, id volutpat dolor posuere blandit. Maecenas interdum elit sagittis, aliquam lectus nec, tristique velita.</div>
+          <div class="c-testimonial__client"> Thomas Cruise</div>
+          <div class="c-testimonial__position bold">Google Engineer</div>
+        </div> <!-- /.c-testimonial__content -->
+      </div> <!-- /.c-testimonial__inner -->
     </div>
-    <div class="c-testimonial__content small-12 medium-9 small-order-1 medium-order-2">
-      <div class="c-testimonial__type bold">Client Testimonial</div>
-      <div class="c-testimonial__summary"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus commodo elit, faucibus bibendum mi. Vestibulum varius efficitur orci, id volutpat dolor posuere blandit. Maecenas interdum elit sagittis, aliquam lectus nec, tristique velita.</div>
-      <div class="c-testimonial__client"> Thomas Cruise</div>
-      <div class="c-testimonial__position bold">Google Engineer</div>
-    </div> <!-- /.c-testimonial__content -->
-  </div> <!-- /.c-testimonial__inner -->
+  </div>
 </div> <!-- /.c-testimonial -->
 
   </div>
@@ -4064,6 +4105,9 @@
       <a href="../../patterns/04-templates-content-page-title/04-templates-content-page-title.html" class="patternLink" data-patternpartial="templates-page-title" title="Link to Pattern">
         page title
         
+                  <span class="sg-pattern-state inreview">
+            inreview
+          </span>
               </a>
     </h3>
     
@@ -4081,13 +4125,15 @@
   <div class="sg-pattern-example">
     <div class="grid-container grid-x">
   <div class="cell medium-6 medium-offset-3">
+    <div class="category-chip">Article</div>
+ 
     <h1>Tom Weston, SVP and CFO of ECS Federal, LLC, Joins HJF's Council of Directors</h1>
   </div>
 </div>
   </div>
   
   <script type="text/json" id="sg-pattern-data-templates-page-title" class="sg-pattern-data">
-    {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"templates","patternSubtype":"content"},"patternDesc":"","patternExtension":"twig","patternName":"page title","patternPartial":"templates-page-title","patternState":""}
+    {"lineage":[{"lineagePattern":"atoms-category-chip","lineagePath":"..\/..\/patterns\/04-templates-content-page-title\/04-templates-content-page-title.html"}],"lineageR":[],"patternBreadcrumb":{"patternType":"templates","patternSubtype":"content"},"patternDesc":"","patternExtension":"twig","patternName":"page title","patternPartial":"templates-page-title","patternState":"inreview"}
   </script>
 </div><!--end .sg-pattern-->                        <div id="viewall-templates-layout" class="sg-subtype">
   <h2>
@@ -4408,7 +4454,7 @@
   </div>
   
   <script type="text/json" id="sg-pattern-data-templates-page" class="sg-pattern-data">
-    {"lineage":[{"lineagePattern":"templates-header-region","lineagePath":"..\/..\/patterns\/04-templates-layout-page\/04-templates-layout-page.html"},{"lineagePattern":"templates-region","lineagePath":"..\/..\/patterns\/04-templates-layout-page\/04-templates-layout-page.html"},{"lineagePattern":"templates-footer-region","lineagePath":"..\/..\/patterns\/04-templates-layout-page\/04-templates-layout-page.html"}],"lineageR":[{"lineagePattern":"pages-article","lineagePath":"..\/..\/patterns\/05-pages-article@inreview\/05-pages-article@inreview.html","lineageState":"inreview"},{"lineagePattern":"pages-article-pdf","lineagePath":"..\/..\/patterns\/05-pages-article-pdf\/05-pages-article-pdf.html","lineageState":"inreview"},{"lineagePattern":"pages-article-video","lineagePath":"..\/..\/patterns\/05-pages-article-video\/05-pages-article-video.html","lineageState":"inreview"},{"lineagePattern":"pages-event","lineagePath":"..\/..\/patterns\/05-pages-event@inreview\/05-pages-event@inreview.html","lineageState":"inreview"},{"lineagePattern":"pages-event-video","lineagePath":"..\/..\/patterns\/05-pages-event-video\/05-pages-event-video.html","lineageState":"inreview"},{"lineagePattern":"pages-homepage","lineagePath":"..\/..\/patterns\/05-pages-homepage@complete\/05-pages-homepage@complete.html","lineageState":"inreview"}],"patternBreadcrumb":{"patternType":"templates","patternSubtype":"layout"},"patternDesc":"","patternExtension":"twig","patternName":"page","patternPartial":"templates-page","patternState":"inreview"}
+    {"lineage":[{"lineagePattern":"templates-header-region","lineagePath":"..\/..\/patterns\/04-templates-layout-page\/04-templates-layout-page.html"},{"lineagePattern":"templates-region","lineagePath":"..\/..\/patterns\/04-templates-layout-page\/04-templates-layout-page.html"},{"lineagePattern":"templates-footer-region","lineagePath":"..\/..\/patterns\/04-templates-layout-page\/04-templates-layout-page.html"}],"lineageR":[{"lineagePattern":"pages-article","lineagePath":"..\/..\/patterns\/05-pages-article@inreview\/05-pages-article@inreview.html","lineageState":"inreview"},{"lineagePattern":"pages-article-pdf-noimg","lineagePath":"..\/..\/patterns\/05-pages-article-pdf-noimg\/05-pages-article-pdf-noimg.html","lineageState":"inreview"},{"lineagePattern":"pages-article-pdf","lineagePath":"..\/..\/patterns\/05-pages-article-pdf\/05-pages-article-pdf.html","lineageState":"inreview"},{"lineagePattern":"pages-event","lineagePath":"..\/..\/patterns\/05-pages-event@inreview\/05-pages-event@inreview.html","lineageState":"inreview"},{"lineagePattern":"pages-event-video","lineagePath":"..\/..\/patterns\/05-pages-event-video\/05-pages-event-video.html","lineageState":"inreview"},{"lineagePattern":"pages-homepage","lineagePath":"..\/..\/patterns\/05-pages-homepage@complete\/05-pages-homepage@complete.html","lineageState":"inreview"}],"patternBreadcrumb":{"patternType":"templates","patternSubtype":"layout"},"patternDesc":"","patternExtension":"twig","patternName":"page","patternPartial":"templates-page","patternState":"inreview"}
   </script>
 </div><!--end .sg-pattern-->                        <div id="viewall-templates-region" class="sg-subtype">
   <h2>

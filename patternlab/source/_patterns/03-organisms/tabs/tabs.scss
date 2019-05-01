@@ -5,6 +5,10 @@
   border: 0;
   background-color: transparent;
   margin-bottom: rem-calc(30);
+  position: relative;
+  top: -40px;
+  z-index: 2;
+
 
   @include breakpoint(medium) {
     position: relative;

@@ -2,10 +2,13 @@
   "page": {
     "content": {
       "join()": [
-        "atoms-category-chip",
         "<div id=\"block-pagetitle\" class=\"block-pagetitle\">",
         "templates-page-title",
-        "</div></div>"
+        "</div></div>",
+        "organisms-wysiwyg",
+        "organisms-file-icon",
+        "organisms-wysiwyg",
+        "organisms-wysiwyg"
       ]
     }
   }

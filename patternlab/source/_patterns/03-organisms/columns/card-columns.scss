@@ -1,0 +1,23 @@
+@import "../../../css/_settings.scss";
+
+.card-columns {
+  margin-bottom: rem-calc(50);
+
+  .list-title {
+    margin: 30px auto 0;
+    font-family: $font-family-monospace;
+    font-size: 24px;
+    font-weight: $global-weight-bold;
+    text-align: center;
+    color: $darkest-gray;
+    @include breakpoint(medium up) {
+      margin: 56px auto 30px;
+      font-size: 35px;
+    }
+  }
+  
+  .list-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
