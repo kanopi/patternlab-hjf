@@ -1,0 +1,62 @@
+@import "../../../css/_settings.scss";
+
+.contact-forms {
+  h2 {
+    font-family: $font-family-monospace;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.17;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: $darkest-gray;
+  }
+
+  h3 {
+    color: $darkest-gray;
+  }
+
+  .tabs {
+    .tabs-title {
+      @include breakpoint(medium) {
+        width: 50%;
+        &:first-child {
+          text-align: right;
+        }
+      }
+
+      & > a {
+        font-family: $font-family-monospace;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.36;
+        letter-spacing: 0.1px;
+      }
+    }
+  }
+  
+  .tabs-panel {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: $white;
+
+    .node-webform {
+      background-color: rgba(0,0,0,0.5);
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 50%;
+    }
+  }
+  
+  #panel0 {
+    background-image: url(../../images/bg_researcher.jpg);
+  }
+  #panel1 {
+    background-image: url(../../images/bg_corporate.jpg);
+    .node-webform {
+      right: 0;
+    }
+  }
+}
