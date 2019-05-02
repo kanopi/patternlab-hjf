@@ -147,6 +147,9 @@
         width: 70px;
         float: right;
         background-color: transparent;
+        position: relative;
+        z-index: 100;
+        margin-left: 10px; 
         a {
           text-align: left;
           background-color: transparent;
@@ -200,5 +203,8 @@
         }
       }
     }
+  }
+  .toolbar-fixed .region--navigation .position-top.is-open {
+    top: 100px;
   }
 }

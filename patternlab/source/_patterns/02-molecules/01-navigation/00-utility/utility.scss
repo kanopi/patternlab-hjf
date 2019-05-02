@@ -1,6 +1,7 @@
 @import "../../../../css/_settings.scss";
 
-nav.block-utilitymenu {
+nav.block-utilitymenu,
+nav.block-utilitymenu-2 {
   @include breakpoint(medium) {
   padding: rem-calc(15 0);
   text-align: right;

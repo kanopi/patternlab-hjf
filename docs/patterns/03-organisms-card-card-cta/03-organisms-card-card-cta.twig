@@ -1,12 +1,14 @@
 {# see: https://foundation.zurb.com/sites/docs/card.html #}
 <a href="{{ cta_link }}" class="c-card c-card{{ card_variation }}">
   {% if card_variation|render == '--reveal' %}
+    {% if image %}
     <div class="c-card__image">
-      {{ image }}
+        <img src="{{ image }}" />
       {% if type|render %}
       <div class="c-card__type">{{ type }}</div>
       {% endif %}
     </div>
+    {% endif %}
   {% endif %}
   <div class="c-card__content">
   {% if type %}
