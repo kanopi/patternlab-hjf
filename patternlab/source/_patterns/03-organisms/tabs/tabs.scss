@@ -9,6 +9,12 @@
   top: -40px;
   z-index: 2;
 
+  &--image {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
   @include breakpoint(medium) {
     position: relative;
