@@ -3,7 +3,7 @@
 .cta-list--four {
 
   .list-title {
-    margin: 30px auto 0;
+    margin: 30px auto 20px;
     font-family: $font-family-monospace;
     font-size: 24px;
     font-weight: $global-weight-bold;
@@ -17,11 +17,13 @@
   .list-content {
     justify-content: center;
   }
+
   .c-card--cta {
     background-color: transparent;
     border: 0;
     color: $darkest-gray;
-    padding: 30px 12.5px 0;
+    padding: 0 12.5px 28px;
+
     @include breakpoint(small only) {
       padding-left: 0;
       padding-right: 0;
@@ -34,6 +36,10 @@
       }
       .button {
         margin-bottom: 0;
+        font-size: 16px;
+        min-width: 124px;
+        padding: 13px 30px;
+        margin-top: 19px;
       }
     }
 
