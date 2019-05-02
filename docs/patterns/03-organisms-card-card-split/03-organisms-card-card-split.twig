@@ -1,9 +1,11 @@
 <div class="c-card c-card{{ card_variation }}">
   <div class="grid-container fluid">
     <div class="grid-x grid-padding-x">
+      {% if image %}
       <div class="c-card--image small-12 medium-6">
-        {{ image }}
+        <img src="{{ image }}" />
       </div>
+      {% endif %}
       <div class="c-card--content small-12 medium-6">
         <div class="content-wrapper">
           <h3>{{ heading }}</h3>
