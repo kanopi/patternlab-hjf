@@ -1,0 +1,41 @@
+@import "../../../css/_settings.scss";
+
+.eu-cookie-compliance-banner {
+  #popup-heading {
+    background-color: #bc0808;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 27px;
+    text-align: left;
+  }
+  .popup-content {
+    background: $primary-color;
+    padding: 0 0 27px;
+    color: #ffffff;
+    line-height: 1.5;
+
+    #popup-text {
+      text-align: left;
+    }
+
+    .button-disagree {
+      color: #ffffff;
+    }
+    .button-agree {
+      margin-top: 0;
+      border-radius: 75;
+    }
+    #popup-buttons {
+      max-width: 145px;
+      text-align: center;
+      @include breakpoint(small only) {
+        margin: 20px auto 0;
+      }
+    }
+    .grid-x {
+      justify-content: space-between;
+    }
+  }
+}

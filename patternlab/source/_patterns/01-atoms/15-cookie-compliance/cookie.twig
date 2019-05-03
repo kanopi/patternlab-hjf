@@ -1,0 +1,18 @@
+<div class="eu-cookie-compliance-banner">
+    <div class="popup-content">
+        <div id="popup-heading"><div class="grid-container">{{ heading }}</div></div>
+        <div class="grid-container">
+          <div class="grid-x">
+            <div id="popup-text" class="cell medium-9">
+              {{ message }}
+            </div>
+            <div id="popup-buttons" class="cell medium-3">
+              <button type="button" class="button button-agree">{{ agree_button }}</button>
+              {% if disagree_button %}
+                <button type="button" class="button-disagree">{{ disagree_button }}</button>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
