@@ -1,28 +1,7 @@
 <div class="c-tabs grid-container">
   <div class="grid-x" data-equalizer>
-    <div class="c-tabs--image show-for-large hero-overlay large-3 large-offset-1" data-equalizer-watch>
-      {{ image }}
+    <div class="c-tabs--image show-for-large hero-overlay large-3 large-offset-1" style="background-image: url({{ image }})" data-equalizer-watch>
     </div>
-  
-    <div class="c-tabs--tab-list large-3" data-equalizer-watch>
-      <ul class="tabs" data-responsive-accordion-tabs="tabs small-accordion medium-tabs" id="tabs">
-      	{% for key, tab_item in tab_items %}
-          <li class="tabs-title {{ tab_item.active }}"><a href="#tab-{{ key }}">{{ tab_item.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-  
-    <div class="c-tabs--tab-content large-4" data-equalizer-watch>
-      <div class="tabs-content" data-tabs-content="tabs">
-      {% for key, tab_content in tab_content_items %}
-          <div class="tabs-panel {{ tab_content.active }}" id="tab-{{ key }}">
-            <h2>{{ tab_content.heading }}</h2>
-            <div class="tabs-panel__summary">{{ tab_content.summary }}</div>
-            <div class="tabs-panel__button">{{ tab_content.button }}</div>
-            <div class="tabs-panel__footer">{{ tab_content.footer }}</div>
-          </div>
-      {% endfor %}
-      </div>
-    </div>
+    {{ tabs }}
   </div>
 </div>

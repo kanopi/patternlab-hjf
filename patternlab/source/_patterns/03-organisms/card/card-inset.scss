@@ -4,9 +4,23 @@
   @include breakpoint(medium) {
     .c-card--image {
       order: 2;
+      margin-left: 0;
     }
     .c-card--content {
       order: 1;
+      margin-left: 8.33333%;
+
+    }
+  }
+}
+
+.c-card--img_left_inset {
+  @include breakpoint(medium) {
+    .c-card--image {
+      margin-left: 8.33333%;
+    }
+    .c-card--content {
+      margin-left: 0;
     }
   }
 }
@@ -48,7 +62,8 @@
   }
 
   @include breakpoint(large up) {
-    padding: 20px;
+    padding-bottom: 40px;
+    padding-top: 40px;
   }
 
   .c-card--image {
