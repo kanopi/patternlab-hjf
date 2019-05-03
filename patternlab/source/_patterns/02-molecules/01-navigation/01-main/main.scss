@@ -141,6 +141,7 @@
 
       .is-drilldown-submenu {
         padding-bottom: 100px;
+        height: 80vh;
       }
 
       .js-drilldown-back {
@@ -148,8 +149,8 @@
         float: right;
         background-color: transparent;
         position: relative;
-        z-index: 100;
-        margin-left: 10px; 
+        //z-index: 100;
+        margin-left: 10px;
         a {
           text-align: left;
           background-color: transparent;
