@@ -1,15 +1,16 @@
 {# see: https://foundation.zurb.com/sites/docs/card.html #}
 <div class="c-card c-card{{ card_variation }}">
   {% if card_variation|render == '--reveal' %}
-    {% if image %}
     <div class="c-card__image">
-        <img src="{{ image }}" />
+      {% if image|render %}
+        {{ image }}
+      {% endif %}
+
       {% if type|render %}
       <div class="c-card__type">{{ type }}</div>
       {% endif %}
     </div>
     {% endif %}
-  {% endif %}
   <div class="c-card__content">
     {% if card_variation|render == '--text' and type %}
       <div class="c-card__type">{{ type }}</div>
