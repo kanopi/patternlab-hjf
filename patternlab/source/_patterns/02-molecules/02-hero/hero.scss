@@ -1,12 +1,12 @@
 @import "../../../css/_settings.scss";
 
-$hero-height: 80vh;
+$hero-height: 700px;
 
 .hero-section {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: $hero-height;
   text-align: center;
   display: flex;
   align-items: center;
