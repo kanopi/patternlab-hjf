@@ -1,18 +1,28 @@
 <div class="grid-container">
   <div class="media-object">
-      <div class="media-object-section image-section">
-        {{ image }}
-      </div>
-      <div class="media-object-section main-section">
-        <div class="inside">
-          <div class="top">
-            <span class="type">{{ tag }}</span>
-            <span class="date">{{ date }}</span>
-          </div>
-          <h3>{{ title }}</h3>
-          <div class="author">{{ author }}</div>
-          {{ summary }}
+    {% if image %}
+    <div class="media-object-section image-section">
+      {{ image }}
+    </div>
+    {% endif %}
+    <div class="media-object-section main-section">
+      <div class="inside">
+        {% if tag or date %}
+        <div class="top">
+          <span class="type">{{ tag }}</span>
+          <span class="date">{{ date }}</span>
         </div>
+        {% endif %}
+
+        {% if title %}
+        <h3>{{ title }}</h3>
+        {% endif %}
+
+        {% if author %}
+        <div class="author">{{ author }}</div>
+        {% endif %}
+        {{ summary }}
+      </div>
     </div>
   </div>
 </div>
