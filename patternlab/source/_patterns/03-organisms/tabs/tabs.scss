@@ -29,24 +29,36 @@
     height: 100%;
     background-color: $primary-color;
     .tabs-content {
+      border: none;
+      border-top: 0;
+      background: transparent;
+      color: inherit;
       height: 100%;
+      transition: inherit;
     }
   }
 }
 
 // Tab List Styles
 #tabs {
+  border: none;
+  margin-bottom: 1rem;
+  margin-left: 1.25rem;
+
+  &:before,
+  &:after {
+    display: none;
+  }
+
   list-style-type: none;
   height: 100%;
   @include breakpoint(medium) {
     padding: rem-calc(49 0);
   }
   .tabs-title {
-    font-family: $font-family-monospace;
-    font-size: rem-calc(22);
-    line-height: rem-calc(30);
     display: flex;
     align-items: center;
+    float: none;
 
     @include breakpoint(medium) {
       border-right: 10px solid transparent;
@@ -58,7 +70,12 @@
       padding: rem-calc(0 40);
     }
     a {
+      background-color: transparent;
       color: $darkest-gray;
+      font-family: $font-family-monospace;
+      font-size: rem-calc(22);
+      line-height: rem-calc(30);
+      padding: 0;
       vertical-align: middle;
     }
     &:last-child {
