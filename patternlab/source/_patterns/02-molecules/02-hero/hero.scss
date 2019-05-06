@@ -69,7 +69,7 @@ $hero-height: 700px;
 
     @include breakpoint(medium up) {
       &.card-overlay {
-        background-image: unset;
+        background-image: none;
       }
     }
   }
