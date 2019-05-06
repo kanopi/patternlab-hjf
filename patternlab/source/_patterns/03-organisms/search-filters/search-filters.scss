@@ -20,6 +20,9 @@
       max-height: 50px;
       position: relative;
       right: 90px;
+      @include breakpoint(medium down) {
+        display: none;
+      }
     }
     form {
       width: 100%;
@@ -79,6 +82,16 @@
     &.path-search .block-exposedformsearchsearch {
       margin-top: 70px;
     }
+    &.path-search .block-exposedformsearchsearch {
+      #filters-modal {
+        top: 73px;
+      }
+    }
+    &.path-search .block-exposedformsearchsearch.smaller {
+      #filters-modal {
+        top: 3px;
+      }
+    }
   }
 
   .path-search .block-exposedformsearchsearch {
@@ -113,8 +126,8 @@
       transition: max-width 0.8s;
     }
     .filters-modal {
-      top: 81px;
-      max-height: calc(100vh - 210px);
+      top: 3px;
+      max-height: calc(100vh - 100px);
       overflow-y: auto;
     }
     .input-wrapper > .button.reset,
@@ -146,11 +159,12 @@
 
 // Filter modal.
 .filters-modal.closed {
-  display: none;
+  //display: none;
+  height: 0;
 }
 .filters-modal {
   background-color: $medium-blue;
-  top: 307px;
+  top: 148px;
   overflow: scroll;
   position: absolute;
   z-index: 99;
