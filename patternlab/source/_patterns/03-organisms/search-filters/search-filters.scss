@@ -19,7 +19,12 @@
       display: block;
       max-height: 50px;
       position: relative;
-      right: 90px;
+      right: 87px;
+      padding: 15px 0 15px;
+      width: 140px;
+      @include breakpoint(large down) {
+        display: block;
+      }
       @include breakpoint(medium down) {
         display: none;
       }
@@ -52,21 +57,13 @@
   .keywords-wrapper #edit-reset.button {
     color: #ffffff;
     background-color: #5d6671;
+    left: 0;
     position: relative;
-    right: -188px;
-    padding: 17px 30px;
-    top: -76px;
-    float: right;
+    margin: 0 0 2em;
     border-radius: 25px;
-    @include breakpoint(small down) {
-      right: -156px;
-      top: -18px;
+    @include breakpoint(large up) {
+      left: 178px;
     }
-  }
-  .search-wrapper .button.rectangular {
-    transition: margin-top 0.3s;
-    padding: 15px 0;
-    width: 130px;
   }
   .search-wrapper .button.rectangular.filtered {
     color: $gray;
@@ -111,6 +108,13 @@
       label {
         display: none;
       }
+      #edit-submit-search.button.success {
+        right: 68px;
+        background-size: 50%;
+        @-moz-document url-prefix() {
+          right: 106px;
+        }
+      }
     }
     .js-form-item-keywords input[type="text"] {
       font-size: 18px;
@@ -123,6 +127,7 @@
     }
     .js-form-item-keywords {
       max-width: 486px;
+      height: 53px;
       transition: max-width 0.8s;
     }
     .filters-modal {
@@ -130,13 +135,14 @@
       max-height: calc(100vh - 100px);
       overflow-y: auto;
     }
+
     .input-wrapper > .button.reset,
     .input-wrapper > #edit-reset.button {
-      right: -103px;
+      right: -197px;
       top: -68px;
     }
     .search-wrapper .button.rectangular {
-      right: 177px;
+      right: 142px;
       margin-top: 0;
     }
   }
@@ -159,7 +165,7 @@
 
 // Filter modal.
 .filters-modal.closed {
-  //display: none;
+  display: block;
   height: 0;
 }
 .filters-modal {
