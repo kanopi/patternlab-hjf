@@ -45,7 +45,16 @@ $hero-height: 700px;
       letter-spacing: 0.1px;
       margin-bottom: 18px;
     }
-
+    .hosts {
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.1px;
+      
+      a {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
     .button {
       text-shadow: none;
       margin-top: 30px;
