@@ -17,6 +17,8 @@
   }
 
   .tabs {
+    border: none;
+
     .tabs-title {
       @include breakpoint(medium) {
         width: 50%;
