@@ -47,7 +47,7 @@
         height: 100%;
       }
       @include breakpoint(xlarge) {
-        object-fit: unset;
+        object-fit: auto;
         width: 100%;
         height: auto;
       }

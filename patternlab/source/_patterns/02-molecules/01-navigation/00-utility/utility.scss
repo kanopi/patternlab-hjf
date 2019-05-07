@@ -49,10 +49,10 @@ nav.block-utilitymenu-2 {
             color: $darkest-gray;
           }
           &.button {
-            background-color: unset;
+            background-color: transparent;
             text-align: right;
             margin: 0;
-            border-radius: unset;
+            border-radius: 0;
             &:hover {
               background-color: $light-blue;
             }

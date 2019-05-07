@@ -13,8 +13,8 @@
     background-position: bottom right;
     background-size: 66% auto;
     @include breakpoint(medium) {
-      background-color: unset;
-      background-image: unset;
+      background-color: transparent;
+      background-image: none;
     }
   }
 }

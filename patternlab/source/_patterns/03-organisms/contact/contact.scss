@@ -131,7 +131,7 @@
   #panel1 {
     background-image: url(../../dist/images/bg_corporate.jpg);
     &.tabs-panel:after {
-      left: unset;
+      left: auto;
       right: 0;
     }
     .node-webform {
