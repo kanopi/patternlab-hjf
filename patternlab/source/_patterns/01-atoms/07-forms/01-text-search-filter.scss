@@ -1,11 +1,36 @@
 @import "../../../css/_settings.scss";
 
+.input-wrapper,
+.keywords-wrapper {
+  #edit-submit-search,
+  .button.submit {
+    background: transparent url(../images/svg/icon-Search-med-blue.svg) center no-repeat;
+    width: 60px;
+    color: white;
+    font-size: 0;
+    line-height: 10px;
+    bottom: 10px;
+    position: relative;
+    right: 69px;
+  }
+}
+
+.keywords-wrapper {
+  > .input-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+}
+
 .js-form-item-keywords {
   border-bottom: solid 1px $darkest-gray;
   width: 100%;
-  max-width: 570px;
+
   @include breakpoint(medium up) {
-    max-width: 82%;
+    max-width: 590px;
+    height: 70px;
+    width: 100%;
   }
   input[type="text"] {
     border-width: 0;
@@ -25,25 +50,10 @@
     background-size: 35px;
     width: 100%;
   }
-
   input#edit-keywords {
-    background: transparent url(../images/svg/icon-Search-med-blue.svg) right no-repeat;
+    background: transparent;
   }
 
-  @-webkit-keyframes autofill {
-    to {
-      background: transparent;
-    }
-  }
-
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  input:-webkit-autofill:active {
-    -webkit-animation-name: autofill;
-    -webkit-animation-fill-mode: both;
-    background: transparent url(../images/svg/icon-Search-med-blue.svg) right no-repeat;
-  }
 }
 
 

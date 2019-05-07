@@ -14,9 +14,9 @@
         background-color: $medium-blue;
         padding: 10px;
         text-transform: capitalize;
-        margin: 5px 0;
+        margin: 2px 0;
         max-width: 220px;
-        line-height: 24px;
+        line-height: 1.3;
       }
       &:focus + label {
         outline: rgb(59, 153, 252) auto 5px;
