@@ -25,6 +25,8 @@
 
       @include breakpoint(medium) {
         width: 50%;
+        float: left;
+
         &:first-child {
           text-align: right;
         }
@@ -48,7 +50,15 @@
       }
     }
   }
-  
+  .tabs-content {
+    border: none;
+    border-top: 0;
+    background: transparent;
+    color: inherit;
+    height: 100%;
+    transition: inherit;
+  }
+
   .tabs-panel {
     background-position: center top;
     background-repeat: no-repeat;
