@@ -1,1 +1,1 @@
-<a id="{{ id }}" href="{{ uri }}" class="button {{ classes }}" target="{{ target }}">{{ title }}</a>
+<a{% if id %} id="{{ id }}"{% endif %} href="{{ uri }}" class="button{% if target %} {{ classes }}{% endif %}"{% if target %} target="{{ target }}"{% endif %}>{{ title }}</a>

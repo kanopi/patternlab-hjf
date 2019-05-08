@@ -10,10 +10,18 @@
   <div class="tabs-content" data-tabs-content="tabs">
   {% for key, tab_content in tab_content_items %}
       <div class="tabs-panel {{ tab_content.active }}" id="tab-{{ key }}">
+      {% if tab_content.heading %}
         <h2>{{ tab_content.heading }}</h2>
+      {% endif %}
+      {% if tab_content.heading %}
         <div class="tabs-panel__summary">{{ tab_content.summary }}</div>
+      {% endif %}
+      {% if tab_content.heading %}
         <div class="tabs-panel__button">{{ tab_content.button }}</div>
+      {% endif %}
+      {% if tab_content.heading %}
         <div class="tabs-panel__footer">{{ tab_content.footer }}</div>
+      {% endif %}
       </div>
   {% endfor %}
   </div>
