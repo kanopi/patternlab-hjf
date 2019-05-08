@@ -20,6 +20,9 @@
     border: none;
 
     .tabs-title {
+      width: 100%;
+      float: none;
+
       @include breakpoint(medium) {
         width: 50%;
         &:first-child {
@@ -57,18 +60,25 @@
       background-color: rgba(0,0,0,0.5);
       content: '';
       height: 100%;
-      width: 50%;
+      width: 100%;
       position: absolute;
       top: 0;
       left: 0;
+
+      @include breakpoint(medium) {
+        width: 50%;
+      }
     }
   }
 
   .node-webform {
-    width: 33.3333%;
-    margin-left: 8.3333%;
     position: relative;
     z-index: 1;
+
+    @include breakpoint(medium) {
+      width: 33.3333%;
+      margin-left: 8.3333%;
+    }
 
     h3 {
       font-family: $font-family-monospace;
@@ -128,16 +138,21 @@
 
   #panel0 {
     background-image: url(../../dist/images/bg_researcher.jpg);
+    @include breakpoint(small) {
+      background-position: left center;
+    }
   }
 
   #panel1 {
     background-image: url(../../dist/images/bg_corporate.jpg);
-    &.tabs-panel:after {
-      left: auto;
-      right: 0;
-    }
-    .node-webform {
-      margin-left: 58.3333%;
+    @include breakpoint(medium) {
+      &.tabs-panel:after {
+        left: auto;
+        right: 0;
+      }
+      .node-webform {
+        margin-left: 58.3333%;
+      }
     }
   }
 }
