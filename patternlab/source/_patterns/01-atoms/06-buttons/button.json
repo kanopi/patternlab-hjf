@@ -1,6 +1,7 @@
 {
   "uri": "#",
-  "classes": "primary",
   "title": "Watch Video",
-  "id": ""
+  "id": "test-link",
+  "class": "warning",
+  "target": "_self"
 }
