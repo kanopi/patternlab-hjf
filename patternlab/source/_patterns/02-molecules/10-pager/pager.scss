@@ -7,19 +7,27 @@
   margin: 2rem auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+
+  .pager__item--first,
+  .pager__item--last {
+    display: none;
+  }
+
   .pager__item.pager__item--previous {
     @extend .button!optional;
     background-color: $card-bg-gray;
     position: relative;
     right: 2.3rem;
   }
+
   .current {
     padding: 6px;
     background-color: $light-blue;
     color: $darkest-blue;
   }
+
   .pager__item.pager__item--next {
     @extend .button!optional;
     position: relative;

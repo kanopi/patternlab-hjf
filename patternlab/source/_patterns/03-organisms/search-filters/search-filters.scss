@@ -72,35 +72,12 @@
 }
 
 @include breakpoint(large up) {
-  .user-logged-in {
-    &.path-search .block-exposedformsearchsearch.smaller {
-      margin-top: 0;
-    }
-    &.path-search .block-exposedformsearchsearch {
-      margin-top: 70px;
-    }
-    &.path-search .block-exposedformsearchsearch {
-      #filters-modal {
-        top: 73px;
-      }
-    }
-    &.path-search .block-exposedformsearchsearch.smaller {
-      #filters-modal {
-        top: 3px;
-      }
-    }
-  }
-
-  .path-search .block-exposedformsearchsearch {
-    margin-top: 145px;
-  }
-
   .block-exposedformsearchsearch.smaller {
     padding: 1em 0 0;
     position: fixed;
     right: 0;
     left: 0;
-    top: 145px;
+    top: 0;
     z-index: 98;
     max-height: 90px;
     margin-top: 0;
@@ -145,21 +122,15 @@
       right: 142px;
       margin-top: 0;
     }
-  }
-  .path-search .off-canvas-content > header {
-    position: fixed;
-    background-color: white;
-    top: 0;
-    z-index: 101;
-    left: 0;
-    right: 0;
-  }
-  .path-search .region--navigation {
-    position: fixed;
-    top: 80px;
-    z-index: 99;
-    left: 0;
-    right: 0;
+    
+    .toolbar-fixed & {
+      top: 39px;
+    }
+
+    .toolbar-tray-open & {
+      top: 75.375px;
+    }
+
   }
 }
 
