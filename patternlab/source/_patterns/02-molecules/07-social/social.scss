@@ -27,7 +27,7 @@
       mask-size: contain;
       background-color: #ffffff;
       width: 25px;
-      height: 19px;
+      height: 25px;
       text-indent: -500px;
       overflow: hidden;
       padding: 0;
@@ -46,6 +46,10 @@
       &.linkedin {
         -webkit-mask-image: url(../images/svg/icon-LinkedIn.svg);
         mask-image: url(../images/svg/icon-LinkedIn.svg);
+      }
+      &.paypal {
+        -webkit-mask-image: url(../images/svg/icon-PayPal.svg);
+        mask-image: url(../images/svg/icon-PayPal.svg);
       }
     }
   }
