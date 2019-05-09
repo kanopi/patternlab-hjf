@@ -1,6 +1,9 @@
 {
   "heading": "This site uses cookies",
-  "message": "We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services. You consent to our cookies if you continue to use our website.",
-  "agree_button": "I Consent",
-  "disagree_button": "I Do Not Consent"
-  }
+  "message": "<p>HJF values your privacy, so please be aware that this website uses cookies to store information and allows you to submit personal information on some pages.</p>",
+  "agree_button": "I Acknowledge",
+  "disagree_button": "More Info",
+  "secondary_button_label": "I do not consent",
+  "primary_button_class": "agree-button eu-cookie-compliance-secondary-button button",
+  "secondary_button_class": "decline-button eu-cookie-compliance-default-button button clear disagree"
+}
