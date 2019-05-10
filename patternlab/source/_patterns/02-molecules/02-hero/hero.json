@@ -2,5 +2,10 @@
   "image": "../../images/hero-1.jpg",
   "snippet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum pretium lectus. Nunc pellentesque nec sapien malesuada tempus. (max = 250 characters)",
   "title": null,
-  "button": "<a href=\"#\" class=\"button\">Watch Video</a>"
+  "button": "<a href=\"#\" class=\"button\">Watch Video</a>",
+  "attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  }
 }
