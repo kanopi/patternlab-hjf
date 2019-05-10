@@ -20,6 +20,7 @@ $card-reveal-transition-speed: 0.6s;
     #{ $self }__image {
       position: relative;
       height: 209px;
+      overflow: hidden;
 
       img{
         height: 100%;
