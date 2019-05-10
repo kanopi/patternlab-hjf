@@ -55,7 +55,18 @@
 }
 
 .eu-cookie-compliance-secondary-button {
+}
+
+.agree-button {
+  @extend .button;
   border-radius: 90px;
+  margin-top: 0;
+}
+
+.decline-button {
+  @extend .button;
+  @extend .clear;
+  @extend .disagree;
   margin-top: 0;
 }
 
