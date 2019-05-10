@@ -69,6 +69,19 @@
     color: $gray;
     background-color: $light-blue;
   }
+  .title-wrapper {
+    display: block;
+    width: 100%;
+    padding-right: 2em;
+    margin-top: 55px;
+    h2 {
+      font-family: $body-font-family;
+      font-size: 45px;
+      font-weight: bold;
+      line-height: 0.58;
+      letter-spacing: 0.3px;
+    }
+  }
 }
 
 @include breakpoint(large up) {
