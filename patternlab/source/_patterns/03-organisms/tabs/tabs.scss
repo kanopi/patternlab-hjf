@@ -6,8 +6,6 @@
   background-color: transparent;
   margin-bottom: rem-calc(30);
   position: relative;
-  top: -40px;
-  z-index: 2;
 
   &--image {
     overflow: hidden;
@@ -20,6 +18,7 @@
     position: relative;
     top: -40px;
     margin-bottom: rem-calc(70);
+    z-index: 2;
   }
   &--tab-list {
     background-color: #ffffff;

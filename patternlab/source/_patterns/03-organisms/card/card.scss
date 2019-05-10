@@ -3,7 +3,8 @@
 
 //.c-card styles
 .c-card {
-  margin-bottom: 0;
+  height: 100%;
+  margin: 0 auto;
 
   &__type {
     color: $darkest-gray;
