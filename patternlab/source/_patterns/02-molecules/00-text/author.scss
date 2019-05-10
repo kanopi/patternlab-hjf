@@ -26,6 +26,8 @@
 p.article-date {
   display: inline;
   padding-right: .5em;
+  font-weight: bold;
+
   & + p {
     display: inline;
   }
