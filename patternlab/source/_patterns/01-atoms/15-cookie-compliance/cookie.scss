@@ -10,7 +10,6 @@
 }
 
 .eu-cookie-compliance-heading {
-  background-color: #bc0808;
   text-align: left;
   width: 100%;
   
@@ -21,7 +20,7 @@
     font-weight: 600;
     line-height: 1.6;
     margin: 0 auto;
-    padding: 10px 40px;
+    padding: 10px 40px 0;
     max-width: $global-width;
   }
 }
@@ -31,7 +30,7 @@
   line-height: 1.5;
   margin: 0 auto;
   max-width: $global-width;
-  padding: 40px;
+  padding: 20px 40px 40px;
   width: 100%;
   overflow: hidden;
 }
