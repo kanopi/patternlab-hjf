@@ -12,8 +12,10 @@
     </div>
     {% endif %}
   <div class="c-card__content">
-    {% if card_variation|render == '--text' and type %}
-      <div class="c-card__type">{{ type }}</div>
+    {% if type|render %}
+      {% if card_variation|render == '--text' or card_variation|render == '--cta' %}
+        <div class="c-card__type">{{ type }}</div>
+      {% endif %}
     {% endif %}
     {% if date|render %}
       <div class="c-card__overlay-date"> {{ date }} </div>
