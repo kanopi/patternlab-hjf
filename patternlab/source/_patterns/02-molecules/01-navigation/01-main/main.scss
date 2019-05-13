@@ -27,15 +27,11 @@
             right: 20px;
             left: unset;
             border: 0;
-            width: 13.6px;
-            height: 8.5px;
+            width: 14px;
+            height: 9px;
             display: block;
             position: absolute;
-            background-color: #ffffff;
-            -webkit-mask-image: url('../images/svg/icon-DownArrow.svg');
-            mask-image: url('../images/svg/icon-DownArrow.svg');
-            mask-size: contain;
-            mask-repeat: no-repeat;
+            background: transparent url('../images/svg/icon-DownArrow-white.svg') no-repeat;
           }
         }
       }
@@ -66,11 +62,7 @@
               height: 15px;
               display: block;
               position: absolute;
-              background-color: #ffffff;
-              -webkit-mask-image: url('../images/svg/icon-DownArrow.svg');
-              mask-image: url('../images/svg/icon-DownArrow.svg');
-              mask-size: contain;
-              mask-repeat: no-repeat;
+              background: transparent url('../images/svg/icon-DownArrow-white.svg') no-repeat;
               transform: rotate(-90deg);
             }
           }
@@ -80,7 +72,9 @@
               background-color: $light-blue;
               color: $darkest-gray;
               &:after {
-                background-color: $darkest-gray;
+                background: transparent url('../images/svg/icon-DownArrow.svg') no-repeat;
+                transform: rotate(-90deg);
+                background-size: 100%;
               }
             }
           }
@@ -124,17 +118,13 @@
           height: 15px;
           display: block;
           transform: rotate(90deg);
-          background-color: #ffffff;
-          -webkit-mask-image: url('../images/svg/icon-DownArrow.svg');
-          mask-image: url('../images/svg/icon-DownArrow.svg');
-          mask-size: contain;
-          mask-repeat: no-repeat;
+          background: transparent url('../images/svg/icon-DownArrow-white.svg') no-repeat;
         }
         &:hover {
           background-color: $light-blue;
           color: $darkest-gray;
           &:after {
-            background-color: $darkest-gray;
+            background: transparent url('../images/svg/icon-DownArrow.svg') no-repeat;
           }
         }
       }

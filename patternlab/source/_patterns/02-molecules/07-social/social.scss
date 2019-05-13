@@ -19,12 +19,6 @@
     }
 
     a {
-      -webkit-mask-repeat: no-repeat;
-      -webkit-mask-position: center;
-      -webkit-mask-size: contain;
-      mask-repeat: no-repeat;
-      mask-position: center;
-      mask-size: contain;
       background-color: #ffffff;
       width: 25px;
       height: 25px;
@@ -35,21 +29,19 @@
         background-color: $light-blue;
       }
       &.facebook {
-        -webkit-mask-image: url(../images/svg/icon-Facebook.svg);
-        mask-image: url(../images/svg/icon-Facebook.svg);
-        width: 10px;
+        background: transparent url(../images/svg/icon-Facebook-white.svg) no-repeat;
+        width:10px;
       }
       &.twitter {
-        -webkit-mask-image: url(../images/svg/icon-Twitter.svg);
-        mask-image: url(../images/svg/icon-Twitter.svg);
+        background: transparent url(../images/svg/icon-Twitter-white.svg) no-repeat;
+        width: 25px;
       }
       &.linkedin {
-        -webkit-mask-image: url(../images/svg/icon-LinkedIn.svg);
-        mask-image: url(../images/svg/icon-LinkedIn.svg);
+        background: transparent url(../images/svg/icon-LinkedIn-white.svg) no-repeat;
+        width: 21px;
       }
       &.paypal {
-        -webkit-mask-image: url(../images/svg/icon-PayPal.svg);
-        mask-image: url(../images/svg/icon-PayPal.svg);
+        background: transparent url(../images/svg/icon-PayPal.svg) no-repeat;
       }
     }
   }
