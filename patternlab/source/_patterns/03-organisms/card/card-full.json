@@ -1,6 +1,7 @@
 {
-  "card_variation": "--img_left_full",
-  "image": "../../images/rectangle-1.jpg",
+  "card_variation": "--img_left-full",
+  "image": "<picture><img src=\"../../images/rectangle-1.jpg\" /></picture>",
+  "image_url": "../../images/rectangle-1.jpg",
   "title": "Far Reaching Options",
   "summary": "<p>Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
   "button": {

@@ -1,0 +1,19 @@
+@import "../../../css/_settings.scss";
+
+picture {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  img {
+    object-fit: cover; 
+    height: auto;
+    width:100%;
+
+    @include breakpoint(xlarge) {
+      object-fit: auto;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

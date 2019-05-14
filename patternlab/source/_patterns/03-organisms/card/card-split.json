@@ -1,7 +1,7 @@
 {
   "type": "Resource",
   "card_variation": "--split c-card--img_right",
-  "image": "<img src=\"../../images/rectangle-1.png\">",
+  "image": "<picture><img src=\"../../images/rectangle-1.jpg\" width=\"720\" height=\"494\" /></picture>",
   "date": "August 2, 2019",
   "date_overlay": "August 2, 2019",
   "heading": "Moral Injury and The Cost to Physicians",

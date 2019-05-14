@@ -37,29 +37,20 @@
 .c-card--img_left,
 .c-card--img_right {
   .c-card--image {
-    img {
-      width: 100%;
-      height: auto;
+    max-height: 230px;
 
-      @include breakpoint(medium) {
-        object-fit: cover;
-        width: auto;
-        height: 100%;
-      }
-      @include breakpoint(xlarge) {
-        object-fit: auto;
-        width: 100%;
-        height: auto;
-      }
+    @include breakpoint(medium) {
+      max-height: 494px;
     }
   }
+
   .c-card--content {
     display: flex;
     align-items: center;
     justify-content: center;
 
     .content-wrapper {
-      padding: rem-calc(20 10);
+      padding: rem-calc(20 30);
       @include breakpoint(small only) {
         font-size: 16px;
       }
