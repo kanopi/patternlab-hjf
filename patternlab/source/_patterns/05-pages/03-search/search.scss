@@ -10,18 +10,10 @@
   line-height: 1.18;
   letter-spacing: 0.1px;
   color: #252a35;
-  margin: 3rem 2rem;
+  margin: 1rem 0 3rem;
 }
 
 .path-search {
-  .views-element-container {
-    max-width: 77rem;
-    margin: 3rem auto 1rem;
-    padding: 0;
-    @include breakpoint(large up) {
-      padding: 0 6.5rem;
-    }
-  }
   .view-search {
     > h3 {
       text-align: center;
@@ -30,10 +22,6 @@
   .media-object:hover {
     cursor: pointer;
   }
-}
-.block-exposedformsearchsearch + header {
-  max-width: 60rem;
-  margin: 3rem auto 1rem;
 }
 
 .view-recent-content {
