@@ -15,5 +15,13 @@
 
   .cell {
     display: flex;
+
+    @include breakpoint(small only) {
+      flex-direction: column;
+      .statistic {
+        margin-bottom: 1rem;
+      }
+    }
   }
+
 }

@@ -1,6 +1,7 @@
 @import "../../../css/_settings.scss";
 
 $hero-height: 700px;
+$her-height-small: 230px;
 
 .hero-section {
   background-position: 50%;
@@ -12,10 +13,12 @@ $hero-height: 700px;
   justify-content: center;
   position: relative;
   z-index: 0;
+  width: 100%;
 
   @include breakpoint(small only) {
     background-size: contain;
     background-position: top center;
+    padding-top: $her-height-small;
   }
 
   @include breakpoint(medium) {
@@ -36,6 +39,7 @@ $hero-height: 700px;
     letter-spacing: 0.3px;
     max-width: 954px;
     z-index: 1;
+    width: 100%;
 
     h1 {
       font-size: 22px;

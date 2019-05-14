@@ -6,6 +6,7 @@
   background-color: transparent;
   margin-bottom: rem-calc(30);
   position: relative;
+  padding: 0;
 
   &--image {
     overflow: hidden;
@@ -19,6 +20,8 @@
     top: -40px;
     margin-bottom: rem-calc(70);
     z-index: 2;
+    padding-left: .625rem;
+    padding-right: .625rem;
   }
   &--tab-list {
     background-color: #ffffff;
@@ -41,19 +44,19 @@
 // Tab List Styles
 #tabs {
   border: none;
-  margin-bottom: 1rem;
-  margin-left: 1.25rem;
+  list-style-type: none;
+  height: 100%;
 
   &:before,
   &:after {
     display: none;
   }
 
-  list-style-type: none;
-  height: 100%;
   @include breakpoint(medium) {
     padding: rem-calc(49 0);
+    margin-left: 1.25rem;
   }
+
   .tabs-title {
     display: flex;
     align-items: center;
