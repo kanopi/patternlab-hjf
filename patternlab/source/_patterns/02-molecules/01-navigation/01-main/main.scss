@@ -39,6 +39,7 @@
         background-color: $primary-color;
         border: 0;
         min-width: 348px;
+        z-index: 100;
         a {
           color: #ffffff;
           padding: rem-calc(17 57 17 40);
