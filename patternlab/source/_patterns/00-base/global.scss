@@ -44,3 +44,23 @@ h4 {
 h5 {
   font-family: $body-font-family;
 }
+
+.section-funding-opportunities {
+  .hero-id-237 {
+    overflow-x: auto; // Needed for table on mobile.
+  }
+  @include breakpoint(small only) {
+    .c-content {
+      padding: 0 1em;
+    }
+    .hero-id-237 {
+      padding: 1em;
+    }
+    .RADSFilter {
+      width: 280px;
+    }
+    #opportunities_table_filter {
+      width: 280px;
+    }
+  }
+}

@@ -74,8 +74,10 @@
   .grid-x {
     flex-direction: row-reverse;
   }
-  .c-card--content {
-    margin-right: calc(8.333%);
-//     @include xy-cell-offset(6);
+  @include breakpoint(medium) {
+    .c-card--content {
+      margin-right: calc(8.333%);
+      //     @include xy-cell-offset(6);
+    }
   }
 }
