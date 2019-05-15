@@ -157,6 +157,7 @@
 .filters-modal.closed {
   display: block;
   height: 0;
+  width: 0;
 }
 .filters-modal {
   background-color: $medium-blue;
