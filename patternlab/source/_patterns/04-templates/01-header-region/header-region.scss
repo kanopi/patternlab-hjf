@@ -2,6 +2,7 @@
 
 header {
   .logo {
+    max-height: 50px;
     max-width: 52px;
     margin: rem-calc(15 0);
     @include breakpoint(small only) {
