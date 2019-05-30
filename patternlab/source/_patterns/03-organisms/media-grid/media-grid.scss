@@ -1,0 +1,21 @@
+@import "../../../css/_settings.scss";
+
+.media-grid {
+  .media-grid-title {
+    font-family: $font-family-monospace;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.17;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: $black;
+    margin-bottom: rem-calc(40);
+  }
+  
+  .media-grid-columns {
+    .file-full img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
