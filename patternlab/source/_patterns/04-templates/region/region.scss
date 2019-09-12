@@ -1,0 +1,39 @@
+@import "../../../css/_settings.scss";
+
+.block-armenu {
+  left: -10px;
+
+  .menu { 
+    & > li {
+      & > a {
+        padding: 1.5625rem 1.25rem;
+        color: #ffffff;
+        font-weight: bold;
+        
+        &:hover {
+          background: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.ar-navigation {
+  background-color: $light-gray;
+
+  .block-armenu-2 {
+    .menu {
+      & > li {
+        & > a {
+          padding: 1.5625rem 1.25rem;
+          color: $darkest-blue;
+          font-weight: bold;
+          
+          &:hover {
+            background: $medium-blue;
+          }
+        }
+      }
+    }
+  }
+}
