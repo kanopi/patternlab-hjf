@@ -1,5 +1,6 @@
 {
   "main_menu": "molecules-main",
+  "main_menu_2": "molecules-main",
   "search_form": "atoms-search-block-text",
   "utility_menu": "molecules-utility",
   "ar_menu": "molecules-armenu",
