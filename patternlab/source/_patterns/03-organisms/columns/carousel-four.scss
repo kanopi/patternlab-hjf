@@ -1,0 +1,70 @@
+@import "../../../css/_settings.scss";
+
+.carousel--four {
+
+  .list-title {
+    margin: 30px auto 20px;
+    font-family: $font-family-monospace;
+    font-size: 24px;
+    font-weight: $global-weight-bold;
+    text-align: center;
+    color: $darkest-gray;
+    @include breakpoint(medium up) {
+      margin: 56px auto 0;
+      font-size: 35px;
+    }
+  }
+  .list-content {
+    justify-content: center;
+  }
+
+  .c-card--cta {
+    background-color: transparent;
+    border: 0;
+    color: $darkest-gray;
+    padding: 0 12.5px 28px;
+    text-align: center;
+
+    @include breakpoint(small only) {
+      padding-left: 0;
+      padding-right: 0;
+      .c-card__type {
+        font-size: 16px;
+      }
+      .c-card__overlay {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      .button {
+        margin-bottom: 0;
+        font-size: 16px;
+        min-width: 124px;
+        padding: 13px 30px;
+        margin-top: 19px;
+      }
+    }
+
+    @include breakpoint(medium) {
+      .card-container {
+        max-width: 250px;
+      }
+    }
+
+    .c-card__heading,
+    .c-card__overlay,
+    .c-card__type  {
+      color: $darkest-gray;
+    }
+  }
+  .card-grid{
+    margin: 0 auto;
+    max-width: 600px;
+    justify-content: center;
+    @include breakpoint(medium) {
+      justify-content: space-between;
+    }
+    @include breakpoint(large) {
+      max-width: 1100px;
+    }
+  }
+}
