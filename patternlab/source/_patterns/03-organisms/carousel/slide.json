@@ -33,6 +33,40 @@
         }
       },
       "image": "<img src=\"https://placehold.it/300x300\">"
+    },
+    {
+      "title": "Slide 3",
+      "active": "",
+      "summary": "Lorem ipsum dolor sit amet consectetur adipiscing elit, taciti pretium suspendisse himenaeos sem litora, lobortis eu inceptos est scelerisque urna. Dictum primis torquent curabitur hac semper curae leo convallis cras tincidunt, aliquet etiam arcu sa.",
+      "button": {
+        "include()": {
+          "pattern": "atoms-button",
+          "with": {
+            "uri": "#",
+            "title": "View",
+            "classes": "warning"
+          },
+          "only": true
+        }
+      },
+      "image": "<img src=\"https://placehold.it/300x300\">"
+    },
+    {
+      "title": "Slide 4",
+      "active": "",
+      "summary": "Lorem ipsum dolor sit amet consectetur adipiscing elit, taciti pretium suspendisse himenaeos sem litora, lobortis eu inceptos est scelerisque urna. Dictum primis torquent curabitur hac semper curae leo convallis cras tincidunt, aliquet etiam arcu sa.",
+      "button": {
+        "include()": {
+          "pattern": "atoms-button",
+          "with": {
+            "uri": "#",
+            "title": "View",
+            "classes": "warning"
+          },
+          "only": true
+        }
+      },
+      "image": "<img src=\"https://placehold.it/300x300\">"
     }
   ]
 }

@@ -2,12 +2,20 @@
   <li class="c-slide orbit-slide {{ slide_content.active }}">
     <div class="slide-content">
       <div class="slide-text">
-        <div class="slide-title">{{ slide_content.title }}</div>
-        <div class="slide-summary">{{ slide_content.summary }}</div>
-        <div class="slide-button">{{ slide_content.button }}</div>
+        {% if slide_content.title|render %}
+          <div class="slide-title">{{ slide_content.title }}</div>
+        {% endif %}
+        {% if slide_content.summary|render %}
+          <div class="slide-summary">{{ slide_content.summary }}</div>
+        {% endif %}
+        {% if slide_content.button|render %}
+          <div class="slide-button">{{ slide_content.button }}</div>
+        {% endif %}
       </div>
       <div class="slide-image">
-        {{ slide_content.image }}
+        {% if slide_content.image|render %}
+          {{ slide_content.image }}
+        {% endif %}
       </div>
     </div>
   </li>
