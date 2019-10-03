@@ -1,0 +1,14 @@
+{% for key, slide_content in slide_content_items %}
+  <li class="orbit-slide {{ slide_content.active }}">
+    <div class="slide-content">
+      <div class="slide-text">
+        <div class="slide-title">{{ slide_content.title }}</div>
+        <div class="slide-summary">{{ slide_content.summary }}</div>
+        <div class="slide-button">{{ slide_content.button }}</div>
+      </div>
+      <div class="slide-image">
+        {{ slide_content.image }}
+      </div>
+    </div>
+  </li>
+{% endfor %}
