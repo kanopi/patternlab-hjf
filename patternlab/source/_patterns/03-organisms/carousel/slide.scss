@@ -1,22 +1,21 @@
 @import "../../../css/_settings.scss";
 
-li.orbit-slide {
+li.c-slide {
 
   .slide-content {
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
 
   .slide-text {
-    width: 50%;
-    text-align: left;
+    width: 30%;
+    margin-right: 20px;
 
     .slide-title {
       font-weight: bold;
+      line-height: 1.2;
+      font-size: 1.375rem;
+      margin-bottom: rem-calc(25);
     }
-  }
-
-  .slide-image {
-    width: 50%;
-    float: right;
   }
 }

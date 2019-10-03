@@ -1,9 +1,9 @@
 {
   "slide_content_items": [
     {
-      "title": "Lorem ipsum dolor sit amet",
+      "title": "Slide 1",
       "active": "is-active",
-      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
+      "summary": "Lorem ipsum dolor sit amet consectetur adipiscing elit, taciti pretium suspendisse himenaeos sem litora, lobortis eu inceptos est scelerisque urna. Dictum primis torquent curabitur hac semper curae leo convallis cras tincidunt, aliquet etiam arcu sa.",
       "button": {
         "include()": {
           "pattern": "atoms-button",
@@ -15,12 +15,12 @@
           "only": true
         }
       },
-      "image": "<img src=\"https://placehold.it/200x300\">"
+      "image": "<img src=\"https://placehold.it/300x300\">"
     },
     {
-      "title": "Lorem ipsum dolor sit amet",
+      "title": "Slide 2",
       "active": "",
-      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet ac nibh aliquet ultricies. Ut sit amet est sagittis, luctus lectus nec, viverra lacus. Donec orci sapien, iaculis faucibus imperdiet vitae. Commodo et magna. Nullam finibus fri.",
+      "summary": "Lorem ipsum dolor sit amet consectetur adipiscing elit, taciti pretium suspendisse himenaeos sem litora, lobortis eu inceptos est scelerisque urna. Dictum primis torquent curabitur hac semper curae leo convallis cras tincidunt, aliquet etiam arcu sa.",
       "button": {
         "include()": {
           "pattern": "atoms-button",
@@ -32,7 +32,7 @@
           "only": true
         }
       },
-      "image": "<img src=\"https://placehold.it/200x300\">"
+      "image": "<img src=\"https://placehold.it/300x300\">"
     }
   ]
 }

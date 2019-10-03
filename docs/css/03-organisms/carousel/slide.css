@@ -1,1 +1,1 @@
-li.orbit-slide .slide-content{margin:0 auto}li.orbit-slide .slide-text{width:50%;text-align:left}li.orbit-slide .slide-text .slide-title{font-weight:bold}li.orbit-slide .slide-image{width:50%;float:right}
+li.c-slide .slide-content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}li.c-slide .slide-text{width:30%;margin-right:20px}li.c-slide .slide-text .slide-title{font-weight:bold;line-height:1.2;font-size:1.375rem;margin-bottom:1.5625rem}
