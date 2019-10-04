@@ -19,4 +19,10 @@
       background-color: $medium-blue;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .orbit-previous, .orbit-next {
+      display: none;
+    }
+  }
 }
