@@ -1,22 +1,20 @@
-{% for key, slide_content in slide_content_items %}
-  <li class="c-slide orbit-slide {{ slide_content.active }}">
-    <div class="slide-content">
-      <div class="slide-text">
-        {% if slide_content.title|render %}
-          <div class="slide-title">{{ slide_content.title }}</div>
-        {% endif %}
-        {% if slide_content.summary|render %}
-          <div class="slide-summary">{{ slide_content.summary }}</div>
-        {% endif %}
-        {% if slide_content.button|render %}
-          <div class="slide-button">{{ slide_content.button }}</div>
-        {% endif %}
-      </div>
-      <div class="slide-image">
-        {% if slide_content.image|render %}
-          {{ slide_content.image }}
-        {% endif %}
-      </div>
+<li class="c-slide orbit-slide {{ active }}">
+  <div class="slide-content">
+    <div class="slide-text">
+      {% if title|render %}
+        <div class="slide-title">{{ title }}</div>
+      {% endif %}
+      {% if summary|render %}
+        <div class="slide-summary">{{ summary }}</div>
+      {% endif %}
+      {% if button|render %}
+        <div class="slide-button">{{ button }}</div>
+      {% endif %}
     </div>
-  </li>
-{% endfor %}
+    <div class="slide-image">
+      {% if image|render %}
+        {{ image }}
+      {% endif %}
+    </div>
+  </div>
+</li>
