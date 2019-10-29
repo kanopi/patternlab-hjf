@@ -1,5 +1,21 @@
 @import "../../css/_settings.scss";
 
+.wf-loading {
+  background: url('../images/ajax-loader.gif') no-repeat center center;
+  height: 100%;
+  overflow: hidden;
+}
+.wf-loading * {
+  opacity: 0;
+}
+.wf-active *, 
+.wf-inactive * {
+  -webkit-transition: opacity .01s ease-out;  
+  -moz-transition: opacity .01s ease-out; 
+  -o-transition: opacity .01s ease-out;  
+  transition: opacity .01s ease-out;  
+}
+
 html {
   font-size: $global-font-size-small;
   @include breakpoint(medium) {
