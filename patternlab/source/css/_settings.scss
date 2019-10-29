@@ -369,12 +369,12 @@ $closebutton-color-hover: $black;
 
 $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
-$drilldown-padding: $global-menu-padding;
+$drilldown-padding: 50px;
 $drilldown-nested-margin: 0;
-$drilldown-background: $white;
+$drilldown-background: $primary-color;
 $drilldown-submenu-padding: $drilldown-padding;
-$drilldown-submenu-background: $white;
-$drilldown-arrow-color: $primary-color;
+$drilldown-submenu-background: $primary-color;
+$drilldown-arrow-color: $white;
 $drilldown-arrow-size: 6px;
 
 // 17. Dropdown

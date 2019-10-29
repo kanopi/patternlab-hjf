@@ -2,92 +2,93 @@
 
 .region--navigation {
   @include breakpoint(medium) {
-  background-color: $medium-blue;
-  .dropdown.menu {
-     > li {
-       > a {
-        padding: rem-calc(25 20);
-        color: #ffffff;
-        font-weight: bold;
-        &:hover {
-          background-color: $primary-color;
+    background-color: $medium-blue;
+    .dropdown.menu {
+       > li {
+         > a {
+          padding: rem-calc(25 20);
           color: #ffffff;
-        }
-      }
-      &.is-active {
-        > a {
-          background-color: $primary-color;
-          color: #ffffff;
-        }
-      }
-      &.is-dropdown-submenu-parent {
-        > a {
-          padding-right: rem-calc(52);
-          &:after {
-            right: 20px;
-            left: unset;
-            border: 0;
-            width: 14px;
-            height: 9px;
-            display: block;
-            position: absolute;
-            background: transparent url('../images/svg/icon-DownArrow-white.svg') no-repeat;
-          }
-        }
-      }
-      .is-dropdown-submenu {
-        background-color: $primary-color;
-        border: 0;
-        min-width: 348px;
-        z-index: 100;
-        a {
-          color: #ffffff;
-          padding: rem-calc(17 57 17 40);
           font-weight: bold;
-          line-height: 1.5;
           &:hover {
-            background-color: $light-blue;
-            color: $darkest-gray;
-            &:after {
-              border-left-color: $darkest-gray;
-            }
+            background-color: $primary-color;
+            color: #ffffff;
           }
         }
-        .is-dropdown-submenu-parent.opens-right {
+        &.is-active {
           > a {
+            background-color: $primary-color;
+            color: #ffffff;
+          }
+        }
+        &.is-dropdown-submenu-parent {
+          > a {
+            padding-right: rem-calc(52);
             &:after {
-              right: 17px;
+              right: 20px;
               left: unset;
               border: 0;
-              width: 15px;
-              height: 15px;
+              width: 14px;
+              height: 9px;
               display: block;
               position: absolute;
               background: transparent url('../images/svg/icon-DownArrow-white.svg') no-repeat;
-              transform: rotate(-90deg);
             }
           }
-
-          &.is-active {
-            > a {
+        }
+        .is-dropdown-submenu {
+          background-color: $primary-color;
+          border: 0;
+          min-width: 348px;
+          z-index: 100;
+          a {
+            color: #ffffff;
+            padding: rem-calc(17 57 17 40);
+            font-weight: bold;
+            line-height: 1.5;
+            &:hover {
               background-color: $light-blue;
               color: $darkest-gray;
               &:after {
-                background: transparent url('../images/svg/icon-DownArrow.svg') no-repeat;
-                transform: rotate(-90deg);
-                background-size: 100%;
+                border-left-color: $darkest-gray;
               }
             }
           }
-
-          .is-dropdown-submenu {
-            top: 1px;
-            background-color: $light-blue;
-            a {
-              color: $darkest-gray;
-              &:hover {
-                color: #ffffff;
-                background-color: $medium-blue;
+          .is-dropdown-submenu-parent.opens-right {
+            > a {
+              &:after {
+                right: 17px;
+                left: unset;
+                border: 0;
+                width: 15px;
+                height: 15px;
+                display: block;
+                position: absolute;
+                background: transparent url('../images/svg/icon-DownArrow-white.svg') no-repeat;
+                transform: rotate(-90deg);
+              }
+            }
+  
+            &.is-active {
+              > a {
+                background-color: $light-blue;
+                color: $darkest-gray;
+                &:after {
+                  background: transparent url('../images/svg/icon-DownArrow.svg') no-repeat;
+                  transform: rotate(-90deg);
+                  background-size: 100%;
+                }
+              }
+            }
+  
+            .is-dropdown-submenu {
+              top: 1px;
+              background-color: $light-blue;
+              a {
+                color: $darkest-gray;
+                &:hover {
+                  color: #ffffff;
+                  background-color: $medium-blue;
+                }
               }
             }
           }
@@ -95,13 +96,13 @@
       }
     }
   }
- }
+
+  .is-drilldown {
+    max-width: 100% !important;
+  }
 
 // Mobile navigation
   @include breakpoint(small) {
-    .is-drilldown {
-      max-width: 100% !important;
-    }
     .drilldown {
       a {
         background-color: $medium-blue;
@@ -135,6 +136,7 @@
         height: 80vh;
       }
 
+/*
       .js-drilldown-back {
         width: 70px;
         float: right;
@@ -162,6 +164,7 @@
           }
         }
       }
+*/
       .is-submenu-parent-item {
         a {
           background-color: $medium-blue;
