@@ -1,17 +1,17 @@
 var gulp = require('gulp'),
-      sass = require('gulp-sass'),
-      plumber = require('gulp-plumber'),
-      notify = require('gulp-notify'),
-      autoprefix = require('gulp-autoprefixer'),
-      glob = require('gulp-sass-glob'),
-      sourcemaps = require('gulp-sourcemaps'),
-      shell = require('gulp-shell'),
-      concat = require('gulp-concat'),
-      babel = require('gulp-babel'),
-      imagemin = require('gulp-imagemin'),
-      importOnce = require('node-sass-import-once'),
-      copy = require('gulp-copy'),
-      browserSync = require('browser-sync').create();
+    sass = require('gulp-sass'),
+    plumber = require('gulp-plumber'),
+    notify = require('gulp-notify'),
+    autoprefix = require('gulp-autoprefixer'),
+    glob = require('gulp-sass-glob'),
+    sourcemaps = require('gulp-sourcemaps'),
+    shell = require('gulp-shell'),
+    concat = require('gulp-concat'),
+    babel = require('gulp-babel'),
+    imagemin = require('gulp-imagemin'),
+    importOnce = require('node-sass-import-once'),
+    copy = require('gulp-copy'),
+    browserSync = require('browser-sync');
 
 const config = require('./gulp.config.json');
 
@@ -50,8 +50,11 @@ function minifyImages() {
 
 function watch() {
     browserSync.init({
-        serveStatic: [config.paths.public],
-        port: 3000
+      host: config.browserSync.host,
+      proxy: config.browserSync.proxy,
+      baseDir: config.browserSync.baseDir,
+      port: 3001,
+      open: false
     });
 
     gulp.watch(config.css.src, compileCss);
@@ -74,7 +77,7 @@ exports.copyJs = copyJs;
 exports.watch = watch;
 exports.generate = generate;
 
-var build = gulp.series(generate, compileCss, compileJs, copyJs, minifyImages);
+var build = gulp.series(compileCss, compileJs, copyJs, minifyImages, generate);
 exports.build = build;
 
 var defaultTasks = gulp.series(build, watch);

@@ -1,8 +1,13 @@
 {
-  "name": "patterns-hjf",
+  "name": "hjf_pl",
   "paths": {
     "root": "./",
     "public": "docs/"
+  },
+  "browserSync": {
+    "host": "patterns.hjfmri.docksal",
+    "proxy": "patterns.hjfmri.docksal",
+    "baseDir": "./docs"
   },
   "css": {
     "css" : "patternlab/source/styles.scss",
