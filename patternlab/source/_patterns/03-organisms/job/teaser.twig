@@ -1,0 +1,40 @@
+<div class="grid-container job-posting teaser">
+  <div class="grid-x">
+    <div class="cell large-10 medium-9 small-7 ">
+      <h3>
+        <a href="{{ url }}">{{ job_title }}</a>
+      </h3>
+    </div>
+    <div class="cell large-2 medium-3 small-5">
+      <div>
+        {{ posted_date }}
+      </div>
+    </div>
+  </div>
+  <div class="grid-x">
+      <div class="cell small-18">
+          {{ industry }}
+      </div>
+      <div class="cell small-18">
+          {{ unique_identifier }}
+      </div>
+      <div class="cell small-18">
+          {{ employment_type }}
+      </div>
+  </div>
+  <div class="grid-x">
+      <div class="cell large-10 medium-9 small-8 ">
+        {{ location }}
+      </div>
+      <div class="cell large-2 medium-3 small-4">
+        {{ telecommute }}
+      </div>
+  </div>
+  <div class="grid-x">
+    <div class="cell small-12">
+      {{ description }}
+    </div>
+  </div>
+
+  <hr>
+</div>

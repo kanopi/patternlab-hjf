@@ -1,0 +1,75 @@
+<div class="grid-container job-posting">
+  <div class="grid-x job-posting-heading">
+    <div class="cell large-10 medium-9 small-7 ">
+      {{ title_prefix }}
+      <h2>{{ job_title }}</h2>
+      {{ title_suffix}}
+
+      {% if industry %}
+      <div>
+        <strong>Industry:</strong>
+        {{ industry }}
+      </div>
+      {% endif %}
+
+      {% if unique_identifier %}
+      <div>
+        <strong>Identifier:</strong>
+        {{ unique_identifier }}
+      </div>
+      {% endif %}
+   </div>
+    <div class="cell large-2 medium-3 small-5">
+      <div class="apply-button">
+        {%
+          include "@atoms/06-buttons/button.twig" with {
+            "title": "Apply Now",
+            "uri": apply_button,
+            "classes": "primary-button",
+            "target": "_blank"
+          }
+        %}
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-x job-posting-content">
+    <div class="cell medium-3">
+      <ul class="unstyled-list">
+      {% if posted_date %}
+        <li>{{ posted_date }}</li>
+      {% endif %}
+
+      {% if employment_type %}
+        <li>{{ employment_type }}</li>
+      {% endif %}
+
+      {% if location %}
+        <li>{{ location }}</li>
+      {% endif %}
+
+      {% if telecommute == 1 %}
+        <li>{{ telecommute }}</li>
+      {% endif %}
+    </div>
+    <div class="cell medium-8 medium-offset-1">
+      <h3>Job Details</h3>
+      {% if description %}
+      <h4>Description</h4>
+      {{ description }}
+      {% endif %}
+
+      {% if education or experience %}
+        <h4>Qualifications</h4>
+        {% if education %}
+          <h5>Education</h5>
+          {{ education }}
+        {% endif %}
+        {% if experience %}
+          <h5>Experience</h5>
+          {{ experience }}
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>
+</div>
