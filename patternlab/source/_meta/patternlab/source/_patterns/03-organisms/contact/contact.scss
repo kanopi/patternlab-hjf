@@ -1,0 +1,170 @@
+@import "../../../css/_settings.scss";
+
+.contact-forms {
+  h2 {
+    font-family: $font-family-monospace;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.17;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: $darkest-gray;
+    margin: rem-calc(30) 0;
+  }
+
+  h3 {
+    color: $darkest-gray;
+  }
+
+  .tabs {
+    border: none;
+
+    .tabs-title {
+      width: 100%;
+      float: none;
+
+      @include breakpoint(medium) {
+        width: 50%;
+        float: left;
+
+        &:first-child {
+          text-align: right;
+        }
+      }
+
+      & > a {
+        font-family: $font-family-monospace;
+        font-size: 22px;
+        line-height: 1.36;
+        letter-spacing: 0.1px;
+
+        &.is-active,
+        &:focus,
+        &:hover,
+        &[aria-selected='true'] {
+          border: none;
+          background: $light-blue;
+          font-weight: bold;
+          outline: none;
+        }
+      }
+    }
+  }
+  .tabs-content {
+    border: none;
+    border-top: 0;
+    background: transparent;
+    color: inherit;
+    height: 100%;
+    transition: inherit;
+  }
+
+  .tabs-panel {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: $white;
+    
+    &:after {
+      background-color: rgba(0,0,0,0.5);
+      content: '';
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      @include breakpoint(medium) {
+        width: 50%;
+      }
+    }
+  }
+
+  .node-webform {
+    position: relative;
+    z-index: 1;
+
+    @include breakpoint(medium) {
+      width: 33.3333%;
+      margin-left: 8.3333%;
+    }
+
+    h3 {
+      font-family: $font-family-monospace;
+      font-size: 35px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.29;
+      letter-spacing: 0.2px;
+      color: $white;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    select {
+      color: #5d6671;
+      padding: 20px 16px;
+      outline: none;
+      margin-bottom: 5px;
+    }
+    select {
+      padding: 0 30px 0 20px;
+    }
+    textarea {
+      margin-bottom: 10px;
+    }
+    .form-item {
+      label {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: 0.1px;
+        color: $white;
+        margin-bottom: 0;
+      }
+    }
+    
+    .form-item-first-name,
+    .form-item-last-name {
+      display: inline-block;
+    }
+    #edit-status--wrapper,
+    #edit-status--2--wrapper {
+      display: inline-block;
+      width: 240px;
+      padding: 0px 20px;
+      .form-item-status {
+        display: inline-block;
+      }
+
+      legend {
+        font-weight: bold;
+      }
+    }
+    .webform-button--submit {
+      border-radius: 75px;
+    }
+  }
+
+  #panel0 {
+//     background-image: url(../../dist/images/bg_researcher.jpg);
+    @include breakpoint(small) {
+      background-position: left center;
+    }
+  }
+
+  #panel1 {
+//     background-image: url(../../dist/images/bg_corporate.jpg);
+    @include breakpoint(medium) {
+      &.tabs-panel:after {
+        left: auto;
+        right: 0;
+      }
+      .node-webform {
+        margin-left: 58.3333%;
+      }
+    }
+  }
+}

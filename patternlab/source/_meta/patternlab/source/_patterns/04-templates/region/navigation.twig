@@ -1,0 +1,52 @@
+<div class="region region--navigation">
+  <div class="grid-container grid-x show-for-medium">
+    {% if ar_menu %}
+    <div class="medium-6 cell">
+      {{ main_menu }}
+    </div>
+    <div class="medium-2 cell">
+      {{ ar_menu }}
+    </div>
+    {% else %}
+    <div class="medium-8 cell">
+      {{ main_menu }}
+    </div>
+    {% endif %}
+    <div class="search-box medium-4 cell">
+      <form action="/search" method="get" id="search-block-form" accept-charset="UTF-8">
+        <div class="field-wrapper">
+          <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keywords" type="search" id="edit-keywords" name="keywords" value="" size="15" maxlength="128" class="form-search">
+          <input class="success button radius js-form-submit form-submit" data-drupal-selector="edit-submit-search" type="submit" id="edit-submit-search" value="Submit">
+        </div>
+        <a class="search-toggle"></a>
+      </form>
+    </div>
+  </div>
+
+  {% if ar_menu_2 %}
+  <div class="ar-navigation">
+    <div class="grid-container grid-x show-for-medium">
+      <div class="cell">
+        {{ ar_menu_2 }}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="off-canvas position-top show-for-small-only" id="offCanvasTop" data-off-canvas data-content-overlay="false" data-content-scroll="false">
+    {% if main_menu_2 %}
+    <div class="row">
+      <div class="columns">
+      {{ main_menu_2 }}
+      </div>
+    </div>
+    {% endif %}
+    {% if utility_menu %}
+    <div class="row utility-menu">
+      <div class="columns">
+      {{ utility_menu }}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
