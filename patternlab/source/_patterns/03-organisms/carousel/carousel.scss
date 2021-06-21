@@ -10,10 +10,14 @@
   margin-top: rem-calc(25);
 
   .orbit-bullets {
-    margin-top: rem-calc(25);
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     button {
       background-color: $light-blue;
+      margin: 0 .5rem;
     }
     button.is-active {
       background-color: $medium-blue;
