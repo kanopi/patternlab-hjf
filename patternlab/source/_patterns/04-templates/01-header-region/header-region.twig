@@ -1,8 +1,14 @@
 <header aria-label="{{ 'Site header'|t }}">
   <div class="grid-container grid-x">
+    {% if page.navigation or page.header %}
     <div class="small-1 cell">
       {{ linked_logo }}
     </div>
+    {% else %}
+    <div class="small-12 cell logo-group">
+      {{ linked_logo }}
+    </div>
+    {% endif %}
 
     <div class="small-11 cell">
       <div class="show-for-small-only">
