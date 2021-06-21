@@ -1,6 +1,6 @@
 @import "../../../css/_settings.scss";
 
-$hero-height: 700px;
+$hero-height: 500px;
 $her-height-small: 230px;
 
 .hero-section {
@@ -27,7 +27,7 @@ $her-height-small: 230px;
   }
 
   @include breakpoint(large up) {
-    padding: rem-calc(180px 89px);
+    padding: rem-calc(146px 89px);
   }
 
   .hero-section-text {

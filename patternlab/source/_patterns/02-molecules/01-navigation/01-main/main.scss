@@ -131,7 +131,8 @@
         }
       }
 
-      .is-drilldown-submenu {
+      .is-drilldown-submenu,
+      .is-drilldown-submenu-parent[aria-expanded="true"] {
         padding-bottom: 100px;
         height: 80vh;
       }
