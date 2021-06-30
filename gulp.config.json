@@ -1,60 +1,60 @@
 {
-  "name": "hjf_pl",
+  "name": "patternlab-hjf",
   "paths": {
     "root": "./",
-    "public": "docs/"
+    "docs": "./docs/",
+    "dest": "./dest"
   },
   "browserSync": {
     "host": "patterns.hjfmri.docksal",
     "proxy": "patterns.hjfmri.docksal",
-    "baseDir": "docs"
+    "baseDir": "./docs"
   },
   "css": {
-    "css" : "patternlab/source/styles.scss",
+    "css" : "./patternlab/source/styles.scss",
     "src": [
-      "patternlab/source/css/*.scss",
-      "patternlab/source/_patterns/*.scss",
-      "patternlab/source/_patterns/**/*.scss"
+      "./patternlab/source/css/*.scss",
+      "./patternlab/source/_patterns/*.scss",
+      "./patternlab/source/_patterns/**/*.scss"
     ],
     "includePaths": [
       "node_modules/foundation-sites/scss/",
       "node_modules/motion-ui/src/"
     ],
-    "pl_dest": "docs/css/",
-    "dest": "dist/css/"
+    "pl_dest": "./docs/css/",
+    "dest": "./dist/css/"
   },
   "js": {
     "src": [
-      "patternlab/source/js/*.js",
-      "patternlab/source/js/**/*.js"
+      "./patternlab/source/js/*.js",
+      "./patternlab/source/js/**/*.js"
     ],
-    "pl_dest": "docs/js/",
-    "dest": "dist/js/"
+    "pl_dest": "./docs/js/",
+    "dest": "./dist/js/"
   },
   "patternlab": {
     "src": [
-
-      "patternlab/source/_annotaions/**/*.json",
-      "patternlab/source/_meta/*.twig",
-      "patternlab/source/_data/**/*.json",
-      "patternlab/source/_patterns/**/*.twig",
-      "patternlab/source/_patterns/**/*.md",
-      "patternlab/source/_patterns/**/*.json"
+      "./patternlab/source/_annotations/**/*.json",
+      "./patternlab/source/_meta/*.twig",
+      "./patternlab/source/_data/**/*.json",
+      "./patternlab/source/_patterns/**/*.twig",
+      "./patternlab/source/_patterns/**/*.md",
+      "./patternlab/source/_patterns/**/*.json"
     ],
     "javascript": {
       "src": [
-        "patternlab/source/_patterns/01-atoms/**/*.js",
-        "patternlab/source/_patterns/02-molecules/**/*.js",
-        "patternlab/source/_patterns/03-organisms/**/*.js",
-        "patternlab/source/_patterns/04-templates/**/*.js"
+        "./patternlab/source/_patterns/01-atoms/**/*.js",
+        "./patternlab/source/_patterns/02-molecules/**/*.js",
+        "./patternlab/source/_patterns/03-organisms/**/*.js",
+        "./patternlab/source/_patterns/04-templates/**/*.js"
       ]
     }
   },
   "images": {
     "src": [
-      "patternlab/source/images/**/*"
+      "./patternlab/source/images/**/*"
     ],
-    "dest": "dist/images/"
+    "dest": "./dist/images/"
   },
   "autoprefixer": [
     "last 2 versions",
@@ -70,7 +70,7 @@
       "node_modules/foundation-sites/dist/js/foundation.min.js",
       "node_modules/motion-ui/dist/motion-ui.min.js"
     ],
-    "pl_dest": "docs/js/",
-    "dest": "dist/js/"
+    "pl_dest": "./docs/js/",
+    "dest": "./dist/js/"
   }
 }
