@@ -7,7 +7,7 @@
   "browserSync": {
     "host": "patterns.hjfmri.docksal",
     "proxy": "patterns.hjfmri.docksal",
-    "baseDir": "./docs"
+    "baseDir": "docs"
   },
   "css": {
     "css" : "patternlab/source/styles.scss",

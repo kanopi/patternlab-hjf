@@ -1,17 +1,17 @@
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    plumber = require('gulp-plumber'),
-    notify = require('gulp-notify'),
-    autoprefix = require('gulp-autoprefixer'),
-    glob = require('gulp-sass-glob'),
-    sourcemaps = require('gulp-sourcemaps'),
-    shell = require('gulp-shell'),
-    concat = require('gulp-concat'),
-    babel = require('gulp-babel'),
-    imagemin = require('gulp-imagemin'),
-    importOnce = require('node-sass-import-once'),
-    copy = require('gulp-copy'),
-    browserSync = require('browser-sync');
+const gulp = require('gulp'),
+      sass = require('gulp-sass'),
+      plumber = require('gulp-plumber'),
+      notify = require('gulp-notify'),
+      autoprefix = require('gulp-autoprefixer'),
+      glob = require('gulp-sass-glob'),
+      sourcemaps = require('gulp-sourcemaps'),
+      shell = require('gulp-shell'),
+      concat = require('gulp-concat'),
+      babel = require('gulp-babel'),
+      imagemin = require('gulp-imagemin'),
+      importOnce = require('node-sass-import-once'),
+      copy = require('gulp-copy'),
+      browsersync = require('browser-sync');
 
 const config = require('./gulp.config.json');
 
@@ -29,7 +29,7 @@ function compileCss() {
       .pipe(autoprefix(config.autoprefixer))
       .pipe(gulp.dest(config.css.pl_dest))
       .pipe(gulp.dest(config.css.dest))
-      .pipe(browserSync.reload({stream: true, match: '**/*.css'}));
+      .pipe(browsersync.reload({stream: true, match: '**/*.css'}));
 }
 
 function compileJs() {
@@ -39,7 +39,7 @@ function compileJs() {
       .pipe(gulp.dest('patternlab/source/js/'))
       .pipe(gulp.dest('dist/js/'))
       .pipe(gulp.dest('docs/js/'))
-      .pipe(browserSync.reload({stream: true, match: '**/*.js'}));
+      .pipe(browsersync.reload({stream: true, match: '**/*.js'}));
 }
 
 function minifyImages() {
@@ -48,17 +48,9 @@ function minifyImages() {
       .pipe(gulp.dest(config.images.dest));
 }
 
-function watch() {
-    browserSync.init({
-      host: config.browserSync.host,
-      proxy: config.browserSync.proxy,
-      baseDir: config.browserSync.baseDir,
-      port: 3001,
-      open: false
-    });
-
+function watchFiles() {
     gulp.watch(config.css.src, compileCss);
-    gulp.watch(config.patternlab.javascript.src, compileJs);
+    gulp.watch(config.patternlab.javascript.src, gulp.series(compileJs,copyJs));
     gulp.watch(config.images.src, minifyImages);
     gulp.watch(config.patternlab.src, build);
 }
@@ -70,17 +62,31 @@ function copyJs() {
       .pipe(copy(config.copy.pl_dest, {prefix: 2}));
 }
 
+function browserSync(done) {
+  browsersync.init({
+    host: config.browserSync.host,
+    proxy: config.browserSync.proxy,
+    baseDir: config.browserSync.baseDir,
+    port: 3001,
+    open: false
+  });
+  done();
+}
+
+function browserSyncReload(done) {
+  browsersync.reload();
+  done();
+}
+
+const watch = gulp.parallel(watchFiles, browserSync);
+const build = gulp.series(generate, compileCss, compileJs, copyJs, minifyImages);
+const defaultTasks = gulp.series(build, watch);
+
 exports.compileCss = compileCss;
 exports.compileJs = compileJs;
 exports.minifyImages = minifyImages;
 exports.copyJs = copyJs;
-exports.watch = watch;
 exports.generate = generate;
-
-var build = gulp.series(compileCss, compileJs, copyJs, minifyImages, generate);
 exports.build = build;
-
-var defaultTasks = gulp.series(build, watch);
-exports.defaultTasks = defaultTasks;
-
-gulp.task('default', defaultTasks);
+exports.watch = watch;
+exports.default = defaultTasks;
