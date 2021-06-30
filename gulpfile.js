@@ -11,13 +11,14 @@ const gulp = require('gulp'),
       imagemin = require('gulp-imagemin'),
       importOnce = require('node-sass-import-once'),
       copy = require('gulp-copy'),
+      log = require('fancy-log'),
       browsersync = require('browser-sync');
 
 const config = require('./gulp.config.json');
 
 const generate = shell.task('php patternlab/core/console --generate');
 
-function compileCss() {
+function compileCss(done) {
   return gulp.src(config.css.src)
       .pipe(glob())
       .pipe(sass({
@@ -29,7 +30,8 @@ function compileCss() {
       .pipe(autoprefix(config.autoprefixer))
       .pipe(gulp.dest(config.css.pl_dest))
       .pipe(gulp.dest(config.css.dest))
-      .pipe(browsersync.reload({stream: true, match: '**/*.css'}));
+      .pipe(browsersync.reload({stream: true, match: '**/*.css'}))
+      .on('end', done);
 }
 
 function compileJs() {
