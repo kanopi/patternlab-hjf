@@ -28,7 +28,7 @@
     width: 100%;
   }
   &--tab-content {
-    height: 100%;
+    height: inherit;
     background-color: $primary-color;
     .tabs-content {
       border: none;

@@ -129,7 +129,6 @@
     .form-item-first-name,
     .form-item-last-name {
       display: inline-block;
-      width: 132px;
     }
     #edit-status--wrapper,
     #edit-status--2--wrapper {
@@ -150,14 +149,14 @@
   }
 
   #panel0 {
-    background-image: url(../../dist/images/bg_researcher.jpg);
+//     background-image: url(../../dist/images/bg_researcher.jpg);
     @include breakpoint(small) {
       background-position: left center;
     }
   }
 
   #panel1 {
-    background-image: url(../../dist/images/bg_corporate.jpg);
+//     background-image: url(../../dist/images/bg_corporate.jpg);
     @include breakpoint(medium) {
       &.tabs-panel:after {
         left: auto;

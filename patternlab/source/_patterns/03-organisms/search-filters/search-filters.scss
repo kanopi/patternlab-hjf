@@ -13,48 +13,56 @@
 
   .search-wrapper {
     display: flex;
+    align-items: flex-end;
     width: 100%;
     max-width: 850px;
     justify-content: left;
     padding: 0 1rem;
+
     .button.rectangular {
       display: block;
       max-height: 50px;
       position: relative;
-      right: 87px;
       padding: 15px 0 15px;
       width: 140px;
+
       @include breakpoint(large down) {
         display: block;
       }
+
       @include breakpoint(medium down) {
         display: none;
       }
     }
+
     form {
       width: 100%;
       max-width: 750px;
       display: flex;
       justify-content: center;
     }
+
     .keywords-wrapper {
       display: block;
       width: 100%;
-      padding-right: 2em;
     }
+
     .button.rectangular {
-      margin-top: 3.5em;
+      padding: 10px 0 14px;
     }
+
     @include breakpoint(small down) {
       .keywords-wrapper {
         max-width: 490px;
       }
+
       .button.rectangular {
         margin-left: 1rem;
         right: 0;
       }
     }
   }
+
   .keywords-wrapper .button.reset,
   .keywords-wrapper #edit-reset.button {
     color: #ffffff;
@@ -63,19 +71,23 @@
     position: relative;
     margin: 0 0 2em;
     border-radius: 25px;
+
     @include breakpoint(large up) {
       left: 178px;
     }
   }
+
   .search-wrapper .button.rectangular.filtered {
     color: $gray;
     background-color: $light-blue;
   }
+
   .title-wrapper {
     display: block;
     width: 100%;
     padding-right: 2em;
     margin-top: 55px;
+
     h2 {
       font-family: $body-font-family;
       font-size: 45px;
@@ -96,52 +108,55 @@
     z-index: 98;
     max-height: 90px;
     margin-top: 0;
+
     .title-wrapper {
       margin-top: 0;
       padding-top: 10px;
     }
+
     .keywords-wrapper {
       label {
         display: none;
       }
+
       #edit-submit-search.button.success {
         right: 68px;
         background-size: 50%;
+
         @-moz-document url-prefix() {
           right: 106px;
         }
       }
     }
+
     .js-form-item-keywords input[type="text"] {
       font-size: 18px;
       padding: 13px;
       transition: font-size 0.8s;
     }
+
     .js-form-item-keywords input {
       background-size: 25px;
       transition: background-size 0.8s;
     }
-    .js-form-item-keywords {
-      max-width: 486px;
-      height: 53px;
-      transition: max-width 0.8s;
-    }
+
     .filters-modal {
       top: 3px;
       max-height: calc(100vh - 100px);
       overflow-y: auto;
     }
 
-    .input-wrapper > .button.reset,
-    .input-wrapper > #edit-reset.button {
+    .input-wrapper>.button.reset,
+    .input-wrapper>#edit-reset.button {
       right: -197px;
       top: -68px;
     }
+
     .search-wrapper .button.rectangular {
       right: 142px;
       margin-top: 0;
     }
-    
+
     .toolbar-fixed & {
       top: 39px;
     }
@@ -149,7 +164,6 @@
     .toolbar-tray-open & {
       top: 75.375px;
     }
-
   }
 }
 
@@ -159,6 +173,7 @@
   height: 0;
   width: 0;
 }
+
 .filters-modal {
   background-color: $medium-blue;
   top: 148px;
@@ -168,66 +183,80 @@
   display: block;
   left: 18%;
   right: 18%;
+
   @include breakpoint(large down) {
     left: 5%;
     right: 5%;
   }
+
   @include breakpoint(small down) {
     max-width: 97%;
     top: 284px;
     left: 5px;
     right: 5px;
   }
+
   &:focus,
   &:active {
     outline: none;
   }
+
   .reveal-wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
+
   #edit-actions {
     display: inline-flex;
     position: relative;
     bottom: 39px;
     left: calc(50% - 110px);
-    [type='submit'] {
-      padding: .875rem 1.875rem;
+
+    [type="submit"] {
+      padding: 0.875rem 1.875rem;
       border: 1px solid transparent;
       border-radius: 4.6875rem;
       margin: 1rem;
     }
+
     .button.success.submit,
     #edit-submit-search.button.success {
       padding: 15px 48px;
       background-color: $warning-color;
-      &:hover, &:focus {
+
+      &:hover,
+      &:focus {
         background-color: #c4e2f5;
         color: #212121;
       }
     }
+
     .button.reset,
     #edit-reset.button {
       background-color: $card-bg-gray;
       position: relative;
       right: 15px;
       padding: 15px 30px;
+
       @include breakpoint(medium down) {
         right: -156px;
         padding: 17px 30px;
         top: 0;
       }
+
       @include breakpoint(small down) {
         top: -38px;
       }
     }
+
     @include breakpoint(small down) {
       top: 52px;
       bottom: unset;
       left: calc(73% - 110px);
     }
   }
+
   .close-button {
     position: absolute;
     color: white;
@@ -236,11 +265,6 @@
     right: 2.5rem;
     font-size: 3em;
   }
-}
-
-.js-form-item-keywords {
-  display: flex;
-  padding-bottom: 10px;
 }
 
 label {
@@ -253,4 +277,44 @@ label {
   letter-spacing: 0.1px;
   color: $darkest-blue;
   margin-bottom: 1.5em;
+}
+
+.search-filters {
+  .js-form-item {
+    height: inherit;
+  }
+  .js-form-item-keywords {
+    border-bottom: 0;
+    display: flex;
+    height: 53px;
+    max-width: 486px;
+    padding-bottom: 10px;
+    transition: max-width 0.8s;
+  }
+  .input-wrapper {
+    border-bottom: solid 1px #212121;
+  }
+  .form-text {
+    background: none;
+    &::placeholder {
+      color: #252a35;
+    }
+  }
+  .form-submit {
+    background-color: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/svg/icon-Search-blue.svg);
+    display: inline-block;
+    font-size: 0;
+    height: 50px;
+    margin: 0;
+    margin-bottom: 10px;
+    &:hover {
+      background-image: url(../images/svg/icon-Search-med-blue.svg);
+    }
+  }
+  .search-fliters--filter-button {
+    margin-left: -15px;
+  }
 }
