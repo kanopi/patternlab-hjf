@@ -1,7 +1,9 @@
 <div{{ attributes.addClass('hero-section', 'hero-overlay') }}>
 <div class="hero-section-image show-for-small-only"></div>
   <div class="hero-section-text">
-    <h1>{{ title }}</h1>
+    {% if title %}
+      <h1>{{ title }}</h1>
+    {% endif %}
     <div>{{ snippet }}</div>
     <div>{{ button }}</div>
   </div>
