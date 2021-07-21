@@ -7,7 +7,8 @@ orbs:
   # Orbs reduce the amount of configuration required for common tasks.
   # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/node
   node: circleci/node@4.1
-
+  # The CI Tools orb contains Kanopi related configurations.
+  ci-tools: kanopi/ci-tools@1.7.1
 
 jobs:
   # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
@@ -20,6 +21,12 @@ jobs:
     # Then run your tests!
     # CircleCI will report the results back to your VCS provider.
     steps:
+      - ci-tools/copy-ssh-key
+
+      - add_ssh_keys:
+          fingerprints:
+          - 4f:68:7b:a9:6c:6f:3a:3d:1b:24:d3:7e:30:f3:75:92
+
       # Checkout the code as the first step.
       - checkout
       # Next, the node orb's install-packages step will install the dependencies from a package.json.
