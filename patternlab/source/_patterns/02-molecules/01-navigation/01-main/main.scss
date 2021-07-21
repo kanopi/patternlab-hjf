@@ -5,10 +5,13 @@
     background-color: $medium-blue;
     .dropdown.menu {
        > li {
-         > a {
+         > a,
+         > span {
+          display: block;
           padding: rem-calc(25 20);
           color: #ffffff;
           font-weight: bold;
+          line-height: 1;
           &:hover {
             background-color: $primary-color;
             color: #ffffff;
@@ -67,7 +70,7 @@
                 transform: rotate(-90deg);
               }
             }
-  
+
             &.is-active {
               > a {
                 background-color: $light-blue;
@@ -79,7 +82,7 @@
                 }
               }
             }
-  
+
             .is-dropdown-submenu {
               top: 1px;
               background-color: $light-blue;

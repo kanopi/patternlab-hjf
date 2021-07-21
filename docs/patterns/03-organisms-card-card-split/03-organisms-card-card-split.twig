@@ -8,7 +8,9 @@
       {% endif %}
       <div class="c-card--content small-12 medium-6">
         <div class="content-wrapper">
-          <h3>{{ heading }}</h3>
+          {% if heading %}
+            <h3>{{ heading }}</h3>
+          {% endif %}
           <div>{{ summary }}</div>
           <div class="button-wrapper">{{ button }}</div>
         </div>
