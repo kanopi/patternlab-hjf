@@ -3,13 +3,13 @@
 .block-armenu {
   left: -10px;
 
-  .menu { 
+  .menu {
     & > li {
       & > a {
         padding: 1.5625rem 1.25rem;
         color: #ffffff;
         font-weight: bold;
-        
+
         &:hover {
           background: $primary-color;
         }
@@ -28,7 +28,7 @@
           padding: 1.5625rem 1.25rem;
           color: $darkest-blue;
           font-weight: bold;
-          
+
           &:hover {
             background: $medium-blue;
             color: #fff;

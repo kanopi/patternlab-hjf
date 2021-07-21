@@ -1,11 +1,15 @@
-<div id="block-exposedformsearchsearch" class="block-exposedformsearchsearch">
+<div id="block-exposedformsearchsearch" class="block-exposedformsearchsearch search-filters">
+
   <div class="search-wrapper">
     <form id="{{ form_id }}" action="{{ action }}" method="{{ method }}">
     {% if keywords %}
       <div class="keywords-wrapper">
         <label>{{ 'What are you looking for?'|t }}</label>
         <div class="input-wrapper">
-          {{ keywords }}{{ submit }}{{ reset }}
+          {{ keywords }}
+          <button class="button radius js-form-submit form-submit" data-drupal-selector="edit-submit-search-2">
+            Submit
+          </button>
         </div>
       </div>
     {% elseif title %}
@@ -13,7 +17,7 @@
       <h2>{{ title }}</h2>
      </div>
     {% endif %}
-    
+
       {# Filters modal. #}
       <div id="filters-modal" class="filters-modal closed">
         <div class="reveal-wrapper">

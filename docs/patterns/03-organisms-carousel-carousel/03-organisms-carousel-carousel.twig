@@ -13,7 +13,9 @@
   </div>
   <nav class="orbit-bullets">
   {% for key, slide in slides %}
-    <button data-slide="{{ key }}"{% if key == 0 %} class="is-active"{% endif %}><span class="show-for-sr">&nbsp;</span></button>
+    <button data-slide="{{ key }}"{% if key == 0 %} class="is-active"{% endif %}>
+      {% if key == 0 %}<span class="show-for-sr">&nbsp;</span>{% endif %}
+    </button>
   {% endfor %}
   </nav>
 </div>
