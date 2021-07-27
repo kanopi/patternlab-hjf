@@ -12,6 +12,8 @@
       {{ main_menu }}
     </div>
     {% endif %}
+
+    {% if search_form %}
     <div class="search-box medium-4 cell">
       <form action="/search" method="get" id="search-block-form" accept-charset="UTF-8">
         <div class="field-wrapper">
@@ -21,6 +23,7 @@
         <a class="search-toggle">Search</a>
       </form>
     </div>
+    {% endif %}
   </div>
 
   {% if ar_menu_2 %}
