@@ -13,8 +13,8 @@
   </div>
   <nav class="orbit-bullets">
   {% for key, slide in slides %}
-    <button data-slide="{{ key }}"{% if key == 0 %} class="is-active"{% endif %}>
-      {% if key == 0 %}<span class="show-for-sr">&nbsp;</span>{% endif %}
+    <button data-slide="{{ key }}"{% if key == 0 %} class="is-active"{% endif %} title="{{ title }} Slide {{ key + 1 }}">
+      {% if key == 0 %}<span class="show-for-sr">Current Slide</span>{% endif %}
     </button>
   {% endfor %}
   </nav>
