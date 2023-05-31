@@ -1,0 +1,35 @@
+<header aria-label="{{ 'Site header'|t }}">
+  <div class="grid-container grid-x">
+    {% if page.navigation or page.header %}
+      <div class="small-1 cell">
+        {{ linked_logo }}
+      </div>
+    {% else %}
+      <div class="small-12 cell logo-group">
+        {{ linked_logo }}
+      </div>
+    {% endif %}
+
+    <div class="small-9 cell">
+      {% if page.navigation %}
+        {{ page.navigation }}
+      {% endif %}
+    </div>
+
+    <div class="small-2 cell">
+      <div class="show-for-small-only">
+        <div class="hamburger-wrapper">
+          <button class="mobile-open" type="button" data-open="offCanvasTop">Menu</button>
+          <button class="mobile-close" type="button" data-close="offCanvasTop">Close</button>
+        </div>
+      </div>
+
+      {% if page.header %}
+      <div class="show-for-medium">
+        {{ page.header }}
+      </div>
+      {% endif %}
+    </div>
+
+  </div>
+</header>
