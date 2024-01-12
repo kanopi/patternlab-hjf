@@ -15,7 +15,7 @@ const sass         = require('gulp-sass'),
       concat       = require('gulp-concat'),
       babel        = require('gulp-babel'),
       imagemin     = require('gulp-imagemin'),
-      importOnce   = require('node-sass-import-once'),
+      importOnce   = require('sass-import-once'),
       copy         = require('gulp-copy'),
       browsersync  = require('browser-sync');
 
