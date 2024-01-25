@@ -15,7 +15,6 @@ const sass         = require('gulp-sass'),
       concat       = require('gulp-concat'),
       babel        = require('gulp-babel'),
       imagemin     = require('gulp-imagemin'),
-      importOnce   = require('node-sass-import-once'),
       copy         = require('gulp-copy'),
       browsersync  = require('browser-sync');
 
@@ -29,8 +28,7 @@ function compileCss() {
       .pipe(sass({
         outputStyle: 'compressed',
         errLogToConsole: true,
-        includePaths: config.css.includePaths,
-        importer: importOnce
+        includePaths: config.css.includePaths
       }))
       .pipe(autoprefix(config.autoprefixer))
       .pipe(dest(config.css.pl_dest))
