@@ -5055,9 +5055,9 @@ lodash.templatesettings@^4.0.0:
     lodash._reinterpolate "^3.0.0"
 
 lodash@^4.17.10, lodash@^4.17.14, lodash@^4.17.4, lodash@^4.3.0:
-  version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
-  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+  version "4.17.23"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.23.tgz#f113b0378386103be4f6893388c73d0bde7f2c5a"
+  integrity sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==
 
 logalot@^2.0.0:
   version "2.1.0"
@@ -6581,11 +6581,6 @@ safe-regex@^1.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-
-sass-import-once@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/sass-import-once/-/sass-import-once-0.2.0.tgz#e37f79bd68f634f60258c9d92d0f021df85ea4de"
-  integrity sha512-UFZiikUAZnOu+0TaUlalYlRgKPuHrz5r1U62bpHUtZp2BZEjJUJctlfLRZTwZjH7QQ+DzXmjFpoBSnA8BQaIiw==
 
 sass@^1.55.0:
   version "1.69.7"
